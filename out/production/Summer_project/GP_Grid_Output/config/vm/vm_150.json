@@ -1,0 +1,440 @@
+{
+    "virtualmachine": [{
+            "id": "m4.large.1",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.1
+        }, {
+            "id": "m4.large.2",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.1
+        }, {
+            "id": "m4.large.3",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.1
+        }, {
+            "id": "m4.large.4",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.1
+        }, {
+            "id": "m4.large.5",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.1
+        }, {
+            "id": "m4.large.6",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.1
+        }, {
+            "id": "m4.large.7",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.1
+        }, {
+            "id": "m4.large.8",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.1
+        }, {
+            "id": "m4.large.9",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.1
+        }, {
+            "id": "m4.large.10",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.1
+        },
+        { "id": "m4.xlarge.1", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.xlarge.2", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.xlarge.3", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.xlarge.4", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.xlarge.5", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.xlarge.6", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.xlarge.7", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.xlarge.8", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.xlarge.9", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.xlarge.10", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.2xlarge.1", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.2xlarge.2", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.2xlarge.3", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.2xlarge.4", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.2xlarge.5", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.2xlarge.6", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.2xlarge.7", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.2xlarge.8", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.2xlarge.9", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.2xlarge.10", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.4xlarge.1", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.4xlarge.2", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.4xlarge.3", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.4xlarge.4", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.4xlarge.5", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.4xlarge.6", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.4xlarge.7", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.4xlarge.8", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.4xlarge.9", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.4xlarge.10", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.10xlarge.1", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "m4.10xlarge.2", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "m4.10xlarge.3", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "m4.10xlarge.4", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "m4.10xlarge.5", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "m4.10xlarge.6", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "m4.10xlarge.7", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "m4.10xlarge.8", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "m4.10xlarge.9", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "m4.10xlarge.10", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "c4.xlarge.1", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.xlarge.2", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.xlarge.3", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.xlarge.4", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.xlarge.5", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.xlarge.6", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.xlarge.7", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.xlarge.8", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.xlarge.9", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.xlarge.10", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.2xlarge.1", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.2xlarge.2", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.2xlarge.3", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.2xlarge.4", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.2xlarge.5", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.2xlarge.6", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.2xlarge.7", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.2xlarge.8", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.2xlarge.9", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.2xlarge.10", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.4xlarge.1", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.4xlarge.2", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.4xlarge.3", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.4xlarge.4", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.4xlarge.5", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.4xlarge.6", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.4xlarge.7", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.4xlarge.8", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.4xlarge.9", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.4xlarge.10", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.8xlarge.1", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        { "id": "c4.8xlarge.2", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        { "id": "c4.8xlarge.3", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        { "id": "c4.8xlarge.4", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        { "id": "c4.8xlarge.5", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        { "id": "c4.8xlarge.6", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        { "id": "c4.8xlarge.7", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        { "id": "c4.8xlarge.8", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        { "id": "c4.8xlarge.9", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        { "id": "c4.8xlarge.10", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        {
+            "id": "g3.4xlarge.1",
+            "name": "g3.4xlarge",
+            "velocity": 56.4,
+            "unit_cost_vm": 1.14
+        }, {
+            "id": "g3.4xlarge.2",
+            "name": "g3.4xlarge",
+            "velocity": 56.4,
+            "unit_cost_vm": 1.14
+        }, {
+            "id": "g3.4xlarge.3",
+            "name": "g3.4xlarge",
+            "velocity": 56.4,
+            "unit_cost_vm": 1.14
+        }, {
+            "id": "g3.4xlarge.4",
+            "name": "g3.4xlarge",
+            "velocity": 56.4,
+            "unit_cost_vm": 1.14
+        }, {
+            "id": "g3.4xlarge.5",
+            "name": "g3.4xlarge",
+            "velocity": 56.4,
+            "unit_cost_vm": 1.14
+        }, {
+            "id": "g3.4xlarge.6",
+            "name": "g3.4xlarge",
+            "velocity": 56.4,
+            "unit_cost_vm": 1.14
+        }, {
+            "id": "g3.4xlarge.7",
+            "name": "g3.4xlarge",
+            "velocity": 56.4,
+            "unit_cost_vm": 1.14
+        }, {
+            "id": "g3.4xlarge.8",
+            "name": "g3.4xlarge",
+            "velocity": 56.4,
+            "unit_cost_vm": 1.14
+        }, {
+            "id": "g3.4xlarge.9",
+            "name": "g3.4xlarge",
+            "velocity": 56.4,
+            "unit_cost_vm": 1.14
+        }, {
+            "id": "g3.4xlarge.10",
+            "name": "g3.4xlarge",
+            "velocity": 56.4,
+            "unit_cost_vm": 1.14
+        },
+        {
+            "id": "g3.8xlarge.1",
+            "name": "g3.8xlarge",
+            "velocity": 112.8,
+            "unit_cost_vm": 2.28
+        }, {
+            "id": "g3.8xlarge.2",
+            "name": "g3.8xlarge",
+            "velocity": 112.8,
+            "unit_cost_vm": 2.28
+        }, {
+            "id": "g3.8xlarge.3",
+            "name": "g3.8xlarge",
+            "velocity": 112.8,
+            "unit_cost_vm": 2.28
+        }, {
+            "id": "g3.8xlarge.4",
+            "name": "g3.8xlarge",
+            "velocity": 112.8,
+            "unit_cost_vm": 2.28
+        }, {
+            "id": "g3.8xlarge.5",
+            "name": "g3.8xlarge",
+            "velocity": 112.8,
+            "unit_cost_vm": 2.28
+        }, {
+            "id": "g3.8xlarge.6",
+            "name": "g3.8xlarge",
+            "velocity": 112.8,
+            "unit_cost_vm": 2.28
+        }, {
+            "id": "g3.8xlarge.7",
+            "name": "g3.8xlarge",
+            "velocity": 112.8,
+            "unit_cost_vm": 2.28
+        }, {
+            "id": "g3.8xlarge.8",
+            "name": "g3.8xlarge",
+            "velocity": 112.8,
+            "unit_cost_vm": 2.28
+        }, {
+            "id": "g3.8xlarge.9",
+            "name": "g3.8xlarge",
+            "velocity": 112.8,
+            "unit_cost_vm": 2.28
+        }, {
+            "id": "g3.8xlarge.10",
+            "name": "g3.8xlarge",
+            "velocity": 112.8,
+            "unit_cost_vm": 2.28
+        },
+        {
+            "id": "g3.16xlarge.1",
+            "name": "g3.16xlarge",
+            "velocity": 225.6,
+            "unit_cost_vm": 4.56
+        }, {
+            "id": "g3.16xlarge.2",
+            "name": "g3.16xlarge",
+            "velocity": 225.6,
+            "unit_cost_vm": 4.56
+        }, {
+            "id": "g3.16xlarge.3",
+            "name": "g3.16xlarge",
+            "velocity": 225.6,
+            "unit_cost_vm": 4.56
+        }, {
+            "id": "g3.16xlarge.4",
+            "name": "g3.16xlarge",
+            "velocity": 225.6,
+            "unit_cost_vm": 4.56
+        }, {
+            "id": "g3.16xlarge.5",
+            "name": "g3.16xlarge",
+            "velocity": 225.6,
+            "unit_cost_vm": 4.56
+        }, {
+            "id": "g3.16xlarge.6",
+            "name": "g3.16xlarge",
+            "velocity": 225.6,
+            "unit_cost_vm": 4.56
+        }, {
+            "id": "g3.16xlarge.7",
+            "name": "g3.16xlarge",
+            "velocity": 225.6,
+            "unit_cost_vm": 4.56
+        }, {
+            "id": "g3.16xlarge.8",
+            "name": "g3.16xlarge",
+            "velocity": 225.6,
+            "unit_cost_vm": 4.56
+        }, {
+            "id": "g3.16xlarge.9",
+            "name": "g3.16xlarge",
+            "velocity": 225.6,
+            "unit_cost_vm": 4.56
+        }, {
+            "id": "g3.16xlarge.10",
+            "name": "g3.16xlarge",
+            "velocity": 225.6,
+            "unit_cost_vm": 4.56
+        }, {
+            "id": "r3.4xlarge.1",
+            "name": "r3.4xlarge",
+            "velocity": 62.4,
+            "unit_cost_vm": 1.33
+        }, {
+            "id": "r3.4xlarge.2",
+            "name": "r3.4xlarge",
+            "velocity": 62.4,
+            "unit_cost_vm": 1.33
+        }, {
+            "id": "r3.4xlarge.3",
+            "name": "r3.4xlarge",
+            "velocity": 62.4,
+            "unit_cost_vm": 1.33
+        }, {
+            "id": "r3.4xlarge.4",
+            "name": "r3.4xlarge",
+            "velocity": 62.4,
+            "unit_cost_vm": 1.33
+        }, {
+            "id": "r3.4xlarge.5",
+            "name": "r3.4xlarge",
+            "velocity": 62.4,
+            "unit_cost_vm": 1.33
+        }, {
+            "id": "r3.4xlarge.6",
+            "name": "r3.4xlarge",
+            "velocity": 62.4,
+            "unit_cost_vm": 1.33
+        }, {
+            "id": "r3.4xlarge.7",
+            "name": "r3.4xlarge",
+            "velocity": 62.4,
+            "unit_cost_vm": 1.33
+        }, {
+            "id": "r3.4xlarge.8",
+            "name": "r3.4xlarge",
+            "velocity": 62.4,
+            "unit_cost_vm": 1.33
+        }, {
+            "id": "r3.4xlarge.9",
+            "name": "r3.4xlarge",
+            "velocity": 62.4,
+            "unit_cost_vm": 1.33
+        }, {
+            "id": "r3.4xlarge.10",
+            "name": "r3.4xlarge",
+            "velocity": 62.4,
+            "unit_cost_vm": 1.33
+        },
+        {
+            "id": "r3.8xlarge.1",
+            "name": "r3.8xlarge",
+            "velocity": 124.8,
+            "unit_cost_vm": 2.66
+        }, {
+            "id": "r3.8xlarge.2",
+            "name": "r3.8xlarge",
+            "velocity": 124.8,
+            "unit_cost_vm": 2.66
+        }, {
+            "id": "r3.8xlarge.3",
+            "name": "r3.8xlarge",
+            "velocity": 124.8,
+            "unit_cost_vm": 2.66
+        }, {
+            "id": "r3.8xlarge.4",
+            "name": "r3.8xlarge",
+            "velocity": 124.8,
+            "unit_cost_vm": 2.66
+        }, {
+            "id": "r3.8xlarge.5",
+            "name": "r3.8xlarge",
+            "velocity": 124.8,
+            "unit_cost_vm": 2.66
+        }, {
+            "id": "r3.8xlarge.6",
+            "name": "r3.8xlarge",
+            "velocity": 124.8,
+            "unit_cost_vm": 2.66
+        }, {
+            "id": "r3.8xlarge.7",
+            "name": "r3.8xlarge",
+            "velocity": 124.8,
+            "unit_cost_vm": 2.66
+        }, {
+            "id": "r3.8xlarge.8",
+            "name": "r3.8xlarge",
+            "velocity": 124.8,
+            "unit_cost_vm": 2.66
+        }, {
+            "id": "r3.8xlarge.9",
+            "name": "r3.8xlarge",
+            "velocity": 124.8,
+            "unit_cost_vm": 2.66
+        }, {
+            "id": "r3.8xlarge.10",
+            "name": "r3.8xlarge",
+            "velocity": 124.8,
+            "unit_cost_vm": 2.66
+        },
+        {
+            "id": "r4.large.1",
+            "name": "r4.large",
+            "velocity": 8.4,
+            "unit_cost_vm": 0.133
+        }, {
+            "id": "r4.large.2",
+            "name": "r4.large",
+            "velocity": 8.4,
+            "unit_cost_vm": 0.133
+        }, {
+            "id": "r4.large.3",
+            "name": "r4.large",
+            "velocity": 8.4,
+            "unit_cost_vm": 0.133
+        }, {
+            "id": "r4.large.4",
+            "name": "r4.large",
+            "velocity": 8.4,
+            "unit_cost_vm": 0.133
+        }, {
+            "id": "r4.large.5",
+            "name": "r4.large",
+            "velocity": 8.4,
+            "unit_cost_vm": 0.133
+        }, {
+            "id": "r4.large.6",
+            "name": "r4.large",
+            "velocity": 8.4,
+            "unit_cost_vm": 0.133
+        }, {
+            "id": "r4.large.7",
+            "name": "r4.large",
+            "velocity": 8.4,
+            "unit_cost_vm": 0.133
+        }, {
+            "id": "r4.large.8",
+            "name": "r4.large",
+            "velocity": 8.4,
+            "unit_cost_vm": 0.133
+        }, {
+            "id": "r4.large.9",
+            "name": "r4.large",
+            "velocity": 8.4,
+            "unit_cost_vm": 0.133
+        }, {
+            "id": "r4.large.10",
+            "name": "r4.large",
+            "velocity": 8.4,
+            "unit_cost_vm": 0.133
+        }
+
+    ]
+}

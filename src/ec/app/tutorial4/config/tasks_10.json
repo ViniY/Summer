@@ -1,0 +1,53 @@
+{
+    "tasks": [{
+            "id": "ID00000",
+            "task_size": 100,
+            "parent_id": []
+        },
+        {
+            "id": "ID00001",
+            "task_size": 200,
+            "parent_id": []
+        },
+        {
+            "id": "ID00002",
+            "task_size": 300,
+            "parent_id": []
+        },
+        {
+            "id": "ID00003",
+            "task_size": 400,
+            "parent_id": []
+        },
+        {
+            "id": "ID00004",
+            "task_size": 500,
+            "parent_id": ["ID00000", "ID00001"]
+        },
+        {
+            "id": "ID00005",
+            "task_size": 120,
+            "parent_id": ["ID00001", "ID00002"]
+        },
+        {
+            "id": "ID00006",
+            "task_size": 100,
+            "parent_id": ["ID00002", "ID00003"]
+        },
+        {
+            "id": "ID00007",
+            "task_size": 80,
+            "parent_id": ["ID00004", "ID00005"]
+        },
+        {
+            "id": "ID00008",
+            "task_size": 180,
+            "parent_id": ["ID00005", "ID00006"]
+        },
+        {
+            "id": "ID00009",
+            "task_size": 320,
+            "parent_id": ["ID00007", "ID00008"]
+        }
+    ]
+}

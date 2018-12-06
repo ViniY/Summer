@@ -1,0 +1,19 @@
+{
+    "virtualmachine": [
+        { "id": "m4.large.1", "name": "m4.large", "velocity": 7.8, "unit_cost_vm": 0.1 },
+        { "id": "m4.xlarge.1", "name": "m4.xlarge", "velocity": 15.6, "unit_cost_vm": 0.2 },
+        { "id": "m4.2xlarge.1", "name": "m4.2xlarge", "velocity": 31.2, "unit_cost_vm": 0.4 },
+        { "id": "m4.4xlarge.1", "name": "m4.4xlarge", "velocity": 64.2, "unit_cost_vm": 0.8 },
+        { "id": "m4.10xlarge.1", "name": "m4.10xlarge", "velocity": 149.4, "unit_cost_vm": 2 },
+        { "id": "c4.xlarge.1", "name": "c4.xlarge", "velocity": 19.2, "unit_cost_vm": 0.199 },
+        { "id": "c4.2xlarge.1", "name": "c4.2xlarge", "velocity": 37.2, "unit_cost_vm": 0.398 },
+        { "id": "c4.4xlarge.1", "name": "c4.4xlarge", "velocity": 74.4, "unit_cost_vm": 0.796 },
+        { "id": "c4.8xlarge.1", "name": "c4.8xlarge", "velocity": 158.4, "unit_cost_vm": 1.591 },
+        { "id": "g3.4xlarge.1", "name": "g3.4xlarge", "velocity": 56.4, "unit_cost_vm": 1.14 },
+        { "id": "g3.8xlarge.1", "name": "g3.8xlarge", "velocity": 112.8, "unit_cost_vm": 2.28 },
+        { "id": "g3.16xlarge.1", "name": "g3.16xlarge", "velocity": 225.6, "unit_cost_vm": 4.56 },
+        { "id": "r3.4xlarge.1", "name": "r3.4xlarge", "velocity": 62.4, "unit_cost_vm": 1.33 },
+        { "id": "r3.8xlarge.1", "name": "r3.8xlarge", "velocity": 124.8, "unit_cost_vm": 2.66 },
+        { "id": "r4.large.1", "name": "r4.large", "velocity": 8.4, "unit_cost_vm": 0.133 }
+    ]
+}

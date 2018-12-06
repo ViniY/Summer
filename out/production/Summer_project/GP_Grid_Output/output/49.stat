@@ -1,0 +1,1966 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9992352033885981
+Tree 0:
+ (+ RFT (+ (/ WT ET) V))
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.999116997283164
+Tree 0:
+ (+ RFT (+ (/ (+ WT ET) ET) V))
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9995680685366765
+Tree 0:
+ (+ (/ TS RFT) RFT)
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9927466300861325
+Tree 0:
+ (+ (+ RFT V) (+ (* 0.106797 0.959738) (-
+     (* UC V) (- TS UC))))
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9995158241912082
+Tree 0:
+ (+ (* (* RFT RFT) (- RFT V)) RFT)
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9943796744667512
+Tree 0:
+ (+ RFT (+ (* (* RFT RFT) (- RFT V)) V))
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9991444099625633
+Tree 0:
+ (+ RFT (+ (* (* RFT RFT) (- RFT V)) V))
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.997415904623863
+Tree 0:
+ (+ RFT (+ (- (* UC V) (- TS UC)) V))
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9969250228200954
+Tree 0:
+ (- (+ RFT (+ (- (* UC V) (- TS UC)) V)) (/
+     RFT (+ (+ UC 0.190396) V)))
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9971768959855164
+Tree 0:
+ (- (* (+ V RFT) TS) (/ (* (+ (* WT ET) (*
+     (+ (/ UC TS) V) (/ (* (+ (* WT ET) (- TS
+     UC)) (+ (+ (- TS WT) (/ RFT 0.806077)) (*
+     ET V))) (/ (* (+ (* WT ET) (+ V RFT)) (+
+     RFT 0.320149)) (+ (+ RFT V) 0.649325)))))
+     (+ (/ 0.079799 V) (* ET V))) (- (/ (/ RFT
+     0.651270) (+ TS UC)) (/ (+ ET V) (/ UC TS)))))
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9989841825393184
+Tree 0:
+ (+ (- (* (- TS ET) (* (* RFT RFT) (- RFT
+     V))) (* (+ RFT WT) (/ RFT RFT))) (+ (/ RFT
+     ET) V))
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9985494880958667
+Tree 0:
+ (- (+ ET WT) (/ (- (/ (- (+ ET WT) (+ (+
+     RFT (- TS UC)) TS)) (- (+ ET WT) (+ (+ RFT
+     V) TS))) (- TS UC)) (+ RFT WT)))
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9964355439361688
+Tree 0:
+ (- (+ (/ UC (/ (* RFT RFT) (+ (+ (* TS RFT)
+     TS) (/ 0.361572 V)))) (+ (+ 0.463445 RFT)
+     TS)) (/ (- (/ (- (+ ET WT) (+ (* (* RFT RFT)
+     (- RFT V)) V)) (+ (+ (+ (+ (+ (* (* RFT RFT)
+     (- (/ RFT TS) (- TS UC))) V) RFT) V) TS)
+     (/ RFT 0.477597))) (- TS UC)) (+ RFT WT)))
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.997689036860543
+Tree 0:
+ (- (+ (/ UC (/ (* RFT RFT) (+ (+ (* TS RFT)
+     TS) (/ 0.288901 V)))) (+ (+ 0.260286 RFT)
+     TS)) (/ (- (/ (- (+ ET WT) (+ (* (* RFT RFT)
+     (- RFT V)) V)) (+ (+ (+ (+ (+ (* (* RFT RFT)
+     (- (/ (+ (+ 0.085969 RFT) TS) TS) (- TS UC)))
+     V) RFT) V) TS) (/ RFT 0.579065))) (- TS UC))
+     (+ RFT WT)))
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9973822606560673
+Tree 0:
+ (- (+ (/ UC (/ (* RFT RFT) (+ (+ (* TS RFT)
+     TS) (/ 0.981771 V)))) (+ (+ 0.509319 RFT)
+     TS)) (/ (- (/ (- (+ ET WT) (+ (* (* RFT RFT)
+     (- RFT V)) V)) (+ (+ (+ (+ (+ (/ (- (* UC
+     (/ 0.880181 V)) (- TS UC)) (+ RFT WT)) V)
+     RFT) V) TS) (/ RFT 0.372996))) (- TS UC))
+     (+ RFT WT)))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9960260790981026
+Tree 0:
+ (- (+ (/ UC (/ (* RFT RFT) (+ (+ (* TS RFT)
+     TS) (/ 0.046942 V)))) (+ (+ 0.901414 RFT)
+     TS)) (/ (- (/ (- (+ ET WT) (+ (* (* RFT RFT)
+     (- RFT V)) V)) (+ (+ (+ (+ ET RFT) V) TS)
+     (/ RFT 0.017517))) (- TS UC)) (+ RFT WT)))
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9977001089235898
+Tree 0:
+ (- (+ (/ UC (/ (* RFT RFT) (+ (+ (* TS RFT)
+     TS) (/ 0.449610 V)))) (- RFT V)) (/ (- (/
+     (- (+ (- (+ 0.565544 RFT) (- TS UC)) TS)
+         (+ (* (* RFT RFT) (- RFT V)) V)) (+ (+ (+
+     (+ (+ (+ (+ (* TS RFT) TS) (+ (+ V TS) (+
+         (+ (- TS WT) (+ (+ (/ 0.925443 V) RFT) V))
+         (- (* (+ V RFT) TS) 0.345473)))) V) RFT)
+     V) TS) (+ 0.587132 RFT))) (- TS UC)) (+ RFT
+     WT)))
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9980067731062516
+Tree 0:
+ (- (+ (+ (/ UC (/ (* RFT RFT) (+ (+ (* TS
+     RFT) TS) (+ 0.477646 RFT)))) (+ (+ 0.584022
+     RFT) TS)) (+ (+ 0.198593 RFT) TS)) (/ (-
+     (/ (- RFT (+ (+ RFT V) TS)) (- (+ (/ UC TS)
+         WT) (/ (- (/ (- (+ ET WT) (+ (+ RFT V) TS))
+         (+ (+ (+ (- TS WT) (+ (+ (* (+ V RFT) TS)
+             RFT) V)) TS) (/ RFT 0.850251))) RFT) (+ RFT
+         WT)))) (- TS UC)) (+ RFT WT)))
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9990695696587758
+Tree 0:
+ (- RFT (/ (- (/ (- (+ (- (/ UC TS) (- TS
+     UC)) TS) (/ RFT (+ (+ (* TS RFT) TS) (+ (+
+     V TS) (+ (+ ET V) (- (* (+ V RFT) TS) 0.626508))))))
+     (+ (* TS (+ RFT WT)) (/ RFT 0.680562))) (-
+     TS UC)) (+ RFT WT)))
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9990228025311239
+Tree 0:
+ (- RFT (/ (- (/ (- (+ ET WT) (+ (* (* RFT
+     RFT) (- RFT V)) V)) (- TS UC)) (- TS UC))
+     (+ RFT WT)))
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9954591153100709
+Tree 0:
+ (- (+ (+ (/ UC (/ (* RFT RFT) (+ (+ (* TS
+     RFT) TS) (/ (+ (/ 0.536588 V) RFT) V))))
+     (+ (+ 0.896149 RFT) TS)) (+ (+ 0.444634 RFT)
+     TS)) (/ (- (/ (- RFT (+ (+ RFT V) TS)) (-
+     (+ (/ UC TS) WT) (/ (- (/ (- (+ (+ (+ 0.900514
+     RFT) TS) WT) (+ (+ RFT V) TS)) (+ 0.076377
+     (* TS RFT))) RFT) (+ RFT WT)))) TS) (+ RFT
+     WT)))
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.998292959024268
+Tree 0:
+ (- (+ (+ (/ UC (/ (* RFT RFT) (+ (+ (* TS
+     RFT) TS) (/ (+ (/ 0.222157 V) RFT) V))))
+     (+ (+ 0.275240 RFT) TS)) (+ (+ 0.547954 RFT)
+     (+ (+ 0.656344 RFT) TS))) (/ (- (/ (- RFT
+     (+ (+ RFT V) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (- (+ ET WT) (/ (+ (/ 0.551710 V) RFT)
+         V)) (+ (+ (+ (- TS WT) (+ (+ (* (+ V RFT)
+         TS) RFT) V)) TS) (/ RFT 0.487776))) RFT)
+     (+ (+ (+ WT WT) (+ (/ TS RFT) ET)) RFT))))
+     TS) (+ RFT WT)))
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9991408767794171
+Tree 0:
+ (- (+ (/ UC (/ (* RFT RFT) (+ (+ (+ (* RFT
+     RFT) TS) (/ RFT 0.352384)) (/ (+ (+ (+ (+
+     (* TS RFT) TS) (+ (+ V TS) (+ (+ (- TS WT)
+     (+ (+ (/ 0.909628 V) RFT) V)) (- (* (+ V
+     RFT) TS) 0.712817)))) V) RFT) V)))) (+ 0.677902
+     RFT)) (/ (/ (- RFT (+ (+ RFT V) TS)) (- (+
+     (/ UC TS) WT) (/ (- (/ (- (+ ET WT) (+ (+
+     RFT V) TS)) (+ (+ (+ (/ (* RFT RFT) (+ (+
+     (/ 0.878231 V) TS) (/ 0.860128 V))) (+ ET
+     WT)) TS) (/ RFT 0.795075))) RFT) (+ RFT WT))))
+     (+ RFT (+ RFT WT))))
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9981026199294745
+Tree 0:
+ (- (+ (/ UC (/ (+ (+ (* RFT RFT) (+ (+ RFT
+     V) TS)) (/ (- (+ ET WT) (+ (* (/ 0.296435
+     V) (- RFT V)) V)) (+ (+ (+ WT V) TS) (- (*
+     (+ V RFT) TS) 0.589309)))) (+ (+ (* TS RFT)
+     TS) (/ (+ (/ 0.334649 V) RFT) V)))) (+ (+
+     0.849333 RFT) TS)) (/ (- (/ (- (+ ET WT)
+     (+ (* (/ 0.733577 V) (- RFT V)) V)) (- (-
+     (+ (* TS RFT) TS) (- TS UC)) (- TS UC)))
+     (- TS UC)) (+ RFT WT)))
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9950956339410193
+Tree 0:
+ (- (+ (/ UC (/ (+ RFT WT) (+ (- TS UC) (/
+     (+ (/ (- (+ ET WT) (+ (+ RFT V) TS)) (+ (+
+         (+ (* RFT RFT) (+ ET WT)) TS) (/ RFT 0.690726)))
+         RFT) V)))) (+ (+ 0.044967 RFT) TS)) (/ (-
+     (/ (- (+ ET WT) (* RFT RFT)) (- (- (/ RFT
+         (+ (+ (+ 0.267070 RFT) TS) (+ (+ V TS) (+
+             (+ ET V) (- (* (+ V RFT) TS) 0.892142)))))
+         (- TS UC)) (+ (* (* RFT RFT) (- (/ (/ UC
+         (+ (+ 0.647781 RFT) V)) TS) (- TS UC))) V)))
+     (- TS UC)) (+ RFT WT)))
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9982856934948722
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.247159 V)))) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (+ (+ (+ ET RFT) V) TS) TS) (-
+     TS UC)))) (+ (+ 0.888158 RFT) TS))) (+ (+
+     0.007714 RFT) TS)) (/ (- (/ (- RFT (+ (+
+     RFT V) TS)) (- (+ (/ UC TS) WT) (/ (- (/
+     (- (+ (+ (* RFT RFT) TS) WT) (+ (+ RFT V)
+         TS)) (+ 0.107351 (* TS RFT))) RFT) (+ RFT
+     WT)))) TS) (+ RFT WT)))
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9940637816689444
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.555961 V)))) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+
+     (+ TS TS) (/ 0.129976 V)))) TS) V) TS) TS)
+     (- TS UC)))) (+ (+ 0.980025 RFT) TS))) (+
+     (+ 0.046471 RFT) TS)) (/ (- (/ (- RFT (+
+     (+ RFT V) TS)) (- (+ (/ UC TS) WT) (/ (-
+     (/ (- (+ (+ (* RFT RFT) TS) WT) (+ (+ RFT
+         V) TS)) (+ 0.897407 (* TS RFT))) RFT) (+
+     RFT WT)))) TS) (+ RFT WT)))
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9925636506116124
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.659843 V)))) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+
+     (+ TS TS) (/ 0.381702 V)))) TS) V) TS) TS)
+     (- TS UC)))) (+ (+ 0.808581 RFT) TS))) (+
+     (+ 0.527223 RFT) TS)) (/ (- (/ (- RFT (+
+     (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/ (-
+     (/ (- (+ (+ (* RFT RFT) TS) WT) (+ (+ RFT
+         V) TS)) (+ 0.411699 (* TS RFT))) RFT) (+
+     RFT WT)))) TS) (+ RFT WT)))
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9846878359739023
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.628971 V)))) TS) (+ (- TS UC) (+ (+
+     0.139071 RFT) TS))) (+ (+ 0.248486 RFT) TS))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (- (+ (+ (* RFT RFT)
+         TS) WT) (+ (+ RFT V) TS)) (+ 0.084912 (*
+         TS RFT))) RFT) (+ RFT WT)))) TS) (+ RFT WT)))
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9956625971813433
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (+ V UC)))) TS) (+ (/ UC (/ (* RFT RFT) (+
+     (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+         (/ 0.967502 V)))) TS) V) TS) TS) (- TS UC))))
+     (+ (+ 0.502577 RFT) TS))) (+ (+ 0.338639
+     RFT) TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (- (+ (+
+     (* RFT RFT) TS) WT) (+ (+ RFT V) TS)) (+
+     0.620059 (* TS RFT))) RFT) (+ RFT WT))))
+     TS) (+ RFT WT)))
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9972378277902801
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (+ V UC)))) TS) (+ (/ UC (/ (* RFT RFT) (+
+     (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+         (/ 0.565321 V)))) TS) V) TS) TS) (- TS UC))))
+     (+ (+ 0.307600 RFT) TS))) (+ (+ 0.056928
+     RFT) TS)) (/ (- (/ (- RFT (+ (+ (+ (* RFT
+     RFT) TS) WT) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (- (+ (+ (* RFT RFT) TS) WT) (+ (+
+         RFT V) TS)) (+ 0.252021 (* TS RFT))) RFT)
+     (+ RFT WT)))) TS) (+ RFT WT)))
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9942735971088361
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (+ V UC)))) TS) (+ (/ UC (/ (* RFT RFT) (+
+     (+ (+ (+ (+ (+ TS TS) (/ 0.818368 V)) V)
+         TS) TS) (- TS UC)))) (+ (+ 0.810160 RFT)
+     TS))) (+ (+ 0.047946 RFT) TS)) (/ (- (/ (-
+     RFT (+ (+ (+ (* RFT RFT) TS) WT) TS)) (-
+     (+ (/ UC TS) WT) (/ (- (/ (- (+ (+ (* RFT
+     RFT) TS) WT) (+ (+ RFT V) TS)) (+ 0.635319
+     (* TS RFT))) RFT) (+ RFT WT)))) TS) (+ RFT
+     WT)))
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9963960136925568
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.309217 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ V TS) (+ (+ ET V) (* RFT
+     RFT))) (- TS UC))) V) (+ (+ (+ (+ (+ (/ UC
+     (/ (+ V RFT) (+ (+ TS TS) (/ 0.223929 V))))
+     TS) V) TS) TS) (- TS UC)))) (+ (+ (+ (+ (/
+     UC (/ (+ V RFT) (+ (+ TS TS) (+ V UC))))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ 0.750939 RFT) TS)))
+     (+ (+ 0.874743 RFT) TS)) TS))) (+ (+ 0.490929
+     RFT) TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (- (+ (+
+     (* RFT RFT) TS) WT) (+ (+ RFT V) TS)) (+
+     0.180361 (* TS RFT))) RFT) (+ RFT V)))) TS)
+     (+ RFT WT)))
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9976828742582596
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.825803 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ V TS) (/ UC (/ (+ V RFT)
+     (+ (+ TS TS) (/ 0.402366 V))))) (- TS UC)))
+     V) (+ (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+
+     TS TS) (/ 0.616544 V)))) TS) V) TS) TS) (-
+     TS UC)))) (+ (+ (+ (+ (/ UC (/ (+ V RFT)
+     (+ (+ TS TS) (+ V UC)))) TS) (+ (/ UC (/
+     (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+     (+ (+ 0.080377 RFT) TS))) (+ (+ 0.006860
+     RFT) TS)) TS))) (+ (+ 0.181428 RFT) TS))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (- (+ (+ (* RFT RFT)
+         TS) WT) (+ (+ RFT V) TS)) (+ 0.566207 (*
+         TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.992428575576739
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.511947 V)))) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (+ ET TS) TS) (/ (+ (+ UC V) V)
+     (+ (+ (+ (+ (+ (+ RFT WT) V) RFT) V) TS)
+         (/ RFT 0.119261)))))) (+ (+ 0.578647 RFT)
+     TS))) (+ (+ 0.267451 RFT) TS)) (/ (- (/ (-
+     RFT (+ (+ (* RFT RFT) TS) TS)) (- (+ (/ UC
+     TS) WT) (/ (- (/ (- (+ (+ (* RFT RFT) TS)
+     WT) (- (+ (* RFT RFT) (+ (+ (+ (+ RFT WT)
+     V) RFT) V)) UC)) (+ 0.776074 (* TS RFT)))
+     RFT) (+ RFT WT)))) TS) (+ RFT WT)))
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9968947494882858
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.199438 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ V TS) RFT) (- TS UC)))
+     V) (+ (+ (- TS UC) TS) (- TS UC)))) (+ (+
+     (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS) (+
+         V UC)))) TS) (+ (/ UC (/ (* RFT RFT) (+ (+
+         (/ UC TS) TS) (- TS UC)))) (+ (+ 0.253502
+         RFT) TS))) (+ (+ 0.689091 RFT) TS)) TS)))
+     (+ (+ 0.493559 RFT) TS)) (/ (- (/ (- RFT
+     (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (- (+ (+ (* RFT RFT) TS) WT) (+ (+
+         RFT V) TS)) (+ 0.052514 (* TS RFT))) RFT)
+     (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9957502804105833
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.242998 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ V TS) (+ (+ ET V) (* RFT
+     RFT))) (- TS UC))) V) (+ V UC))) (+ (+ (+
+     (+ (/ UC (/ (+ V RFT) (+ (+ TS TS) (+ 0.786792
+         RFT)))) TS) (+ (/ UC (/ (* RFT RFT) (+ (+
+     (/ UC TS) TS) (- TS UC)))) (+ (+ 0.673975
+     RFT) TS))) (+ (+ 0.215503 RFT) TS)) TS)))
+     (+ (+ 0.219739 RFT) TS)) (/ (- (/ (- RFT
+     (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (+ TS TS) (+ 0.281495 (* TS RFT)))
+         RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9969103103679279
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     0.617623))) TS) (+ (/ UC (/ (+ (* (* RFT
+     RFT) (- (+ (+ V TS) (+ (+ ET V) (* RFT RFT)))
+     (- TS UC))) V) (+ (+ (+ (/ UC (/ (+ V RFT)
+     (+ (+ TS TS) (/ (- (* (+ V RFT) TS) 0.666136)
+         (+ RFT V))))) TS) (+ (/ UC (+ (+ (* TS RFT)
+     TS) WT)) (+ (+ 0.254261 RFT) TS))) (- TS
+     UC)))) (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+
+     (+ TS TS) (+ V UC)))) TS) (+ (/ UC (/ (*
+     RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+     (+ (+ 0.018501 RFT) TS))) (+ (+ 0.105769
+     RFT) TS)) TS))) (+ (+ 0.000069 RFT) TS))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (+ TS TS) (+ 0.613835
+         (* TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT
+         WT)))
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.995879672542965
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     0.617623))) TS) (+ (/ UC (/ (+ (* (* RFT
+     RFT) (- (+ (+ V TS) (+ (+ ET V) (* RFT RFT)))
+     (- TS UC))) V) (+ (+ (+ (/ UC (/ (+ V RFT)
+     (+ (+ TS TS) (/ (- (* (+ V RFT) TS) 0.666136)
+         (+ RFT V))))) TS) (+ (/ UC (+ (+ (* TS RFT)
+     TS) WT)) (+ (+ 0.254261 RFT) TS))) (- TS
+     UC)))) (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+
+     (+ TS TS) (+ V UC)))) TS) (+ (/ UC (/ (*
+     RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+     (+ (+ 0.018501 RFT) TS))) (+ (+ 0.105769
+     RFT) TS)) TS))) (+ (+ 0.000069 RFT) TS))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (+ TS TS) (+ 0.613835
+         (* TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT
+         WT)))
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9980538832063237
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.094059 V)))) TS) (+ (/ UC (/ (+ (* TS
+     RFT) V) (+ (+ (+ (+ (+ (/ UC (* RFT RFT))
+     TS) V) TS) TS) (- TS UC)))) (+ (+ (+ (+ (/
+     UC (/ (+ V RFT) (+ (+ TS TS) (+ V UC))))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ 0.538737 RFT) TS)))
+     (+ (+ 0.692020 RFT) TS)) TS))) (+ (+ 0.669121
+     RFT) TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/
+     (- (+ (+ (* RFT RFT) TS) WT) (+ (+ 0.941919
+         RFT) TS)) (+ 0.309732 (* TS RFT))) RFT) (+
+     RFT WT)) (+ 0.702258 (* TS RFT))) RFT) (+
+     RFT V)))) TS) (+ RFT WT)))
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9969716795303479
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.439852 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ V TS) (+ (+ RFT WT) (*
+     RFT RFT))) (* RFT RFT))) V) (+ (/ UC TS)
+     WT))) (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+
+     TS TS) (+ V UC)))) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (/ UC TS) TS) (- TS UC)))) (+
+     (+ 0.997156 RFT) TS))) (+ (+ 0.807499 RFT)
+     TS)) TS))) (+ (+ 0.453692 RFT) TS)) (/ (-
+     (/ (- RFT (+ (* RFT RFT) TS)) (- (+ (/ UC
+         TS) WT) (/ (- (/ (- (+ (+ (* RFT RFT) TS)
+         WT) (+ TS TS)) (+ 0.438809 (* TS RFT))) RFT)
+         (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9965639514275587
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.439852 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ V TS) (+ (+ RFT WT) (*
+     RFT RFT))) (* RFT RFT))) V) (+ (/ UC TS)
+     WT))) (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+
+     TS TS) (+ V UC)))) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (/ UC TS) TS) (- TS UC)))) (+
+     (+ 0.997156 RFT) TS))) (+ (+ 0.807499 RFT)
+     TS)) TS))) (+ (+ 0.453692 RFT) TS)) (/ (-
+     (/ (- RFT (+ (* RFT RFT) TS)) (- (+ (/ UC
+         TS) WT) (/ (- (/ (- (+ (+ (* RFT RFT) TS)
+         WT) (+ TS TS)) (+ 0.438809 (* TS RFT))) RFT)
+         (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9974360298582179
+Tree 0:
+ (- (+ (+ (+ (/ UC (+ (+ (/ UC TS) WT) (*
+     RFT RFT))) TS) (+ (/ UC (/ (+ (/ UC (/ (+
+     V RFT) (+ (+ TS TS) (/ 0.613206 V)))) V)
+     (+ (+ (+ (+ (+ (/ UC (* RFT RFT)) TS) V)
+         TS) TS) (- TS UC)))) (+ (+ (+ (+ (/ UC (/
+     (+ V RFT) (+ (+ TS TS) (+ V UC)))) TS) (+
+     (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS) TS)
+         (- TS UC)))) RFT)) (+ (+ 0.242242 RFT) TS))
+     TS))) (+ (+ 0.728502 RFT) TS)) (/ (- (/ (-
+     RFT (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT)
+     (/ (- (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS)
+         WT) (+ (+ 0.959747 RFT) TS)) (+ 0.564611
+         (* TS RFT))) RFT) (+ RFT WT)) (+ 0.156578
+         (* TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT
+     WT)))
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.990767117224065
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.464562 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ V TS) (+ (+ RFT WT) (*
+     RFT RFT))) (* RFT RFT))) V) (+ (/ UC TS)
+     (+ V RFT)))) (+ (+ (+ (+ (/ UC (/ (+ V RFT)
+     (+ (+ TS TS) (+ V UC)))) TS) (+ (/ UC (/
+     (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+     (+ (+ 0.373807 RFT) TS))) (+ (+ 0.259408
+     RFT) TS)) TS))) (+ ET TS)) (/ (- (/ (- RFT
+     (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (- (+ (+ (* RFT RFT) TS) WT) (+ TS
+         TS)) (+ 0.052516 (* TS RFT))) RFT) (+ RFT
+     V)))) TS) (+ RFT WT)))
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9976373760952427
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.390405 V)))) TS) (+ (/ UC (/ (+ (* (+
+     0.469053 RFT) (- (+ (+ (* (* RFT RFT) (-
+     (+ (+ V TS) (+ (+ ET V) (* RFT RFT))) (-
+     TS UC))) V) (+ (+ ET V) (* RFT RFT))) (*
+     RFT RFT))) V) (+ (+ (+ (+ (+ (/ UC (/ (+
+     V RFT) (* RFT RFT))) TS) V) TS) TS) (- TS
+     UC)))) (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+
+     (+ TS TS) (+ V UC)))) TS) (+ (/ UC (/ (*
+     RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+     (+ (+ 0.890461 RFT) TS))) (+ (+ 0.596777
+     RFT) TS)) TS))) (+ (+ 0.563622 RFT) TS))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (/ (- (/ (- (+ (+
+         (* RFT RFT) TS) WT) (+ (+ 0.069166 RFT) TS))
+         (+ 0.326471 (* TS RFT))) RFT) (+ RFT WT))
+         (+ 0.705248 (* TS RFT))) RFT) (+ RFT V))))
+         TS) (+ RFT WT)))
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9977380906900357
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.390405 V)))) TS) (+ (/ UC (/ (+ (* (+
+     0.469053 RFT) (- (+ (+ (* (* RFT RFT) (-
+     (+ (+ V TS) (+ (+ ET V) (* RFT RFT))) (-
+     TS UC))) V) (+ (+ ET V) (* RFT RFT))) (*
+     RFT RFT))) V) (+ (+ (+ (+ (+ (/ UC (/ (+
+     V RFT) (* RFT RFT))) TS) V) TS) TS) (- TS
+     UC)))) (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+
+     (+ TS TS) (+ V UC)))) TS) (+ (/ UC (/ (*
+     RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+     (+ (+ 0.890461 RFT) TS))) (+ (+ 0.596777
+     RFT) TS)) TS))) (+ (+ 0.563622 RFT) TS))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (/ (- (/ (- (+ (+
+         (* RFT RFT) TS) WT) (+ (+ 0.069166 RFT) TS))
+         (+ 0.326471 (* TS RFT))) RFT) (+ RFT WT))
+         (+ 0.705248 (* TS RFT))) RFT) (+ RFT V))))
+         TS) (+ RFT WT)))
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9887395001859374
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.134450 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ V TS) (+ (+ ET V) (* RFT
+     RFT))) (- TS UC))) V) (+ (/ UC (/ (+ V RFT)
+     (+ (+ TS TS) (/ 0.826688 V)))) TS))) (+ (+
+     (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS) (+
+         V UC)))) TS) (+ (/ UC (/ (* RFT RFT) (+ (+
+         (/ UC TS) TS) (- TS UC)))) (+ (+ 0.673249
+         RFT) TS))) (+ (+ 0.952682 RFT) TS)) TS)))
+     (+ (- TS UC) TS)) (/ (- (/ (- RFT (+ (* RFT
+     RFT) TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/
+     UC (+ (+ (/ UC TS) TS) (- TS UC))) (+ 0.320497
+     (* TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT
+     WT)))
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9966861588075365
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.850516 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ 0.807218 RFT) (+ (- TS
+     UC) (* RFT RFT))) (- TS UC))) V) (+ (+ (-
+     TS UC) TS) (* RFT RFT)))) (+ (+ (+ (+ (/
+     UC (/ (+ V RFT) (+ (+ TS TS) (+ V UC))))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ 0.401578 RFT) TS)))
+     (+ (+ 0.019954 RFT) TS)) TS))) (+ (+ 0.900248
+     RFT) TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (+ V
+     RFT) (+ (+ (+ 0.837021 RFT) TS) (+ V UC)))
+     (+ 0.653177 (* TS RFT))) RFT) (+ RFT V))))
+     TS) (+ RFT WT)))
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9969462670615485
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ RFT V) (+ TS TS)))
+     TS) (+ (/ UC (/ (+ (* (* RFT RFT) (- (+ (+
+     V TS) (+ (+ ET V) (* RFT RFT))) (- TS UC)))
+     V) (+ (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+
+     (* RFT RFT) TS) WT))) TS) V) TS) TS) (- TS
+     UC)))) (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+
+     (+ TS TS) (+ V UC)))) TS) (+ (/ UC (/ (*
+     RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+     (+ (+ 0.195593 RFT) TS))) (+ (+ 0.149541
+     RFT) TS)) (+ UC (- TS UC))))) (+ (+ 0.174763
+     RFT) TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ UC TS)
+     (+ 0.679804 (* TS RFT))) RFT) (+ RFT V))))
+     TS) (+ RFT WT)))
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9901580757258197
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.696313 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ V TS) (+ (+ ET V) (* RFT
+     RFT))) (* RFT RFT))) V) (+ (+ (+ (+ (+ (/
+     UC (/ (+ V RFT) (* RFT RFT))) TS) V) TS)
+     TS) (- TS UC)))) (+ (+ (+ (+ (/ UC (/ (+
+     V RFT) (+ (+ TS TS) (+ V UC)))) TS) (+ (/
+     UC (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (-
+     TS UC)))) (+ (+ 0.210213 RFT) TS))) (+ (+
+     0.122539 RFT) TS)) TS))) (+ (+ 0.784339 RFT)
+     TS)) (/ (- (/ (- RFT (+ (* RFT RFT) TS))
+     (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/ (-
+         (+ (+ (* RFT RFT) TS) WT) (+ (+ 0.112563
+         RFT) TS)) (+ 0.016781 (* TS RFT))) RFT) (+
+         (+ (/ UC (/ (+ V RFT) (+ (+ TS TS) (+ V UC))))
+             TS) (+ (+ (+ 0.405851 RFT) TS) (+ (+ 0.481236
+         RFT) TS)))) ET) RFT) (+ RFT V)))) TS) (+
+     RFT WT)))
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9961721718069441
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.339987 V)))) TS) (+ (/ UC (+ (+ (+ (/
+     UC (/ (+ V RFT) (+ (/ UC (/ (* RFT RFT) (+
+     (+ (/ UC TS) TS) (- TS UC)))) (+ (+ 0.302838
+     RFT) TS)))) TS) (+ (/ UC (/ (* RFT RFT) (+
+     (* TS RFT) (- TS UC)))) RFT)) (+ (+ 0.153203
+     RFT) TS))) (+ (+ (+ (+ (/ UC (/ (+ V RFT)
+     (+ (+ TS TS) (+ V UC)))) TS) (+ (/ UC (/
+     (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+     (+ (+ 0.322633 RFT) TS))) (+ (+ 0.837470
+     RFT) TS)) TS))) (+ (+ 0.049390 RFT) TS))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (/ (- (/ (- (+ (+
+         (* RFT RFT) TS) WT) (+ (+ 0.621629 RFT) TS))
+         (+ 0.090425 (* TS RFT))) RFT) (+ (+ (/ UC
+         (/ (+ V RFT) (+ (+ TS TS) (+ V UC)))) TS)
+         (+ (/ UC (/ (+ TS TS) (+ (+ 0.129107 RFT)
+             (- TS UC)))) (+ (+ 0.310485 RFT) TS)))) (+
+         0.311915 (* TS RFT))) RFT) (+ RFT V)))) TS)
+         (+ RFT WT)))
+
+Generation: 51
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9961790432309958
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.534879 V)))) TS) (+ (/ UC (- TS UC))
+     (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+         (+ V UC)))) TS) (+ (/ UC (/ (* RFT RFT) (+
+         (+ (/ UC TS) TS) (- TS UC)))) (+ (+ 0.381577
+         RFT) TS))) (+ (+ 0.407200 RFT) TS)) TS)))
+     (+ (+ 0.577764 RFT) TS)) (/ (- (/ (- RFT
+     (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT)
+         (+ (+ 0.860811 RFT) TS)) (+ 0.109817 (* TS
+         RFT))) RFT) (+ (/ (* RFT RFT) (+ (+ (/ UC
+         TS) TS) (/ UC (/ (+ V RFT) (+ (+ TS TS) (+
+         V UC)))))) (+ 0.735123 RFT))) ET) RFT) (+
+     RFT V)))) TS) (+ RFT WT)))
+
+Generation: 52
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9966894169730666
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.590683 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (+ (+ V TS) (+ (+ ET V) (* RFT
+     RFT))) (* RFT RFT))) V) (+ (/ (* RFT RFT)
+     (+ (+ (/ UC TS) TS) (+ (/ UC TS) TS))) RFT)))
+     (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+         (+ V UC)))) TS) (+ (/ UC (/ (* RFT RFT) (+
+         (+ (/ UC TS) TS) (+ ET V)))) (+ (+ 0.776361
+         RFT) TS))) (+ (+ 0.001179 RFT) TS)) TS)))
+     (+ (+ 0.840813 RFT) TS)) (/ (- (/ (- RFT
+     (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT)
+         (+ (+ 0.395077 RFT) TS)) (+ 0.446994 (* TS
+         RFT))) RFT) (+ (+ (/ UC (/ (+ V RFT) (+ (+
+         TS TS) (+ V UC)))) (* RFT RFT)) (+ (/ UC
+         (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS
+             UC)))) (+ (+ 0.274548 RFT) TS)))) (+ (/ UC
+         (/ (+ V RFT) (+ (+ TS TS) (+ V UC)))) (*
+         TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 53
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9959928352716916
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ RFT V) (+ (+ TS TS)
+     (/ 0.874981 V)))) TS) (+ (/ UC (/ (+ (* (+
+     0.420638 RFT) (- (+ (+ V TS) (+ (+ (+ (+
+     0.650239 RFT) TS) (- TS UC)) (* RFT RFT)))
+     (* RFT RFT))) V) (+ (+ (+ (+ (+ 0.239214
+     RFT) TS) (+ (+ V UC) (+ (+ 0.267563 RFT)
+     TS))) TS) (- TS UC)))) (+ (+ (+ (+ (/ UC
+     (/ (+ V RFT) (+ (+ TS TS) (+ V UC)))) TS)
+     (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS) TS)
+         (- TS UC)))) (+ (+ 0.828212 RFT) TS))) (+
+     (+ 0.220003 RFT) TS)) TS))) (+ (+ 0.243850
+     RFT) TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (+ V
+     RFT) (+ (+ V TS) (+ (* TS RFT) V))) (+ 0.686896
+     (+ 0.837214 RFT))) RFT) (+ RFT V)))) TS)
+     (+ RFT WT)))
+
+Generation: 54
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9947779576024144
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ (+ V RFT) (+ (+ TS TS) (+ V UC)))))) TS)
+     (+ (/ UC (/ (+ (* (* RFT RFT) (- (* RFT RFT)
+         (* RFT RFT))) V) (+ (/ (* RFT RFT) (+ (+
+         (/ UC TS) TS) (+ (/ UC TS) TS))) (- TS UC))))
+         (+ (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+             (+ V UC)))) TS) (+ (/ UC (/ (* RFT RFT) (+
+             (+ (/ UC TS) TS) (- TS UC)))) (+ (+ 0.090022
+             RFT) TS))) (+ (+ 0.293811 RFT) TS)) TS)))
+     (+ (+ 0.995038 RFT) TS)) (/ (- (/ (- RFT
+     (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT)
+         (+ (+ 0.742775 RFT) TS)) (+ 0.836418 (* TS
+         RFT))) RFT) (+ (+ (/ UC (/ (+ V RFT) (+ (+
+         (+ 0.021527 RFT) TS) (+ V UC)))) (* RFT RFT))
+         (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS) TS)
+             (- TS UC)))) (+ (+ 0.297307 RFT) TS)))) (+
+         (/ UC (/ (+ V RFT) (+ (+ TS TS) (+ V UC))))
+         (* TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT
+     WT)))
+
+Generation: 55
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9969430670024892
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.864232 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (* RFT RFT) (* RFT RFT))) V)
+     (+ (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (+
+         (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+ (+
+     (/ UC (/ (+ V RFT) (+ (+ TS TS) (+ V UC))))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ 0.651197 RFT) TS)))
+     (+ (+ (+ TS TS) (+ V UC)) TS)) TS))) (+ (+
+     0.095293 RFT) TS)) (/ (- (/ (- RFT (+ (*
+     RFT RFT) TS)) (- (+ (/ UC TS) WT) (/ (- (/
+     (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT) (+
+         (+ 0.220127 RFT) TS)) (+ 0.072233 (* TS RFT)))
+         RFT) (+ (+ (/ UC (/ (+ V RFT) (+ (+ (+ 0.094665
+         RFT) TS) (+ V UC)))) (* RFT RFT)) (+ (/ UC
+         (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS
+             UC)))) (+ (+ 0.857996 RFT) TS)))) (+ (/ UC
+     (/ (+ V RFT) (+ (+ TS TS) (+ V UC)))) (*
+     TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 56
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9968255202717689
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.864232 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (* RFT RFT) (* RFT RFT))) V)
+     (+ (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (+
+         (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+ (+
+     (/ UC (/ (+ V RFT) (+ (+ TS TS) (+ V UC))))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ 0.651197 RFT) TS)))
+     (+ (+ (+ TS TS) (+ V UC)) TS)) TS))) (+ (+
+     0.095293 RFT) TS)) (/ (- (/ (- RFT (+ (*
+     RFT RFT) TS)) (- (+ (/ UC TS) WT) (/ (- (/
+     (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT) (+
+         (+ 0.220127 RFT) TS)) (+ 0.072233 (* TS RFT)))
+         RFT) (+ (+ (/ UC (/ (+ V RFT) (+ (+ (+ 0.094665
+         RFT) TS) (+ V UC)))) (* RFT RFT)) (+ (/ UC
+         (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS
+             UC)))) (+ (+ 0.857996 RFT) TS)))) (+ (/ UC
+     (/ (+ V RFT) (+ (+ TS TS) (+ V UC)))) (*
+     TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 57
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9931841102061534
+Tree 0:
+ (- (+ (+ (+ (/ UC (- (/ (- (+ (+ (* RFT RFT)
+     TS) WT) (+ (+ 0.221503 RFT) TS)) (+ 0.233104
+     (* TS RFT))) RFT)) TS) (+ (/ UC (/ (+ (*
+     (* RFT RFT) (- (* RFT RFT) (* RFT RFT)))
+     V) (+ (/ (* RFT RFT) (+ (+ (/ UC TS) TS)
+     (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+
+     (+ (/ UC (/ (+ V RFT) (+ (+ TS TS) (+ ET
+         UC)))) TS) (+ (/ UC (/ (* RFT RFT) (+ (+
+     (/ UC TS) TS) (- TS UC)))) (+ (+ 0.927016
+     RFT) TS))) (+ (+ (+ TS TS) (+ V UC)) TS))
+     TS))) (+ (+ 0.795411 RFT) TS)) (/ (- (/ (-
+     RFT (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT)
+     (/ (- (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS)
+         WT) (+ (+ 0.191180 RFT) TS)) (+ 0.696100
+         (* TS RFT))) RFT) (+ (+ (/ UC (/ (+ V RFT)
+         (+ (+ (+ 0.220461 RFT) TS) (+ V UC)))) (*
+         RFT RFT)) (+ (/ UC (/ (* RFT RFT) (+ (+ (/
+         UC TS) TS) (- TS UC)))) (+ (+ 0.471271 RFT)
+         TS)))) (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+         (+ V UC)))) (* TS RFT))) RFT) (+ RFT V))))
+     TS) (+ RFT WT)))
+
+Generation: 58
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9977680388585061
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ (+ V RFT) (+ (+ TS TS) (+ V UC)))))) TS)
+     (+ (/ UC (/ (+ (* (* RFT RFT) (- (* (/ UC
+         (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS
+             UC)))) RFT) (* RFT RFT))) V) (+ (/ (* RFT
+         RFT) (+ (+ (+ (+ 0.078922 RFT) TS) TS) (+
+         (/ UC TS) TS))) (- TS UC)))) (+ (+ (+ (+
+         (/ UC (/ (+ V RFT) (+ (+ TS TS) (+ V UC))))
+         TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+         TS) (- TS UC)))) (+ (+ 0.651022 RFT) TS)))
+         (+ (+ 0.352903 RFT) TS)) TS))) (+ (+ 0.100628
+     RFT) TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/
+     (- (+ (+ (* RFT RFT) TS) WT) (+ (+ 0.554888
+         RFT) TS)) (+ 0.649760 (* TS RFT))) RFT) (+
+     (+ (/ UC (/ (+ V RFT) (+ (+ (+ 0.602247 RFT)
+         TS) UC))) (* RFT RFT)) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (/ UC TS) TS) (- TS UC)))) (+
+     (+ 0.474596 RFT) TS)))) (+ (/ UC (/ (+ V
+     RFT) (+ (+ TS TS) (+ V UC)))) (* TS RFT)))
+     RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 59
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9948537549437912
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.237380 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (* RFT RFT) (* RFT RFT))) V)
+     (+ (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT)
+         (+ (+ 0.118740 RFT) TS)) (+ 0.567512 (* TS
+         RFT))) RFT) (+ (+ (/ UC TS) TS) (+ (/ UC
+         TS) TS))) (+ TS TS)))) (+ (+ (+ (+ 0.184961
+     RFT) TS) (+ (+ (+ TS TS) (+ V UC)) TS)) TS)))
+     (+ (+ 0.743062 RFT) TS)) (/ (- (/ (- RFT
+     (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT)
+         (+ (+ 0.796699 RFT) TS)) (+ 0.425873 (* TS
+         RFT))) RFT) (+ (+ (/ UC (/ (+ V RFT) (+ (+
+         (+ 0.615866 RFT) TS) (+ V UC)))) (* RFT RFT))
+         (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS) TS)
+             (- TS UC)))) (+ (+ 0.087039 RFT) TS)))) (+
+         (/ UC (* RFT RFT)) (* TS RFT))) RFT) (+ RFT
+     V)))) TS) (+ RFT WT)))
+
+Generation: 60
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9922169638867457
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.958562 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (* RFT RFT) (* RFT RFT))) V)
+     (+ (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (+
+         (/ UC TS) TS))) (+ TS TS)))) (+ TS TS)))
+     (+ (+ 0.169393 RFT) TS)) (/ (- (/ (- RFT
+     (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT)
+         (+ (+ 0.651720 RFT) TS)) (+ 0.130141 (* TS
+         RFT))) RFT) (+ (+ (/ UC (/ (+ V RFT) (+ (+
+         (+ 0.850676 RFT) TS) (+ V UC)))) (* RFT RFT))
+         (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS) TS)
+             (- TS UC)))) (+ (+ 0.712917 RFT) TS)))) (+
+         (+ (+ (/ UC TS) TS) (- TS UC)) (* TS RFT)))
+         RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 61
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9957842610944112
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ (+ (/
+     UC (/ (+ V RFT) (+ (+ TS TS) (+ V UC))))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ 0.059611 RFT) TS)))
+     (/ 0.052464 V)))) TS) (+ (/ UC (/ (+ (* (*
+     RFT RFT) (- (* RFT RFT) (* RFT RFT))) V)
+     (+ (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (+
+         (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+ (+
+     (/ UC (/ (+ V RFT) (+ (+ TS TS) (+ V UC))))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ 0.191132 RFT) TS)))
+     (+ (+ 0.739148 RFT) TS)) TS))) (+ (+ 0.799224
+     RFT) TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/
+     (- (+ (+ (* RFT RFT) TS) WT) (+ (+ 0.757834
+         RFT) TS)) (+ 0.599707 (* TS RFT))) RFT) (+
+     (+ (/ UC (/ (+ V RFT) (+ (+ (+ 0.573914 RFT)
+         TS) (+ V UC)))) (* RFT RFT)) (+ (/ UC (/
+     (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+     (+ (+ 0.185089 RFT) TS)))) (+ (/ UC (/ (+
+     V RFT) (+ (+ TS TS) (+ V UC)))) (* TS RFT)))
+     RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 62
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9937597732920778
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (* (* RFT
+     RFT) (- (* RFT RFT) (* RFT RFT))) (/ 0.428480
+     V)))) TS) (+ (/ UC (/ (+ (* (* RFT RFT) (-
+     (* RFT RFT) (* RFT RFT))) V) (+ (/ (* RFT
+     RFT) (+ (+ (/ UC TS) V) (+ (+ 0.704159 RFT)
+     TS))) (+ TS TS)))) (+ (+ (- (* RFT RFT) (*
+     RFT RFT)) (+ (+ 0.595434 RFT) TS)) TS)))
+     (/ UC TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/
+     (- (+ (+ (* RFT RFT) TS) WT) (+ (+ 0.294301
+         RFT) TS)) (+ 0.944768 (* TS RFT))) RFT) (+
+     V UC)) (+ (/ UC (+ 0.900673 RFT)) (* TS RFT)))
+     RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 63
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9906366322001173
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (+ V UC)))) TS) (+ (/ UC (/ (+ (* (* RFT
+     RFT) (- (* RFT RFT) (* RFT RFT))) V) (+ (/
+     (* RFT RFT) (+ (+ (/ UC TS) TS) (+ (/ UC
+     TS) TS))) (+ TS TS)))) (+ (+ (+ (+ (/ UC
+     (/ UC TS)) TS) (+ (/ UC (/ (* RFT RFT) (+
+     (+ (/ UC TS) TS) (- TS UC)))) (+ (/ UC (/
+     (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+     (+ (+ 0.906673 RFT) TS)))) (+ (+ (+ TS TS)
+     (+ V UC)) TS)) TS))) (+ (+ 0.814065 RFT)
+     TS)) (/ (- (/ (- RFT (+ (* RFT RFT) TS))
+     (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/ (-
+         (+ (+ (* RFT RFT) TS) WT) (+ (+ 0.359934
+         RFT) TS)) (+ 0.485395 (* TS RFT))) RFT) (+
+         (+ (/ UC (/ (+ V RFT) (+ (+ (+ 0.239646 RFT)
+             TS) (+ V UC)))) (* RFT RFT)) (+ (/ UC (/
+         (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+         (+ (+ 0.591922 RFT) TS)))) (+ V RFT)) RFT)
+         (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 64
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9922941448908938
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (* (* RFT
+     RFT) (- (* RFT RFT) (* RFT RFT))) (/ 0.712652
+     V)))) TS) (+ (/ UC (/ (+ (* (* RFT RFT) (-
+     (* RFT RFT) (* RFT RFT))) V) (+ (/ (* RFT
+     RFT) (+ (+ (/ UC TS) V) (+ (+ 0.330779 RFT)
+     TS))) (+ TS TS)))) (+ (+ (- (* RFT RFT) (*
+     RFT RFT)) (+ (+ 0.908213 RFT) TS)) TS)))
+     (/ UC TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (/ (+
+     V RFT) (+ (+ (+ 0.503246 RFT) TS) (+ V UC)))
+     (+ V UC)) (+ (+ RFT WT) (* TS RFT))) RFT)
+     (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 65
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9956834021993151
+Tree 0:
+ (- (+ (+ (+ (/ UC RFT) TS) (+ (/ UC (/ (+
+     (* (* RFT RFT) (- (* RFT RFT) (* RFT RFT)))
+     V) (+ (/ (* RFT RFT) (+ (+ (/ UC TS) TS)
+     (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+
+     (+ (/ UC (/ UC TS)) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (/ UC TS) TS) (- TS UC)))) (+
+     (+ 0.266613 RFT) TS))) (+ (+ (+ TS UC) (+
+     V UC)) TS)) TS))) (+ (+ 0.302189 RFT) TS))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (/ (- (/ (- (+ (+
+         (* RFT RFT) TS) WT) (+ (+ 0.725197 RFT) TS))
+         (+ 0.197843 (+ (* RFT RFT) TS))) RFT) (+
+         (+ (* RFT RFT) (* RFT RFT)) (+ (/ UC (/ (*
+         RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+         (+ (+ 0.163541 RFT) TS)))) (+ (+ (+ (/ UC
+         TS) TS) (- TS UC)) (* TS RFT))) RFT) (+ RFT
+         V)))) TS) (+ RFT WT)))
+
+Generation: 66
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9977134458911958
+Tree 0:
+ (- (+ (+ (+ TS TS) (+ (/ UC (/ (+ (* (* RFT
+     RFT) (- (* RFT RFT) (* RFT RFT))) V) (+ (/
+     (- (/ (- (+ (+ (* RFT RFT) TS) WT) (+ (*
+         RFT RFT) TS)) (+ 0.159190 (* TS RFT))) RFT)
+     (+ (+ (/ UC TS) TS) (+ V RFT))) (+ TS TS))))
+     (+ (+ (+ (+ 0.672814 RFT) TS) TS) TS))) (+
+     (+ 0.691237 RFT) TS)) (/ (- (/ (- RFT (+
+     (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/ (-
+     (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT)
+         (+ TS TS)) (+ 0.302132 (* TS RFT))) RFT)
+         (+ (+ (/ UC (/ (+ V RFT) (+ (+ (+ 0.620518
+             RFT) TS) (+ V UC)))) (* RFT (+ (+ (+ 0.889077
+             RFT) TS) (+ V UC)))) (+ (/ UC (/ (* RFT RFT)
+             (+ (+ (/ UC TS) TS) (- TS UC)))) (+ (+ 0.195041
+             RFT) TS)))) (+ (/ UC (* RFT RFT)) (* TS RFT)))
+     RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 67
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9974402488962968
+Tree 0:
+ (- (+ (+ (/ (+ (* (* RFT RFT) (- (* RFT RFT)
+     (* RFT RFT))) V) (+ (/ (* RFT RFT) (+ (+
+     (/ UC TS) V) (+ (+ 0.804807 RFT) TS))) (+
+     TS TS))) (+ (/ UC (/ (+ (* (* RFT RFT) (-
+     (* RFT RFT) (* RFT RFT))) V) (+ (/ (* RFT
+     RFT) (+ RFT V)) (+ TS TS)))) (+ (+ (+ (+
+     (/ UC (/ UC TS)) TS) (+ (/ UC (/ (* RFT RFT)
+     (+ (+ (/ UC TS) TS) (+ TS TS)))) (+ (+ 0.633681
+     RFT) TS))) (+ (+ (+ TS TS) (+ V UC)) TS))
+     TS))) (+ (+ 0.283505 RFT) TS)) (/ (- (/ (-
+     RFT (+ (/ UC (/ UC TS)) TS)) (- (+ (/ UC
+     TS) WT) (/ (- (/ (/ (- (/ (- (+ (+ (* RFT
+     RFT) TS) WT) (+ (+ 0.804467 RFT) TS)) (+
+     0.304451 (* TS RFT))) RFT) (+ (+ (/ UC (/
+     (+ V RFT) (+ (+ (+ 0.615889 RFT) TS) (+ V
+     UC)))) (* RFT RFT)) (+ (/ UC (/ (* RFT RFT)
+     (+ (+ (/ UC TS) TS) (- TS UC)))) (+ (+ 0.636480
+     RFT) TS)))) (+ (+ (+ (/ UC TS) TS) (- TS
+     UC)) (* TS RFT))) RFT) (+ RFT V)))) TS) (+
+     RFT WT)))
+
+Generation: 68
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9948778823102313
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ UC (+ (+ TS TS) (/ 0.779095
+     V)))) TS) (+ (/ UC (/ (+ (* (* RFT RFT) (-
+     (* RFT RFT) (* RFT RFT))) V) (+ (/ (* RFT
+     RFT) (+ (+ (/ UC TS) TS) (+ (/ UC TS) TS)))
+     (+ TS TS)))) (+ (+ (+ (+ (/ UC (/ UC TS))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ 0.305065 RFT) TS)))
+     (+ (+ (+ TS TS) (+ V UC)) TS)) TS))) (+ (+
+     0.611357 RFT) TS)) (/ (- (/ (- RFT (+ (*
+     RFT RFT) TS)) (- (+ (/ UC TS) WT) (/ (- (/
+     (/ (- (/ (- (+ (/ UC (/ UC TS)) TS) (+ (+
+         0.229811 RFT) TS)) (+ 0.791271 (* TS RFT)))
+         RFT) (+ (+ (/ UC (/ (* RFT RFT) (+ (+ (+
+         0.532456 RFT) TS) (+ V UC)))) (* RFT RFT))
+         (+ (+ (+ 0.463625 RFT) TS) (+ (+ 0.323207
+             RFT) TS)))) TS) RFT) (+ RFT V)))) TS) (+
+     RFT WT)))
+
+Generation: 69
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9923906436825083
+Tree 0:
+ (- (+ (+ (+ TS TS) (+ (/ UC (/ (+ (* (* RFT
+     RFT) (- (* RFT RFT) (* RFT RFT))) V) (+ (/
+     (- (/ (- (+ (+ (* RFT RFT) TS) WT) (+ (*
+         RFT RFT) TS)) (+ 0.698919 (* TS RFT))) RFT)
+     (+ (+ (/ UC TS) TS) (+ V RFT))) (+ TS TS))))
+     TS)) (+ (+ 0.158676 RFT) TS)) (/ (- (/ (-
+     RFT (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT)
+     (/ (- (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS)
+         WT) (+ TS TS)) (+ 0.698171 (* TS RFT))) RFT)
+         (+ (+ (/ UC WT) (* RFT (+ (+ (+ 0.293237
+             RFT) TS) (+ V UC)))) (+ (/ UC (/ (* RFT RFT)
+             (+ (+ (/ UC TS) TS) (* RFT RFT)))) (+ (+
+             0.139947 RFT) TS)))) (+ (/ UC (* RFT RFT))
+         (* TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT
+     WT)))
+
+Generation: 70
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9963509629070996
+Tree 0:
+ (- (+ (+ (+ (+ (/ UC TS) WT) (- TS UC)) (+
+     (/ UC (/ (+ (* (* RFT RFT) (- (* RFT RFT)
+         (* RFT RFT))) V) (+ (/ (* RFT RFT) (+ (+
+         (/ UC TS) TS) (+ (/ UC TS) TS))) (+ TS TS))))
+     (+ (+ (+ (/ UC TS) (+ (/ UC (/ (* RFT RFT)
+         (+ (+ (/ UC TS) TS) (- TS UC)))) (+ (+ 0.930319
+         RFT) TS))) (+ (+ (+ TS TS) (+ V UC)) TS))
+         TS))) (+ (+ 0.759773 RFT) TS)) (/ (- (/ (-
+     RFT (+ (* RFT RFT) TS)) (- (+ (/ UC (+ RFT
+     V)) WT) (/ (- (/ (/ (- (/ (- (+ (+ (* RFT
+     RFT) TS) WT) (+ (+ 0.303741 RFT) TS)) (+
+     0.459559 (* TS RFT))) RFT) (+ (+ (/ UC (/
+     (+ V RFT) (+ (+ (+ 0.887931 RFT) TS) (+ V
+     UC)))) (* RFT RFT)) (+ (/ UC (/ (* RFT RFT)
+     (+ (+ TS TS) (+ V UC)))) (+ (+ 0.446071 RFT)
+     TS)))) (+ (- (/ (- RFT (+ (* RFT RFT) TS))
+     (- (+ (/ UC TS) WT) (/ (- 0.294772 RFT) (+
+         RFT V)))) TS) (* TS RFT))) RFT) (+ RFT V))))
+     TS) (+ RFT WT)))
+
+Generation: 71
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.992572326688773
+Tree 0:
+ (- (+ (+ (+ TS TS) (+ (/ UC (/ (+ (* (* RFT
+     RFT) (- (* RFT RFT) (* RFT RFT))) V) (+ (/
+     (- (/ (- (+ (+ (* RFT RFT) TS) WT) (* RFT
+         RFT)) (+ 0.768165 (* TS RFT))) RFT) (+ (+
+     (/ UC TS) TS) (+ V RFT))) (+ TS TS)))) (+
+     (+ (+ (+ 0.563393 RFT) TS) (+ TS TS)) TS)))
+     (+ (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT)
+         (+ (+ 0.975046 RFT) TS)) (+ 0.567994 (* TS
+         RFT))) RFT) (+ (+ (/ UC (/ (+ V RFT) (+ (+
+         (+ 0.990957 RFT) TS) (+ V UC)))) (* RFT RFT))
+         (+ (/ UC (/ (* RFT RFT) (+ (+ TS TS) (+ V
+             UC)))) (+ (+ 0.196552 RFT) TS)))) TS)) (/
+     (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+ (/
+         UC TS) WT) (/ (- (/ (/ (/ UC TS) (/ UC TS))
+         (+ (/ UC (* RFT RFT)) (* TS RFT))) RFT) (+
+         RFT V)))) TS) (+ RFT WT)))
+
+Generation: 72
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9841728558715112
+Tree 0:
+ (- (+ (+ (+ TS TS) (+ (/ UC (/ (+ (* (* RFT
+     RFT) (- (* RFT RFT) (* RFT RFT))) V) (+ (/
+     (- (/ (- (+ (+ (* RFT RFT) TS) WT) (+ (*
+         RFT RFT) TS)) (+ 0.833822 (* TS RFT))) RFT)
+     (+ (+ (/ UC TS) TS) (+ V RFT))) (+ TS TS))))
+     (+ (+ (+ (+ 0.008972 RFT) TS) TS) TS))) (+
+     (+ (/ UC TS) TS) TS)) (/ (- (/ (- RFT (+
+     (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/ (-
+     (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS) WT)
+         (+ (/ UC (* RFT RFT)) (* TS RFT))) (+ 0.549621
+         (* TS RFT))) RFT) (+ (+ (/ UC (/ (+ V RFT)
+         (+ (+ (+ 0.850106 RFT) TS) (+ V UC)))) (*
+         RFT (+ (+ (+ 0.342977 RFT) TS) (+ V UC))))
+         (+ (/ UC (* RFT RFT)) (+ (+ 0.758869 RFT)
+             TS)))) (+ (/ UC (* RFT RFT)) (* TS RFT)))
+     RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 73
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9970851411764525
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ UC (/ (+ (/ UC (/ (-
+     TS UC) (+ (+ (/ UC TS) TS) (- TS UC)))) RFT)
+     (+ (+ (/ (* RFT RFT) (- (* RFT RFT) (* RFT
+         RFT))) TS) (+ V UC))))) TS) (+ (/ UC (/ (+
+     (* (* RFT RFT) (- (* RFT RFT) (* RFT RFT)))
+     V) (+ (/ (* RFT RFT) (+ (+ (/ UC TS) TS)
+     (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+
+     (+ TS TS) (+ (+ (+ 0.958302 RFT) TS) (+ (+
+     0.904153 RFT) TS))) (+ (* (* RFT RFT) (-
+     (* RFT RFT) (* RFT RFT))) V)) TS))) (+ (+
+     0.566522 RFT) TS)) (/ (- (/ (- RFT (+ (*
+     RFT RFT) TS)) (- (+ (/ UC TS) WT) (/ (- (/
+     (+ TS TS) (+ (+ (+ (/ UC TS) TS) (- TS UC))
+     (* TS RFT))) RFT) (+ RFT V)))) TS) (+ RFT
+     WT)))
+
+Generation: 74
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9965435011285219
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ UC (+ (+ TS TS) (/ 0.094868
+     V)))) TS) (+ (/ UC (/ (+ (* (* RFT RFT) (-
+     (* RFT RFT) (* RFT RFT))) V) (+ (/ (* RFT
+     RFT) (+ (+ (/ UC TS) TS) (+ (/ UC TS) TS)))
+     (+ TS TS)))) (+ (+ (+ (+ (/ UC (/ UC TS))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ 0.034325 RFT) TS)))
+     (+ (+ (+ TS TS) (+ V UC)) TS)) TS))) (+ (+
+     0.418123 RFT) TS)) (/ (- (/ (- RFT (+ TS
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/
+     (- (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (-
+         TS UC))) (+ (+ 0.888099 RFT) TS)) (+ 0.089545
+     (* TS RFT))) RFT) (+ (+ (/ UC (/ (* RFT RFT)
+     (+ (+ (+ 0.709175 RFT) TS) (+ V UC)))) (+
+     0.459075 RFT)) (+ (+ (+ 0.649831 RFT) TS)
+     (+ (+ 0.157333 RFT) TS)))) TS) RFT) (+ RFT
+     V)))) TS) (+ RFT WT)))
+
+Generation: 75
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9940836799347305
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (- (* RFT RFT) (* RFT RFT)) (- (*
+         RFT RFT) (* RFT RFT))) V) (+ (/ (* RFT RFT)
+         (+ (+ (/ (+ TS TS) TS) TS) (+ (/ UC TS) TS)))
+         (+ TS TS)))) (+ (+ (+ (+ (/ UC (/ UC TS))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ (+ (+ (/ UC TS) TS)
+     (+ (/ UC TS) TS)) RFT) TS))) (+ (+ (+ TS
+     TS) (+ V UC)) TS)) TS))) (+ TS TS)) (/ (-
+     (/ (- RFT (+ (* RFT RFT) TS)) (- (+ (/ UC
+         TS) WT) (/ (- (/ (/ (- (/ (+ (+ (+ 0.105350
+         RFT) TS) (+ V UC)) (+ 0.205247 (* TS RFT)))
+         RFT) (* RFT RFT)) (+ V RFT)) RFT) (+ RFT
+         V)))) TS) (+ RFT WT)))
+
+Generation: 76
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9926573007439761
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (- (* RFT RFT) (* RFT RFT)) (- (/
+         (* (+ (/ UC (- TS UC)) TS) RFT) (+ (+ (/
+         UC TS) TS) (- TS UC))) (* RFT RFT))) V) (+
+         (/ (* RFT RFT) (+ (+ (/ (+ TS TS) TS) TS)
+             (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+
+     (+ (/ UC (/ UC TS)) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (/ UC TS) TS) (- TS UC)))) (+
+     (+ (+ (+ (/ UC TS) TS) (+ (/ UC TS) TS))
+         RFT) TS))) (+ (+ (+ TS TS) (+ V UC)) TS))
+     TS))) (+ TS TS)) (/ (- (/ (- RFT (+ (* RFT
+     RFT) TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/
+     (- (/ (+ (+ (+ 0.781155 RFT) TS) (+ V UC))
+         (+ 0.532419 (* TS RFT))) RFT) (* RFT RFT))
+     (+ V RFT)) RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 77
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9969333254121278
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (/ (+ V
+     RFT) (+ (+ (+ 0.767593 RFT) TS) (+ V UC)))
+     (/ (* RFT RFT) (- (/ (+ (+ (+ TS TS) (+ V
+         UC)) TS) (- (+ (/ UC TS) WT) (/ (- 0.260865
+         RFT) (+ RFT V)))) TS))))) TS) (+ (/ UC (/
+     (+ (* (* RFT RFT) (- (* RFT RFT) (* RFT RFT)))
+         V) (+ (/ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (/ 0.745544 V)))) TS) (/ (* RFT RFT) (+ (+
+     (/ UC TS) TS) (- TS UC)))) (+ TS TS)))) (+
+     (+ (+ (+ (/ UC (/ UC TS)) (+ 0.129470 RFT))
+         (+ (/ UC (/ (* RFT RFT) (+ V UC))) (+ (+
+             0.118160 RFT) TS))) (+ (+ (+ TS TS) (+ V
+         UC)) TS)) TS))) (+ (+ 0.095801 RFT) TS))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (* RFT RFT) (+ (+
+         (/ UC TS) TS) (+ (* (* RFT RFT) (- (* RFT
+         RFT) (+ (+ (+ (/ UC TS) TS) (- TS UC)) (*
+         TS (* RFT RFT))))) TS))) RFT) (+ RFT V))))
+         TS) (+ RFT WT)))
+
+Generation: 78
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9981033273387008
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (- (* RFT RFT) (* RFT RFT)) (- (*
+         RFT RFT) (* RFT RFT))) V) (+ (/ (* RFT RFT)
+         (+ (+ (/ (+ TS TS) TS) TS) (+ (/ UC TS) TS)))
+         (+ TS TS)))) (+ (+ (+ (+ (/ UC (/ UC TS))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS UC)))) (+ (+ (+ RFT (+ (/ UC TS)
+     TS)) RFT) TS))) (+ (+ RFT WT) TS)) TS)))
+     (+ TS TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/
+     (+ (+ (+ 0.605758 RFT) TS) (+ V UC)) (+ 0.451971
+     (* TS RFT))) RFT) (* RFT RFT)) (+ V RFT))
+     RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 79
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9974039984634948
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (* RFT RFT) (- (* RFT RFT) (* RFT
+         RFT))) V) (+ (/ (* RFT RFT) (+ (+ (/ UC TS)
+         TS) (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+
+     (+ (+ (/ UC (/ UC TS)) TS) (+ (/ UC (/ (*
+         RFT RFT) (/ UC (+ (+ (+ TS TS) (+ V UC))
+         TS)))) (+ (+ 0.727363 RFT) TS))) (+ (+ (+
+     TS TS) (+ V UC)) TS)) TS))) (+ (+ (+ (/ UC
+     (/ UC TS)) TS) (+ (/ UC (/ (* RFT RFT) (+
+     (+ (/ UC TS) TS) (- TS UC)))) (+ (+ 0.089255
+     RFT) TS))) TS)) (/ (- (/ (- RFT (+ (+ (/
+     UC TS) TS) (- TS UC))) (- (+ (/ UC TS) WT)
+     (/ (- (/ (/ (- (/ (- (+ (+ (* RFT RFT) TS)
+         WT) (+ UC TS)) (+ 0.563872 (* TS RFT))) RFT)
+         (+ RFT WT)) (/ UC (/ (+ (+ 0.097379 RFT)
+         TS) (+ (/ (* RFT RFT) (+ (+ (/ UC TS) V)
+         (+ (+ 0.625129 RFT) TS))) (+ TS TS))))) RFT)
+         (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 80
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9959405429504176
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (- (* RFT RFT) (* RFT RFT)) (- (*
+         RFT RFT) (+ (/ (* RFT RFT) (+ (+ (/ UC TS)
+         TS) (+ (/ UC TS) TS))) (+ TS TS)))) V) (+
+         (/ (* RFT RFT) (+ (+ (/ (+ TS TS) TS) TS)
+             (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+
+     (+ (/ UC (/ UC TS)) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (/ UC TS) TS) (- TS UC)))) (+
+     (+ (+ RFT (+ (/ UC TS) TS)) RFT) TS))) (+
+     (+ (+ TS TS) (+ (+ (/ UC TS) TS) (- TS UC)))
+     TS)) TS))) (+ TS TS)) (/ (- (/ (- RFT (+
+     (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/ (-
+     (/ (/ (- (/ (+ (+ (+ 0.322576 RFT) TS) (+
+         V UC)) (+ 0.813891 (* TS RFT))) RFT) (* RFT
+         RFT)) (+ V RFT)) RFT) (+ RFT V)))) TS) (+
+     RFT WT)))
+
+Generation: 81
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9899786430381542
+Tree 0:
+ (- (+ (+ (+ (/ UC (/ (+ V RFT) (+ (/ (+ V
+     RFT) (+ (+ (+ 0.930414 RFT) TS) (+ V UC)))
+     (/ (* RFT RFT) (- (/ (+ (+ (+ TS TS) (+ V
+         UC)) TS) (- (+ (/ UC TS) WT) (/ (- 0.731476
+         RFT) (+ RFT V)))) TS))))) TS) (+ (/ UC (/
+     (+ (* (* RFT RFT) (- (* RFT RFT) (* RFT RFT)))
+         V) (+ (/ (+ (/ UC (/ (+ V RFT) (+ (+ TS TS)
+     (+ V (/ RFT RFT))))) TS) (/ (* RFT RFT) (+
+     (+ (/ UC TS) TS) (- TS UC)))) (+ TS TS))))
+     (+ (+ (+ (+ (/ UC (/ UC TS)) (+ 0.225659
+         RFT)) (+ (/ UC (/ (* RFT RFT) (+ V UC)))
+         (+ (+ 0.073250 RFT) TS))) (+ (+ TS (+ V UC))
+         TS)) TS))) (- (/ (+ (+ (+ 0.697781 RFT) TS)
+     (+ V UC)) (+ 0.362722 (* TS RFT))) RFT))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (* RFT RFT) (+ (+
+         (+ V RFT) TS) (+ (* (* RFT RFT) (- (* RFT
+         RFT) (+ (+ (+ (/ UC TS) TS) (- TS UC)) (*
+         TS (* RFT RFT))))) TS))) RFT) (+ RFT V))))
+         TS) (+ RFT WT)))
+
+Generation: 82
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9919801769690362
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (- (* RFT RFT) (* RFT RFT)) (- (*
+         RFT RFT) TS)) V) (+ (/ (* RFT RFT) (+ (+
+         (/ (+ TS TS) TS) TS) (+ (/ UC TS) TS))) (+
+         TS TS)))) (+ (+ (+ (+ (/ UC (/ UC TS)) TS)
+     (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS) TS)
+         (- TS UC)))) (+ (+ (+ RFT (+ (/ UC TS) TS))
+         RFT) TS))) (/ UC (- TS UC))) TS))) (+ TS
+     TS)) (/ (- (/ (- RFT (+ (* RFT RFT) TS))
+     (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/ (+
+         (+ (+ 0.731343 RFT) TS) (+ V RFT)) (+ 0.216042
+         (* TS RFT))) RFT) (* RFT RFT)) (+ V RFT))
+         RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 83
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9969549971518943
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (- (* RFT RFT) (* RFT RFT)) (- (*
+         RFT RFT) (+ (/ (* RFT RFT) (+ (+ (/ UC TS)
+         TS) (+ (/ UC TS) TS))) (+ TS TS)))) V) (+
+         (/ (* RFT RFT) (+ (+ (/ (+ TS TS) TS) TS)
+             (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+
+     (+ (/ UC (/ UC TS)) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (/ UC TS) (+ (+ TS TS) (+ V UC)))
+     (- TS UC)))) (+ (+ (+ RFT (+ (/ UC TS) TS))
+     RFT) TS))) (+ (+ (/ UC TS) (+ (+ (/ UC TS)
+     TS) (+ (/ UC TS) WT))) TS)) TS))) (+ TS TS))
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (/ (- (/ (+ (+ (+
+         0.161707 RFT) TS) (+ V UC)) (+ 0.040256 (*
+         TS RFT))) RFT) (* RFT RFT)) (+ V RFT)) RFT)
+         (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 84
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9919335717783931
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (- (* RFT RFT) (* RFT RFT)) (- (*
+         RFT RFT) (+ (/ (* RFT RFT) TS) (+ TS TS))))
+         V) (+ (/ (* RFT RFT) (+ (+ (/ (+ TS TS) TS)
+         TS) (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+
+     (+ (+ (/ UC (/ UC TS)) TS) (+ (/ UC (/ (*
+         RFT RFT) (+ (+ (/ UC TS) TS) (- TS UC))))
+         (+ (+ (+ RFT (+ (/ UC TS) TS)) RFT) TS)))
+     (+ (+ (+ TS TS) (+ (/ UC TS) (- TS UC)))
+         TS)) TS))) (+ TS TS)) (/ (- (/ (- RFT (+
+     (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/ (-
+     (/ (/ (- (/ (+ (+ (+ 0.539300 RFT) TS) (+
+         V UC)) (+ 0.220393 (* TS RFT))) RFT) (* RFT
+         RFT)) (+ V RFT)) RFT) (+ RFT V)))) TS) (+
+     RFT WT)))
+
+Generation: 85
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9924656768556661
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (/ UC TS) (- (* RFT RFT) (+ (/ (*
+         RFT RFT) (+ (+ (/ UC TS) TS) (+ (/ UC TS)
+         TS))) (+ TS TS)))) V) (+ (/ (* RFT RFT) (+
+         (+ (/ (+ TS TS) TS) TS) (+ (/ UC TS) TS)))
+         (+ TS TS)))) (+ (+ (+ (+ (/ UC (/ UC TS))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     TS) (- TS (+ (/ UC TS) TS))))) (+ (+ (+ RFT
+     (+ (/ UC TS) TS)) RFT) TS))) (+ (+ (+ TS
+     TS) (+ (+ (/ UC TS) TS) (- TS UC))) TS))
+     TS))) (+ TS TS)) (/ (- (/ (- RFT (+ (* RFT
+     RFT) TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/
+     (- (/ (+ (+ (+ (/ UC TS) WT) TS) (+ V UC))
+         (+ 0.386110 (* TS RFT))) RFT) (* RFT RFT))
+     (+ V RFT)) RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 86
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9860664130568135
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (/ UC TS) (- (* RFT RFT) TS)) V)
+         (+ (/ (* RFT RFT) (+ (+ (/ (+ TS TS) TS)
+             TS) (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+
+     (+ (+ (/ UC (/ UC TS)) TS) (+ (/ UC (/ (*
+         RFT RFT) (+ (+ (- TS UC) TS) (- TS UC))))
+         (+ (+ (+ RFT (+ (/ UC TS) TS)) RFT) TS)))
+     (/ UC (- TS UC))) TS))) (+ TS TS)) (/ (-
+     (/ (- RFT (+ (* RFT RFT) TS)) (- (+ (/ UC
+         TS) WT) (/ (- (/ (/ (- (/ (+ RFT (+ (/ UC
+         TS) TS)) (+ 0.985729 (* TS RFT))) RFT) (*
+         RFT RFT)) (+ V RFT)) RFT) (+ RFT V)))) TS)
+     (+ RFT WT)))
+
+Generation: 87
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9883884903658132
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (/ UC TS) (- (* RFT RFT) (+ (/ (*
+         RFT RFT) (+ (+ (/ UC TS) TS) (+ (* RFT RFT)
+         TS))) (+ TS TS)))) V) (+ (/ (* RFT RFT) (+
+         (+ (/ (+ TS TS) TS) TS) (+ (+ (/ UC TS) TS)
+         TS))) (+ TS TS)))) (+ (+ (+ (+ (/ UC (/ UC
+     TS)) TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/
+     UC TS) TS) (- TS UC)))) (+ (+ (+ RFT (+ (/
+     UC TS) TS)) RFT) TS))) (+ (+ (/ UC TS) (+
+     (+ (/ UC TS) TS) (- TS UC))) TS)) TS))) (+
+     TS TS)) (/ (- (/ (- RFT (+ (* RFT RFT) TS))
+     (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/ (+
+         (+ (+ 0.545852 RFT) TS) (+ V UC)) (+ 0.666667
+         (* TS RFT))) RFT) (* RFT RFT)) (+ V RFT))
+         RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 88
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.997483224843011
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (- (* RFT RFT) (* RFT RFT)) (- (*
+         RFT RFT) (+ (+ 0.592899 RFT) TS))) V) (+
+         (/ (* RFT RFT) (+ (- RFT (+ (* RFT RFT) TS))
+             (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+
+     (+ (+ (/ UC TS) WT) TS) (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (- (* RFT RFT) (* RFT RFT)) (+
+     (+ TS TS) (+ V UC))) (- TS UC)))) (+ (+ (+
+     RFT (+ (/ UC TS) TS)) RFT) TS))) (+ (+ (/
+     UC TS) (+ (+ (/ UC TS) TS) (- TS UC))) TS))
+     TS))) (+ TS TS)) (/ (- (/ (- RFT (+ (* RFT
+     RFT) TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/
+     (- (/ (+ (+ (+ 0.092181 RFT) TS) (+ V UC))
+         (+ 0.933226 (* TS RFT))) RFT) (* RFT RFT))
+     (+ V RFT)) RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 89
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9948228465644849
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (* (/ UC TS) (- (* RFT RFT) (+ (/ (+
+         (+ (+ (/ UC TS) WT) TS) (+ V UC)) (+ (+ (/
+         UC TS) TS) (+ (/ UC TS) TS))) (- TS UC))))
+         V) (+ (/ (* RFT RFT) (+ (+ (/ (+ TS TS) TS)
+         TS) (* RFT RFT))) (+ TS TS)))) (+ (+ (+ (+
+     (/ UC (/ UC TS)) TS) (+ (/ UC (/ (* RFT RFT)
+     (+ (+ (/ UC TS) TS) (- TS (+ (/ UC TS) TS)))))
+     (+ (+ (+ RFT (+ (/ UC TS) TS)) RFT) TS)))
+     (+ (+ (+ TS TS) (+ (+ (/ UC TS) TS) (- TS
+         UC))) TS)) TS))) (+ TS TS)) (/ (- (/ (- RFT
+     (+ (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/
+     (- (/ (/ (- (/ (+ (+ (+ (/ UC TS) WT) TS)
+         (+ V UC)) (+ 0.234143 (* TS RFT))) RFT) (*
+         RFT RFT)) (+ V RFT)) RFT) (+ RFT V)))) TS)
+     (+ RFT WT)))
+
+Generation: 90
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9969675693563079
+Tree 0:
+ (- (+ (+ (+ WT TS) (+ (/ UC (/ (+ (* (- (*
+     RFT RFT) (* RFT RFT)) (- (* RFT RFT) ET))
+     V) (+ (/ (* RFT RFT) (+ (+ (/ (+ 0.691969
+     RFT) TS) TS) (+ (/ UC TS) TS))) (+ TS TS))))
+     (+ (+ (+ (+ (/ UC (/ UC TS)) TS) (+ (/ UC
+         (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS
+             UC)))) (+ (+ (+ RFT (+ (/ UC TS) TS)) RFT)
+         TS))) (+ (+ (+ TS TS) (+ TS TS)) TS)) TS)))
+     (+ TS TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/
+     (+ (+ (+ 0.993881 RFT) TS) (+ V UC)) (+ 0.845072
+     (* TS RFT))) RFT) (* RFT RFT)) (+ V RFT))
+     RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 91
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9975082578470973
+Tree 0:
+ (- (+ (+ (+ WT TS) (+ (/ UC (/ (+ (* (- (*
+     RFT RFT) (* RFT RFT)) (- (* RFT RFT) ET))
+     V) (+ (/ (* RFT RFT) (+ (+ (/ (+ 0.691969
+     RFT) TS) TS) (+ (/ UC TS) TS))) (+ TS TS))))
+     (+ (+ (+ (+ (/ UC (/ UC TS)) TS) (+ (/ UC
+         (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS
+             UC)))) (+ (+ (+ RFT (+ (/ UC TS) TS)) RFT)
+         TS))) (+ (+ (+ TS TS) (+ TS TS)) TS)) TS)))
+     (+ TS TS)) (/ (- (/ (- RFT (+ (* RFT RFT)
+     TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/ (- (/
+     (+ (+ (+ 0.993881 RFT) TS) (+ V UC)) (+ 0.845072
+     (* TS RFT))) RFT) (* RFT RFT)) (+ V RFT))
+     RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 92
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9881701995302108
+Tree 0:
+ (- (+ (+ (+ (/ UC (- TS UC)) TS) (+ (/ UC
+     (/ (+ (/ UC TS) V) (+ (/ (* RFT RFT) (+ (+
+         (/ (+ TS TS) TS) TS) (+ (/ UC TS) TS))) (+
+         TS TS)))) (+ (+ (+ UC (+ (/ UC (/ (* RFT
+     RFT) (+ (+ (- (* RFT RFT) (+ (/ UC TS) TS))
+     TS) (- TS UC)))) (+ (+ (+ RFT (+ (/ UC TS)
+     TS)) RFT) TS))) (+ (+ (+ TS TS) (+ (/ UC
+     TS) TS)) TS)) TS))) TS) (/ (- (/ (- RFT (+
+     (* RFT RFT) TS)) (- (+ (/ UC TS) WT) (/ (-
+     (/ (/ (- (/ (+ (+ (+ 0.343080 RFT) TS) (+
+         V UC)) (+ V UC)) RFT) (+ (/ UC (- TS UC))
+         TS)) (+ (+ (+ (/ UC TS) TS) (- TS UC)) TS))
+     RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 93
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9940806501204977
+Tree 0:
+ (- (+ (+ (+ (/ (* RFT RFT) (+ (+ (/ (+ TS
+     TS) TS) TS) (+ (/ UC TS) TS))) TS) (+ (/
+     UC (/ (+ (/ UC TS) V) (+ (/ (+ (+ (/ (* RFT
+     RFT) (+ (+ (/ UC TS) TS) (- TS UC))) UC)
+     (+ (+ (/ UC TS) TS) TS)) (+ (+ TS TS) (+
+     (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+ (+
+     (/ UC (/ UC TS)) TS) (+ (/ UC (/ (* RFT RFT)
+     (+ (+ (/ UC TS) ET) (- TS UC)))) (+ (+ (+
+     RFT (+ (/ UC TS) TS)) RFT) TS))) (+ (+ (+
+     TS TS) (+ (/ UC TS) TS)) TS)) TS))) TS) (/
+     (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+ (/
+         UC TS) WT) (/ (- (/ (/ (- (/ (+ (+ (+ 0.299834
+         RFT) TS) (+ V UC)) (+ V UC)) RFT) (* RFT
+         RFT)) (+ (+ (+ (/ UC TS) TS) (- TS UC)) TS))
+         RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 94
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9940685355511231
+Tree 0:
+ (- (+ (+ (+ (/ (* RFT RFT) (+ (+ (/ (* RFT
+     RFT) TS) TS) (+ (/ UC TS) TS))) TS) (+ (/
+     UC (/ (+ (/ UC TS) V) (+ (/ (* RFT RFT) (+
+     (+ (/ (+ TS TS) TS) TS) (+ (/ UC TS) TS)))
+     (+ TS TS)))) (+ (+ (+ (+ (/ UC (/ UC TS))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ UC TS)
+     ET) (- TS UC)))) (+ (+ (+ RFT (+ (/ UC TS)
+     TS)) RFT) TS))) (+ (+ (+ TS TS) (/ UC TS))
+     TS)) TS))) TS) (/ (- (/ (- RFT (+ (* RFT
+     RFT) TS)) (- (+ (/ UC TS) WT) (/ (- (/ (/
+     (- (/ (+ (+ (+ 0.418603 RFT) TS) (+ V UC))
+         (+ V UC)) RFT) (* RFT RFT)) (+ (+ (+ (/ UC
+     TS) TS) (- TS UC)) TS)) RFT) (+ RFT V))))
+     TS) (+ RFT WT)))
+
+Generation: 95
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9969525897456378
+Tree 0:
+ (- (+ (+ (+ (/ (* RFT RFT) (+ (+ (/ (+ TS
+     TS) TS) TS) (+ (/ UC TS) TS))) TS) (+ (/
+     UC (/ (+ (/ UC TS) V) (+ (/ (* RFT RFT) (+
+     (+ (/ (+ TS RFT) TS) TS) (+ (/ UC TS) TS)))
+     (+ TS TS)))) (+ (+ (+ (+ (/ UC (/ UC TS))
+     TS) (+ (/ UC (/ (* RFT RFT) (+ (+ (/ (+ TS
+     TS) TS) ET) (- TS UC)))) (+ (+ (+ RFT (+
+     (/ UC TS) TS)) RFT) TS))) WT) TS))) TS) (/
+     (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+ (/
+         UC TS) WT) (/ (- (/ (/ (- (/ (+ (+ (+ 0.391796
+         RFT) TS) (+ V UC)) (+ V UC)) RFT) (* RFT
+         RFT)) (+ (+ (+ (/ UC TS) TS) (- TS UC)) TS))
+         RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 96
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.998232441317657
+Tree 0:
+ (- (+ (+ (+ (/ (* RFT RFT) (+ (+ (/ (+ TS
+     TS) TS) TS) (+ (/ UC TS) TS))) TS) (+ (/
+     UC (/ (+ (/ UC TS) V) (+ (/ (* RFT RFT) (+
+     V (+ (/ UC TS) TS))) (+ TS TS)))) (+ (+ (+
+     (/ (* RFT RFT) (+ (+ (/ UC TS) TS) (- TS
+         UC))) (+ (/ UC (/ (* RFT RFT) (+ (* RFT RFT)
+     (- TS UC)))) (+ (+ (+ RFT (+ RFT TS)) RFT)
+     TS))) (+ (+ (/ UC TS) TS) TS)) TS))) TS)
+     (/ (- (/ (- RFT (+ RFT TS)) (- (+ (/ UC TS)
+         WT) (/ (- (/ (/ (- (/ (+ (+ (+ 0.177075 RFT)
+         TS) (+ V UC)) (+ V UC)) RFT) (* RFT RFT))
+         (+ (+ (+ (/ UC TS) TS) (- TS UC)) TS)) RFT)
+         (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 97
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9970725800405278
+Tree 0:
+ (- (+ (+ (+ (/ (* RFT RFT) (+ (+ (/ (+ TS
+     TS) TS) TS) (+ (/ (+ (+ (+ 0.055499 RFT)
+     TS) (+ 0.528427 (* TS RFT))) (+ 0.377223
+     (* TS RFT))) TS))) TS) (+ (/ UC (/ (+ (/
+     UC TS) V) (+ (/ (* RFT RFT) (+ (+ (/ (+ TS
+     TS) TS) TS) (+ (/ UC TS) TS))) (+ TS TS))))
+     (+ (+ (+ (+ (/ UC (/ UC TS)) TS) (+ (/ UC
+         (/ (* RFT RFT) (+ (+ (* RFT RFT) ET) (- TS
+             UC)))) (+ (+ (+ RFT (+ (/ UC TS) TS)) RFT)
+         TS))) (- (+ (/ UC TS) WT) (/ (- (+ (/ UC
+         (/ UC TS)) TS) RFT) (+ RFT V)))) TS))) TS)
+     (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (- (+
+         (/ UC TS) WT) (/ (- (/ (/ (- (/ (+ (+ (+
+         0.042600 RFT) TS) (+ V UC)) (+ V UC)) RFT)
+         (* RFT RFT)) (+ (+ (+ (/ UC TS) TS) (- TS
+         UC)) TS)) RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Generation: 98
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9958550915167137
+Tree 0:
+ (- (+ (+ (+ (/ (* RFT RFT) (+ (+ (/ (+ TS
+     TS) (* RFT RFT)) TS) (+ (/ UC TS) TS))) TS)
+     (+ (/ UC (/ (+ (/ UC TS) V) (+ (/ (* RFT
+         RFT) (+ (/ (* RFT RFT) (+ (+ (/ UC TS) ET)
+         (- TS UC))) (+ (/ UC TS) TS))) (+ TS TS))))
+         (+ (+ (+ (+ (/ UC (/ UC TS)) TS) (+ (/ UC
+             (/ (* RFT RFT) (+ (+ (- TS UC) ET) (- TS
+                 UC)))) (+ (+ (+ RFT (+ (/ UC TS) TS)) RFT)
+             TS))) (+ (+ (+ TS TS) (+ TS TS)) TS)) TS)))
+     TS) (/ (- (/ (- RFT (+ (* RFT RFT) TS)) (-
+     (+ (/ UC TS) WT) (/ (- (/ (/ (- (/ (+ (+
+     (+ 0.655526 RFT) TS) (+ V UC)) (+ V UC))
+     RFT) (* RFT RFT)) (+ (+ (+ (/ UC TS) TS)
+     (- TS UC)) TS)) RFT) (+ RFT V)))) TS) (+
+     RFT WT)))
+
+Generation: 99
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9897180324053951
+Tree 0:
+ (- (+ (+ (+ (/ (/ UC (/ (* RFT RFT) (* RFT
+     RFT))) TS) TS) (+ (/ UC (/ (+ (/ UC TS) V)
+     (+ (/ (* RFT RFT) (+ (+ (/ (/ UC TS) TS)
+         TS) (+ (+ (/ UC TS) TS) TS))) (+ TS TS))))
+     (+ (+ (+ (/ (* RFT RFT) (+ TS (- TS UC)))
+         (+ (/ UC (/ (* RFT RFT) (+ (* RFT RFT) (-
+             TS UC)))) (+ (+ (+ RFT (+ (/ UC TS) TS))
+             RFT) TS))) (+ (+ (/ (+ (+ (/ UC TS) TS) TS)
+         (+ V RFT)) TS) TS)) TS))) (+ TS TS)) (/ (-
+     (/ (- RFT (+ (* RFT RFT) TS)) (- (+ (/ UC
+         TS) WT) (/ (- (/ (/ ET (* RFT RFT)) (+ V
+         RFT)) RFT) (+ RFT V)))) TS) (+ RFT WT)))
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9995680685366765
+Tree 0:
+ (+ (/ TS RFT) RFT)
+The best rule is: (TS / RFT) + RFT
+GP - average total cost of testing set is: 137259.48614328235
+GP - average makespan of testing set is: 4124.774096989975

@@ -1,0 +1,21 @@
+{
+    "virtualmachine": [{
+            "id": "VM0",
+            "name": "m4.large",
+            "velocity": 7.8,
+            "unit_cost_vm": 0.01
+        },
+        {
+            "id": "VM1",
+            "name": "m4.xlarge",
+            "velocity": 15.6,
+            "unit_cost_vm": 0.2
+        },
+        {
+            "id": "VM2",
+            "name": "m4.2xlarge",
+            "velocity": 31.2,
+            "unit_cost_vm": 1.4
+        }
+    ]
+}

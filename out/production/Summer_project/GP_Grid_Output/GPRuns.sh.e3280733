@@ -1,0 +1,53 @@
+
+| ECJ
+| An evolutionary computation system (version 25)
+| By Sean Luke
+| Contributors: L. Panait, G. Balan, S. Paus, Z. Skolicki, R. Kicinger,
+|               E. Popovici, K. Sullivan, J. Harrison, J. Bassett, R. Hubley,
+|               A. Desai, A. Chircop, J. Compton, W. Haddon, S. Donnelly,
+|               B. Jamil, J. Zelibor, E. Kangas, F. Abidi, H. Mooers,
+|               J. O'Beirne, L. Manzoni, K. Talukder, S. McKay, J. McDermott
+|               J. Zou, A. Rutherford, D. Freelan, E. Wei
+| URL: http://cs.gmu.edu/~eclab/projects/ecj/
+| Mail: ecj-help@cs.gmu.edu
+|       (better: join ECJ-INTEREST at URL above)
+| Date: July 1, 2017
+| Current Java: 1.8.0_152 / Java HotSpot(TM) 64-Bit Server VM-25.152-b16
+| Required Minimum Java: 1.5
+
+
+Threads:  breed/1 eval/1
+Seed: -952219287 
+Job: 0
+Setting up
+Processing GP Types
+Processing GP Node Constraints
+Processing GP Function Sets
+Processing GP Tree Constraints
+Initializing Generation 0
+Subpop 0 best fitness of generation Fitness: 0.9985701526776956
+Generation 1	Evaluations So Far 500
+Subpop 0 best fitness of generation Fitness: 0.9987902341293273
+Generation 2	Evaluations So Far 1000
+Subpop 0 best fitness of generation Fitness: 0.9984221634275963
+Generation 3	Evaluations So Far 1500
+Subpop 0 best fitness of generation Fitness: 0.9976203530259612
+Generation 4	Evaluations So Far 2000
+Subpop 0 best fitness of generation Fitness: 0.997953509636299
+Generation 5	Evaluations So Far 2500
+Subpop 0 best fitness of generation Fitness: 0.9995078855480164
+Generation 6	Evaluations So Far 3000
+Subpop 0 best fitness of generation Fitness: 0.9979850428196402
+Generation 7	Evaluations So Far 3500
+Subpop 0 best fitness of generation Fitness: 0.9953083092363133
+Generation 8	Evaluations So Far 4000
+Subpop 0 best fitness of generation Fitness: 0.997688266922187
+Generation 9	Evaluations So Far 4500
+Subpop 0 best fitness of generation Fitness: 0.9996405326121152
+Generation 10	Evaluations So Far 5000
+Subpop 0 best fitness of generation Fitness: 0.9992358416484328
+Generation 11	Evaluations So Far 5500
+Subpop 0 best fitness of generation Fitness: 0.9977798960260483
+Generation 12	Evaluations So Far 6000
+Subpop 0 best fitness of generation Fitness: 0.9995189789926292
+Generation 13	Evaluations So Far 6500

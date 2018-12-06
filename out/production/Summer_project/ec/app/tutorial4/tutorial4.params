@@ -1,0 +1,49 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = ../../gp/koza/koza.params
+
+# the next four items are already defined in koza.params, but we
+# put them here to be clear.
+
+# We have one function set, of class GPFunctionSet
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+# We'll call the function set "f0".
+gp.fs.0.name = f0
+
+# We have five functions in the function set.  They are:
+gp.fs.0.size = 11
+gp.fs.0.func.0 = ec.app.tutorial4.Add
+gp.fs.0.func.0.nc = nc2
+gp.fs.0.func.1 = ec.app.tutorial4.Sub
+gp.fs.0.func.1.nc = nc2
+gp.fs.0.func.2 = ec.app.tutorial4.Mul
+gp.fs.0.func.2.nc = nc2
+gp.fs.0.func.3 = ec.app.tutorial4.Div
+gp.fs.0.func.3.nc = nc2
+
+gp.fs.0.func.4 = ec.app.tutorial4.TS
+gp.fs.0.func.4.nc = nc0
+gp.fs.0.func.5 = ec.app.tutorial4.V
+gp.fs.0.func.5.nc = nc0
+gp.fs.0.func.6 = ec.app.tutorial4.UC
+gp.fs.0.func.6.nc = nc0
+gp.fs.0.func.7 = ec.app.tutorial4.ET
+gp.fs.0.func.7.nc = nc0
+gp.fs.0.func.8 = ec.app.tutorial4.WT
+gp.fs.0.func.8.nc = nc0
+gp.fs.0.func.9 = ec.app.tutorial4.RFT
+gp.fs.0.func.9.nc = nc0
+gp.fs.0.func.10 = ec.app.tutorial4.Const
+gp.fs.0.func.10.nc = nc0
+
+
+eval.problem = ec.app.tutorial4.MultiValuedRegression
+eval.problem.data = ec.app.tutorial4.DoubleData
+
+pop.subpop.0.species.fitness = ec.simple.SimpleFitness
+
+
+

@@ -1,0 +1,56 @@
+{
+    "tasks": [
+        { "id": "I0", "task_size": 572, "parent_id": [] },
+        { "id": "I1", "task_size": 4218, "parent_id": [] },
+        { "id": "I2", "task_size": 3743, "parent_id": [] },
+        { "id": "I3", "task_size": 6660, "parent_id": [] },
+        { "id": "I4", "task_size": 9332, "parent_id": [] },
+        { "id": "I5", "task_size": 3449, "parent_id": [] },
+        { "id": "I6", "task_size": 6092, "parent_id": [] },
+        { "id": "I7", "task_size": 5781, "parent_id": ["I0"] },
+        { "id": "I8", "task_size": 4284, "parent_id": ["I1"] },
+        { "id": "I9", "task_size": 2191, "parent_id": ["I2"] },
+        { "id": "I10", "task_size": 8320, "parent_id": ["I3"] },
+        { "id": "I11", "task_size": 6385, "parent_id": ["I4"] },
+        { "id": "I12", "task_size": 1439, "parent_id": ["I5"] },
+        { "id": "I13", "task_size": 3699, "parent_id": ["I6"] },
+        {
+            "id": "I14",
+            "task_size": 1280,
+            "parent_id": ["I12",
+                "I13",
+                "I10",
+                "I11",
+                "I9",
+                "I8",
+                "I7"
+            ]
+        },
+        { "id": "I15", "task_size": 7152, "parent_id": ["I14"] },
+        { "id": "I16", "task_size": 3635, "parent_id": ["I14"] },
+        { "id": "I17", "task_size": 9107, "parent_id": ["I14"] },
+        { "id": "I18", "task_size": 846, "parent_id": ["I14"] },
+        { "id": "I19", "task_size": 7179, "parent_id": ["I14"] },
+        { "id": "I20", "task_size": 8137, "parent_id": ["I14"] },
+        { "id": "I21", "task_size": 9549, "parent_id": ["I14"] },
+        { "id": "I22", "task_size": 1816, "parent_id": ["I15"] },
+        { "id": "I23", "task_size": 3575, "parent_id": ["I16"] },
+        { "id": "I24", "task_size": 2913, "parent_id": ["I17"] },
+        { "id": "I25", "task_size": 3680, "parent_id": ["I18"] },
+        { "id": "I26", "task_size": 9599, "parent_id": ["I19"] },
+        { "id": "I27", "task_size": 984, "parent_id": ["I20"] },
+        { "id": "I28", "task_size": 9576, "parent_id": ["I21"] },
+        {
+            "id": "I29",
+            "task_size": 6880,
+            "parent_id": ["I22",
+                "I23",
+                "I24",
+                "I25",
+                "I26",
+                "I27",
+                "I28"
+            ]
+        }
+    ]
+}

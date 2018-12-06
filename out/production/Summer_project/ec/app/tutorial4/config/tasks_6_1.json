@@ -1,0 +1,33 @@
+{
+    "tasks": [{
+            "id": "ID00000",
+            "task_size": 4222080,
+            "parent_id": []
+        },
+        {
+            "id": "ID00001",
+            "task_size": 4222080,
+            "parent_id": []
+        },
+        {
+            "id": "ID00002",
+            "task_size": 4167312,
+            "parent_id": []
+        },
+        {
+            "id": "ID00003",
+            "task_size": 4141389,
+            "parent_id": ["ID00000", "ID00001"]
+        },
+        {
+            "id": "ID00004",
+            "task_size": 4141389,
+            "parent_id": ["ID00001", "ID00002"]
+        },
+        {
+            "id": "ID00005",
+            "task_size": 46509614,
+            "parent_id": ["ID00003", "ID00004"]
+        }
+    ]
+}

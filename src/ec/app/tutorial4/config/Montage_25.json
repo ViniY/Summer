@@ -1,0 +1,130 @@
+{
+    "tasks": [
+
+        { "id": "M0", "task_size": 74802, "parent_id": [] },
+        { "id": "M1", "task_size": 12680, "parent_id": [] },
+        { "id": "M2", "task_size": 81453, "parent_id": [] },
+        { "id": "M3", "task_size": 14017, "parent_id": [] },
+        { "id": "M4", "task_size": 3751, "parent_id": [] },
+        {
+            "id": "M5",
+            "task_size": 82802,
+            "parent_id": ["M1",
+                "M0"
+            ]
+        },
+        {
+            "id": "M6",
+            "task_size": 66456,
+            "parent_id": ["M1",
+                "M0"
+            ]
+        },
+        {
+            "id": "M7",
+            "task_size": 60369,
+            "parent_id": ["M1",
+                "M3"
+            ]
+        },
+        {
+            "id": "M8",
+            "task_size": 70968,
+            "parent_id": ["M2",
+                "M0"
+            ]
+        },
+        {
+            "id": "M9",
+            "task_size": 5236,
+            "parent_id": ["M2",
+                "M1"
+            ]
+        },
+        { "id": "M10", "task_size": 7146, "parent_id": ["M2"] },
+        {
+            "id": "M11",
+            "task_size": 25404,
+            "parent_id": ["M1",
+                "M3"
+            ]
+        },
+        {
+            "id": "M12",
+            "task_size": 88414,
+            "parent_id": ["M1",
+                "M4"
+            ]
+        },
+        {
+            "id": "M13",
+            "task_size": 38122,
+            "parent_id": ["M4",
+                "M3"
+            ]
+        },
+        {
+            "id": "M14",
+            "task_size": 34235,
+            "parent_id": ["M12",
+                "M13",
+                "M10",
+                "M11",
+                "M6",
+                "M5",
+                "M9",
+                "M8",
+                "M7"
+            ]
+        },
+        { "id": "M15", "task_size": 88093, "parent_id": ["M14"] },
+        {
+            "id": "M16",
+            "task_size": 80180,
+            "parent_id": ["M0",
+                "M15"
+            ]
+        },
+        {
+            "id": "M17",
+            "task_size": 70838,
+            "parent_id": ["M1",
+                "M15"
+            ]
+        },
+        {
+            "id": "M18",
+            "task_size": 49804,
+            "parent_id": ["M2",
+                "M15"
+            ]
+        },
+        {
+            "id": "M19",
+            "task_size": 42920,
+            "parent_id": ["M3",
+                "M15"
+            ]
+        },
+        {
+            "id": "M20",
+            "task_size": 16180,
+            "parent_id": ["M4",
+                "M15"
+            ]
+        },
+        {
+            "id": "M21",
+            "task_size": 58930,
+            "parent_id": ["M20",
+                "M16",
+                "M17",
+                "M18",
+                "M19"
+            ]
+        },
+        { "id": "M22", "task_size": 87810, "parent_id": ["M21"] },
+        { "id": "M23", "task_size": 26480, "parent_id": ["M22"] },
+        { "id": "M24", "task_size": 18972, "parent_id": ["M23"] }
+    ]
+}

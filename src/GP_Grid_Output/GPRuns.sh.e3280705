@@ -1,0 +1,109 @@
+
+| ECJ
+| An evolutionary computation system (version 25)
+| By Sean Luke
+| Contributors: L. Panait, G. Balan, S. Paus, Z. Skolicki, R. Kicinger,
+|               E. Popovici, K. Sullivan, J. Harrison, J. Bassett, R. Hubley,
+|               A. Desai, A. Chircop, J. Compton, W. Haddon, S. Donnelly,
+|               B. Jamil, J. Zelibor, E. Kangas, F. Abidi, H. Mooers,
+|               J. O'Beirne, L. Manzoni, K. Talukder, S. McKay, J. McDermott
+|               J. Zou, A. Rutherford, D. Freelan, E. Wei
+| URL: http://cs.gmu.edu/~eclab/projects/ecj/
+| Mail: ecj-help@cs.gmu.edu
+|       (better: join ECJ-INTEREST at URL above)
+| Date: July 1, 2017
+| Current Java: 1.8.0_152 / Java HotSpot(TM) 64-Bit Server VM-25.152-b16
+| Required Minimum Java: 1.5
+
+
+Threads:  breed/1 eval/1
+Seed: -952219178 
+Job: 0
+Setting up
+Processing GP Types
+Processing GP Node Constraints
+Processing GP Function Sets
+Processing GP Tree Constraints
+Initializing Generation 0
+Subpop 0 best fitness of generation Fitness: 0.9993362332752586
+Generation 1	Evaluations So Far 500
+Subpop 0 best fitness of generation Fitness: 0.9983922757319621
+Generation 2	Evaluations So Far 1000
+Subpop 0 best fitness of generation Fitness: 0.99732566147892
+Generation 3	Evaluations So Far 1500
+Subpop 0 best fitness of generation Fitness: 0.9994794382024271
+Generation 4	Evaluations So Far 2000
+Subpop 0 best fitness of generation Fitness: 0.9993348690387407
+Generation 5	Evaluations So Far 2500
+Subpop 0 best fitness of generation Fitness: 0.9950817957990649
+Generation 6	Evaluations So Far 3000
+Subpop 0 best fitness of generation Fitness: 0.999421799810275
+Generation 7	Evaluations So Far 3500
+Subpop 0 best fitness of generation Fitness: 0.999486507009443
+Generation 8	Evaluations So Far 4000
+Subpop 0 best fitness of generation Fitness: 0.9994801950352605
+Generation 9	Evaluations So Far 4500
+Subpop 0 best fitness of generation Fitness: 0.999572715329588
+Generation 10	Evaluations So Far 5000
+Subpop 0 best fitness of generation Fitness: 0.9994703200463518
+Generation 11	Evaluations So Far 5500
+Subpop 0 best fitness of generation Fitness: 0.9995653340321107
+Generation 12	Evaluations So Far 6000
+Subpop 0 best fitness of generation Fitness: 0.9995379198053919
+Generation 13	Evaluations So Far 6500
+Subpop 0 best fitness of generation Fitness: 0.9995448297213688
+Generation 14	Evaluations So Far 7000
+Subpop 0 best fitness of generation Fitness: 0.9986963757799125
+Generation 15	Evaluations So Far 7500
+Subpop 0 best fitness of generation Fitness: 0.9996873908208694
+Generation 16	Evaluations So Far 8000
+Subpop 0 best fitness of generation Fitness: 0.9981780525863388
+Generation 17	Evaluations So Far 8500
+Subpop 0 best fitness of generation Fitness: 0.9976825019792049
+Generation 18	Evaluations So Far 9000
+Subpop 0 best fitness of generation Fitness: 0.999682986885632
+Generation 19	Evaluations So Far 9500
+Subpop 0 best fitness of generation Fitness: 0.9937866437326192
+Generation 20	Evaluations So Far 10000
+Subpop 0 best fitness of generation Fitness: 0.99956331022732
+Generation 21	Evaluations So Far 10500
+Subpop 0 best fitness of generation Fitness: 0.9923234955299141
+Generation 22	Evaluations So Far 11000
+Subpop 0 best fitness of generation Fitness: 0.9929835170947876
+Generation 23	Evaluations So Far 11500
+Subpop 0 best fitness of generation Fitness: 0.9995462724870515
+Generation 24	Evaluations So Far 12000
+Subpop 0 best fitness of generation Fitness: 0.9995749178466966
+Generation 25	Evaluations So Far 12500
+Subpop 0 best fitness of generation Fitness: 0.999067060398646
+Generation 26	Evaluations So Far 13000
+Subpop 0 best fitness of generation Fitness: 0.9999540675078555
+Generation 27	Evaluations So Far 13500
+Subpop 0 best fitness of generation Fitness: 0.9887344795183542
+Generation 28	Evaluations So Far 14000
+Subpop 0 best fitness of generation Fitness: 0.9934307710371937
+Generation 29	Evaluations So Far 14500
+Subpop 0 best fitness of generation Fitness: 0.9976075012153576
+Generation 30	Evaluations So Far 15000
+Subpop 0 best fitness of generation Fitness: 0.9995756258539472
+Generation 31	Evaluations So Far 15500
+Subpop 0 best fitness of generation Fitness: 0.9924159686227583
+Generation 32	Evaluations So Far 16000
+Subpop 0 best fitness of generation Fitness: 0.9995757070414203
+Generation 33	Evaluations So Far 16500
+Subpop 0 best fitness of generation Fitness: 0.9399088365973834
+Generation 34	Evaluations So Far 17000
+Subpop 0 best fitness of generation Fitness: 0.9849488723815187
+Generation 35	Evaluations So Far 17500
+Subpop 0 best fitness of generation Fitness: 0.997607753953087
+Generation 36	Evaluations So Far 18000
+Subpop 0 best fitness of generation Fitness: 0.997653709657549
+Generation 37	Evaluations So Far 18500
+Subpop 0 best fitness of generation Fitness: 0.9995753672453764
+Generation 38	Evaluations So Far 19000
+Subpop 0 best fitness of generation Fitness: 0.9998983913076926
+Generation 39	Evaluations So Far 19500
+Subpop 0 best fitness of generation Fitness: 0.9946749696423621
+Generation 40	Evaluations So Far 20000
+Subpop 0 best fitness of generation Fitness: 0.9758864885967132
+Generation 41	Evaluations So Far 20500
