@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="356a728e-fbb8-49d5-a53c-e9a508f7f715" name="Default" comment="" />
+    <list default="true" id="356a728e-fbb8-49d5-a53c-e9a508f7f715" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java" afterPath="$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java" />
+      <change beforePath="$PROJECT_DIR$/src/ec/app/tutorial5/fitness_function.java" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,23 +29,13 @@
       <file leaf-file-name="ImplementingPSO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ec/app/baselines/ImplementingPSO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
+            <state relative-caret-position="-504">
               <caret line="15" column="63" lean-forward="false" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1388#1389#0" expanded="true" />
                 <element signature="e#1415#1416#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fitness_function.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/fitness_function.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -85,18 +79,8 @@
       <file leaf-file-name="PSO_based_approach.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Math.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/default-runtime/src.zip!/java/lang/Math.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="642" column="25" lean-forward="false" selection-start-line="642" selection-start-column="25" selection-end-line="642" selection-end-column="25" />
+            <state relative-caret-position="475">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,6 +107,9 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/src/ec/app/baselines</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -157,6 +144,7 @@
     <option name="width" value="1272" />
     <option name="height" value="692" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -179,6 +167,11 @@
             <path>
               <item name="Summer Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Summer_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Summer Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Summer_project" type="462c0819:PsiDirectoryNode" />
+              <item name="PSO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Summer Project" type="b2602c69:ProjectViewProjectNode" />
@@ -426,16 +419,15 @@
       <workItem from="1543198885276" duration="8315000" />
       <workItem from="1543446663727" duration="3093000" />
       <workItem from="1543880873985" duration="4809000" />
-      <workItem from="1543975188213" duration="15716000" />
+      <workItem from="1543975188213" duration="22708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49599000" />
+    <option name="totallyTimeSpent" value="56591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2009" y="0" width="1920" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -445,8 +437,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23216188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23265742" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -473,18 +465,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/VirtualMachine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -811,31 +797,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/baselines/ParticleSwarmOptimization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4272">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/baselines/ImplementingPSO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
+        <state relative-caret-position="-504">
           <caret line="15" column="63" lean-forward="false" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1388#1389#0" expanded="true" />
             <element signature="e#1415#1416#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/fitness_function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,14 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/default-runtime/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="642" column="25" lean-forward="false" selection-start-line="642" selection-start-column="25" selection-end-line="642" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/feature_selection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -901,10 +863,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/fitness_function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/app/baselines/ParticleSwarmOptimization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4272">
+          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/default-runtime/src.zip!/java/lang/StrictMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="369" column="26" lean-forward="false" selection-start-line="369" selection-start-column="26" selection-end-line="369" selection-end-column="26" />
+          <folding>
+            <element signature="e#12605#12606#0" expanded="false" />
+            <element signature="e#12658#12659#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/default-runtime/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="422" column="29" lean-forward="false" selection-start-line="422" selection-start-column="29" selection-end-line="422" selection-end-column="29" />
+          <folding>
+            <element signature="e#16338#16339#0" expanded="false" />
+            <element signature="e#16420#16421#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="475">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
