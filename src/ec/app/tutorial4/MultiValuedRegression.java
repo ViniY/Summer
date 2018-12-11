@@ -38,8 +38,9 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 	public ArrayList<Task> ls_tasks;
 	public ArrayList<VirtualMachine> ls_vms;
 
-	private static final int TRAINING_SET = 0;
+	private static final int TRAINING_SET = 0;//distinguish training and test sets
 	private static final int TESTING_SET = 1;
+
 
 	public void setup(final EvolutionState state, final Parameter base) {
 		super.setup(state, base);
@@ -145,7 +146,7 @@ public class MultiValuedRegression extends GPProblem implements SimpleProblemFor
 //				f.setFitness(state, fitness, false);
 				// System.out.println("fitness value: " + f.fitness());
 
-		//		ind.evaluated = true;
+//				ind.evaluated = true;
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

@@ -12,6 +12,7 @@ public class Comparison {
 	private static final int ALGORITHM_RR = 2;
 	private static final int ALGORITHM_WRR = 3;
 	private static final int ALGORITHM_RANDOM = 4;
+	private static final int ALGORITHM_PSO = 5;
 	@SuppressWarnings("Duplicates")
 	public static void main(String[] args) {
 		try {
@@ -19,7 +20,8 @@ public class Comparison {
 			// int alg = ALGORITHM_GREEDY;
 			// int alg = ALGORITHM_RR;
 			//int alg = ALGORITHM_WRR;
-			int alg = ALGORITHM_RANDOM;
+//			int alg = ALGORITHM_RANDOM;
+			int alg = ALGORITHM_PSO;
 
 			for (int pp = 0; pp < 30; pp++) {
 				double totalCost = 0;
@@ -66,7 +68,13 @@ public class Comparison {
 								Random r = new Random();
 								udpatedVal = r.taskMapping(parentTasks, ls_vms, t, 0); // i no use
 								break;
+								case ALGORITHM_PSO:
+									PSO_based_approach pso = new PSO_based_approach(parentTasks,ls_vms,t,j);
+									udpatedVal = pso.taskMapping();
+								break;
+
 							}
+
 
 							for (Object o : udpatedVal) {
 								if (o instanceof Task) {
