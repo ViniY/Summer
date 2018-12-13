@@ -29,56 +29,21 @@ public class PSO_based_approach  implements IAlgorithm{
         this.number_particle = number_particle;
         this.VEC = VEC;
     }
-
     public PSO_based_approach(ArrayList<Task> taskList,  ArrayList<VirtualMachine> ls_vms, int j) {
         this.ls_vms = ls_vms;
         this.j = j;
         this.taskList = taskList;
     }
-    public ArrayList<Object> taskMapping(ArrayList<Task> parentTasks, ArrayList<VirtualMachine> vms, Task t, int j) {
+    public ArrayList<Object> taskMapping( int j) {
         ArrayList<Object> updatedVals = new ArrayList<Object>();//it is used as the returning value which holds the matching between task and VMs
-        this.POP = new double[][];
-        Initialization();
-
-
-//        t.setAllocation_time(Utility.getMaxFinishTime(parentTasks));
-//        for (VirtualMachine vm : vms) {
-//            t.setExe_time((double) t.getTask_size() /(double) vm.getVelocity());
-//
-//            double preFinishTime = Utility.getMaxFinishTime(vm.getPriority_queue());
-//            t.setStart_time(Utility.getMaxStartTime(preFinishTime, t.getAllocation_time()));
-//            t.setWaiting_time();
-//            t.setRelative_finish_time();
-//
-//            double cost = (double) t.getRelative_finish_time() * vm.getUnit_cost_vm();
-//            vm.setCost(cost);
-//
-//        }
-//
-//        VirtualMachine vmSel = getVMWithMinCost(vms);
-//
-//        t.setExe_time(t.getTask_size() / (double) vmSel.getVelocity());
-//
-//        double preFinishTime = Utility.getMaxFinishTime(vmSel.getPriority_queue());
-//
-//        t.setStart_time(Utility.getMaxStartTime(preFinishTime, t.getAllocation_time()));
-//        t.setWaiting_time();
-//        t.setRelative_finish_time();
-//        t.setFinish_time();
-//
-//        vmSel.setPriority_queue(t);
-//
-//        updatedVals.add(t);
-//        updatedVals.add(vmSel);
+        double[][] POP =new double [this.number_particle][this.taskList.size()];
+        double[] VEC = new double[this.taskList.size()];
+        Initialization(POP,VEC);
 
         return updatedVals;
     }
 
-    private VirtualMachine getVMWithMinCost(ArrayList<VirtualMachine> vms) {
-        return null;
-    }
-
-
+//  intialise POP and VEC this two arrays with this function with random value varies from 0 to 1 based on uniform distribution
     public void Initialization(double[][] POP, double[] VEC) {
         for (int i = 0; i < POP.length; i++) {
             for (int j = 0; j < POP[0].length; j++) {
@@ -89,14 +54,14 @@ public class PSO_based_approach  implements IAlgorithm{
             double tmp = j * numberOfVM;
             if (tmp > numberOfVM) {
                 while (tmp > numberOfVM) {
-                    tmp = Math.floor(tmp / numberOfVM);
+                    tmp = Math.floor(tmp / numberOfVM);//this math function will return a closest int value which is smaller than the value
                 }
             }
             VEC[j] = tmp;
         }
         return;
     }
-
+//    the initial mapping generated
     public void MapTaskToVM(double[][] POP, double[][] MAP, double[] VEC) {
         for (int i = 0; i < POP.length; i++) {
             for (int j = 0; j < POP[0].length; j++) {
@@ -106,11 +71,12 @@ public class PSO_based_approach  implements IAlgorithm{
         return;
     }
 
-    public void cost_matrix() {//this was represented as CM(Communication cost matrix)
+    public void cost_matrix() {//this was represented as CM(Communication cost matrix) in the paper
 
 
     }
-
+//    this function is used to calculate fitness of the solution but we are using yalian's fitness function which is also the same fitness function we are using in GP
+//    So here we are not following this paper's fitness function
     public void CalFitness(double[][] ETC, double[] Row_of_Map, double[][] CM) {
 
 
@@ -158,12 +124,8 @@ public class PSO_based_approach  implements IAlgorithm{
 
     }
 
-    public ArrayList<Object> taskMapping() {
-    return null;
-    }
 
-
-
+//  setters and getters starts from here
     public void setPop_size(int size){
         this.pop_size = size;
     }

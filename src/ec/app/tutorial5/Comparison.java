@@ -86,11 +86,13 @@ public class Comparison {
 							}
 						}
 					}
+					//****************************
 					// PSO used to give a solution of scheduling, this is different to the greedy algorithms which schedule
 					// each task and routing to VM, so here I put it outside of the for loop which is iterate through the task set
 					if(alg == 5){//PSO
 						ArrayList<Object> udpatedVal = new ArrayList<Object>();// Here we store the solution which will be used to calculate
 						PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
+						udpatedVal = pso.taskMapping(0);
 					}
 					for (VirtualMachine vm : ls_vms) {
 						double totalRFT = 0;
