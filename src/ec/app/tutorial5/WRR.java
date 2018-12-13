@@ -12,7 +12,7 @@ public class WRR implements IAlgorithm {
 	public WRR() {
 		// TODO Auto-generated constructor stub
 	}
-
+	@SuppressWarnings("Duplicates")
 	@Override
 	public ArrayList<Object> taskMapping(ArrayList<Task> parentTasks, ArrayList<VirtualMachine> vms, Task t, int j) {
 		ArrayList<Object> updatedVals = new ArrayList<Object>();
@@ -21,7 +21,7 @@ public class WRR implements IAlgorithm {
 
 		VirtualMachine vmSel = vms.get(index);
 
-		t.setAllocation_time(Utility.getMaxFinishTime(parentTasks));
+		t.setAllocation_time(Utility.getMaxFinishTime( parentTasks));
 
 		for (VirtualMachine vm : vms) {
 			t.setExe_time(t.getTask_size() / (double) vm.getVelocity());

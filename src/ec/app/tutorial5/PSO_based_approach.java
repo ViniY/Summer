@@ -2,32 +2,83 @@ package ec.app.tutorial5;
 
 import ec.app.tutorial4.Task;
 import ec.app.tutorial4.VirtualMachine;
-
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
-public class PSO_based_approach {
-    int numberOfVM = 0;//
-    public double[][] MAP;//
-    public double[][] POP;//
-    public double[] VEC;
+
+public class PSO_based_approach  implements IAlgorithm{
+    private ArrayList<Task> taskList;//tasks
+    private int j;
+    private ArrayList<VirtualMachine> ls_vms;//VMs
+    int numberOfVM = 0;
+    public double[][] MAP;
+    public double[][] POP;
+    private double[] VEC;
     public double Min_Fit;
     public double besti;
     private double[][] Pbest;
     private double[] Gbest;
-    public double Ietr;
+    private double Ietr;
     private double Max_Ietr;
+    public int number_particle = 100;
+    private int pop_size;
+
 
     public PSO_based_approach(Object task, int number_particle, double[] VEC) {
-
+        this.number_particle = number_particle;
+        this.VEC = VEC;
     }
 
-    public int number_particle;
+    public PSO_based_approach(ArrayList<Task> taskList,  ArrayList<VirtualMachine> ls_vms, int j) {
+        this.ls_vms = ls_vms;
+        this.j = j;
+        this.taskList = taskList;
+    }
+    public ArrayList<Object> taskMapping(ArrayList<Task> parentTasks, ArrayList<VirtualMachine> vms, Task t, int j) {
+        ArrayList<Object> updatedVals = new ArrayList<Object>();//it is used as the returning value which holds the matching between task and VMs
+        this.POP = new double[][];
+        Initialization();
 
-    public PSO_based_approach(ArrayList<Task> parentTasks, ArrayList<VirtualMachine> ls_vms, Task t, int j) {
 
+//        t.setAllocation_time(Utility.getMaxFinishTime(parentTasks));
+//        for (VirtualMachine vm : vms) {
+//            t.setExe_time((double) t.getTask_size() /(double) vm.getVelocity());
+//
+//            double preFinishTime = Utility.getMaxFinishTime(vm.getPriority_queue());
+//            t.setStart_time(Utility.getMaxStartTime(preFinishTime, t.getAllocation_time()));
+//            t.setWaiting_time();
+//            t.setRelative_finish_time();
+//
+//            double cost = (double) t.getRelative_finish_time() * vm.getUnit_cost_vm();
+//            vm.setCost(cost);
+//
+//        }
+//
+//        VirtualMachine vmSel = getVMWithMinCost(vms);
+//
+//        t.setExe_time(t.getTask_size() / (double) vmSel.getVelocity());
+//
+//        double preFinishTime = Utility.getMaxFinishTime(vmSel.getPriority_queue());
+//
+//        t.setStart_time(Utility.getMaxStartTime(preFinishTime, t.getAllocation_time()));
+//        t.setWaiting_time();
+//        t.setRelative_finish_time();
+//        t.setFinish_time();
+//
+//        vmSel.setPriority_queue(t);
+//
+//        updatedVals.add(t);
+//        updatedVals.add(vmSel);
+
+        return updatedVals;
     }
 
-    //    public
+    private VirtualMachine getVMWithMinCost(ArrayList<VirtualMachine> vms) {
+        return null;
+    }
+
+
     public void Initialization(double[][] POP, double[] VEC) {
         for (int i = 0; i < POP.length; i++) {
             for (int j = 0; j < POP[0].length; j++) {
@@ -108,8 +159,35 @@ public class PSO_based_approach {
     }
 
     public ArrayList<Object> taskMapping() {
-
+    return null;
     }
+
+
+
+    public void setPop_size(int size){
+        this.pop_size = size;
+    }
+
+    public int getNumberOfVM() {
+        return numberOfVM;
+    }
+
+    public void setNumberOfVM(int numberOfVM) {
+        this.numberOfVM = numberOfVM;
+    }
+
+    public double[][] getMAP() {
+        return MAP;
+    }
+
+    public void setMAP(double[][] MAP) {
+        this.MAP = MAP;
+    }
+    public int getNumberOfParticle(){
+        return this.number_particle;
+    }
+
+
 }
 
 // here we are using our own fitness calculation function
