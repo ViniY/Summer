@@ -13,7 +13,16 @@ public class Comparison {
 	private static final int ALGORITHM_WRR = 3;
 	private static final int ALGORITHM_RANDOM = 4;
 	private static final int ALGORITHM_PSO = 5;
+	public double fitness_PSO(){
+
+
+
+
+		return .0;
+	}
+
 	@SuppressWarnings("Duplicates")
+
 	public static void main(String[] args) {
 		try {
 			// int alg = ALGORITHM_HEFT;
@@ -93,6 +102,7 @@ public class Comparison {
 						ArrayList<Object> udpatedVal = new ArrayList<Object>();// Here we store the solution which will be used to calculate
 						PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
 						udpatedVal = pso.taskMapping(0);
+
 					}
 					for (VirtualMachine vm : ls_vms) {
 						double totalRFT = 0;
