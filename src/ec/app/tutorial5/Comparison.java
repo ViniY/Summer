@@ -13,6 +13,8 @@ public class Comparison {
 	private static final int ALGORITHM_WRR = 3;
 	private static final int ALGORITHM_RANDOM = 4;
 	private static final int ALGORITHM_PSO = 5;
+	private PSO_based_approach pso;
+
 	public double fitness_PSO(){
 
 
@@ -23,7 +25,7 @@ public class Comparison {
 
 	@SuppressWarnings("Duplicates")
 
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		try {
 			// int alg = ALGORITHM_HEFT;
 			// int alg = ALGORITHM_GREEDY;
@@ -78,6 +80,15 @@ public class Comparison {
 								break;
 							}
 							//
+							//****************************
+							// PSO used to give a solution of scheduling, this is different to the greedy algorithms which schedule
+							// each task and routing to VM, so here I put it outside of the for loop which is iterate through the task set
+							if(alg == 5){//PSO
+//								ArrayList<Object> udpatedVal = new ArrayList<Object>();// Here we store the solution which will be used to calculate
+								PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
+								this.pso = pso;
+								udpatedVal = pso.taskMapping(0);
+							}
 							for (Object o : udpatedVal) {
 								if (o instanceof Task) {
 									t = (Task) o;
@@ -95,15 +106,7 @@ public class Comparison {
 							}
 						}
 					}
-					//****************************
-					// PSO used to give a solution of scheduling, this is different to the greedy algorithms which schedule
-					// each task and routing to VM, so here I put it outside of the for loop which is iterate through the task set
-					if(alg == 5){//PSO
-						ArrayList<Object> udpatedVal = new ArrayList<Object>();// Here we store the solution which will be used to calculate
-						PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
-						udpatedVal = pso.taskMapping(0);
 
-					}
 					for (VirtualMachine vm : ls_vms) {
 						double totalRFT = 0;
 						if (!vm.getPriority_queue().isEmpty()) {
@@ -117,9 +120,22 @@ public class Comparison {
 
 				double average_total = (double) totalCost / taskFiles.length;
 				double average_makespan = (double) totalTime / taskFiles.length;
+				//***************PSO
+				if(alg == 5 ){// PSO
+					if(pso.best_solution) {//already the best solution
+						System.out.println(alg + " - average total cost of testing set is: " + average_total);
+						System.out.println(alg + " - average makespan of testing set is: " + average_makespan);
+					}
+					else{
+						pso.setCurrent_fitness(average_makespan);
+						pso.Main_Procedure(pso.POP,pso.ETC);
+					}
 
-				System.out.println(alg + " - average total cost of testing set is: " + average_total);
-				System.out.println(alg + " - average makespan of testing set is: " + average_makespan);
+				}
+				else {
+					System.out.println(alg + " - average total cost of testing set is: " + average_total);
+					System.out.println(alg + " - average makespan of testing set is: " + average_makespan);
+				}
 			}
 
 		} catch (Exception e) {

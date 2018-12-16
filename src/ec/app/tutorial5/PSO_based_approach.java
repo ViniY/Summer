@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 //public class PSO_based_approach  implements IAlgorithm
 public class PSO_based_approach {
-    private double[][] ETC ;
+    public double[][] ETC ;
     private ArrayList<Task> taskList;//tasks
     private int j;
     private ArrayList<VirtualMachine> ls_vms;//VMs
@@ -20,12 +20,15 @@ public class PSO_based_approach {
     public double besti;
     private double[][] Pbest;
     private double[] Gbest;
-    private double Ietr;
+    private double Ietr;//index of current iteration
     private double Max_Ietr=500;
     public int number_particle = 20;
-    public boolean best_solution = false;
+    public boolean best_solution = false;// indicate rather find the best solution or not
     private int pop_size = 20;
-
+    private static double c1 = 2.05;
+    private static double c2 = 2.05;
+    private static double w = 0.5314;
+    private double current_fitness =0;
 
     public PSO_based_approach(Object task, int number_particle, double[] VEC) {
         this.number_particle = number_particle;
@@ -35,13 +38,15 @@ public class PSO_based_approach {
         this.ls_vms = ls_vms;
         this.j = j;
         this.taskList = taskList;
+        Initialization(POP,VEC);
+
     }
     public ArrayList<Object> taskMapping( int j) {
         ArrayList<Object> updatedVals = new ArrayList<Object>();//it is used as the returning value which holds the matching between task and VMs
         double[][] POP =new double [this.number_particle][this.taskList.size()];
         double[] VEC = new double[this.taskList.size()];
-        Initialization(POP,VEC);
 
+        Main_Procedure(this.POP,this.ETC);
         return updatedVals;
     }
 
@@ -66,7 +71,7 @@ public class PSO_based_approach {
         MapTaskToVM(this.POP,this.MAP,this.VEC);
         return;
     }
-    //    the initial mapping generated
+    //    the initial mapping generated --it will create the initial mapping
     public void MapTaskToVM(double[][] POP, double[][] MAP, double[] VEC) {
         for (int i = 0; i < POP.length; i++) {
             for (int j = 0; j < POP[0].length; j++) {
@@ -74,18 +79,18 @@ public class PSO_based_approach {
             }
         }
         ETC = generateETCMatrix(this.taskList,this.ls_vms);
-        Main_Procedure(this.POP,this.ETC);
     }
     //    calculate the ETC matrix
-    private double[][] generateETCMatrix(ArrayList<Task> taskList, ArrayList<VirtualMachine> ls_vms) throws Throwable {//if nothing inside of it then just throw a exception(better change here to an specific exception like define an exception)
-        if(taskList.isEmpty()||ls_vms.isEmpty()) throw new Throwable();
+    private double[][] generateETCMatrix(ArrayList<Task> taskList, ArrayList<VirtualMachine> ls_vms)  {//if nothing inside of it then just throw a exception(better change here to an specific exception like define an exception)
         double[][] ETC = new double[taskList.size()][ls_vms.size()];
-        for(int i=0; i < taskList.size(); i++){
-            for(int j=0; j< ls_vms.size(); j++){
-                ETC[i][j] = taskList.get(i).task_size / ls_vms.get(j).velocity;
+        if(!(taskList.isEmpty()||ls_vms.isEmpty())) {
+            for (int i = 0; i < taskList.size(); i++) {
+                for (int j = 0; j < ls_vms.size(); j++) {
+                    ETC[i][j] = taskList.get(i).task_size / ls_vms.get(j).velocity;
+                }
             }
+            this.ETC = ETC;
         }
-        this.ETC = ETC;
         return ETC;
     }
 
@@ -94,12 +99,8 @@ public class PSO_based_approach {
 
 
     }
-//    this function is used to calculate fitness of the solution but we are using yalian's fitness function which is also the same fitness function we are using in GP
-//    So here we are not following this paper's fitness function
-    public void CalFitness(double[][] ETC, double[] Row_of_Map, double[][] CM) {
 
 
-    }
 
 
     //    ETC is the Expected time to compute
@@ -108,13 +109,15 @@ public class PSO_based_approach {
     public void Main_Procedure(double[][] POP, double[][] ETC) {
         double Min_Fit=0;
         for (int i = 0; i < POP.length; i++) {
-            CalFitness(ETC, MAP[i], CM);
+//            CalFitness(ETC, MAP[i], CM);
+
             Pbest[i] = POP[i];
         }
         for (int i = 0; i < POP.length; i++) {
             double temp = F(Pbest[i]);
             if (Min_Fit > temp) {
                 Min_Fit = temp;
+
                 Gbest = Pbest[i];
             }
         }
@@ -123,7 +126,7 @@ public class PSO_based_approach {
             for (int k = 0; k < POP.length; k++) {
 //                update velocity and position of POPk Using eq8 and 9
                 MapTaskToVM(POP, MAP, VEC);
-                CalFitness(ETC, MAP[k], CM);
+//                CalFitness(ETC, MAP[k], CM);
                 if (F(POP[k]) < F(Pbest[k])) {
                     Pbest[k] = POP[k];
                 }
@@ -141,13 +144,33 @@ public class PSO_based_approach {
     }
 
     private double F(double[] best) {// find the best value and return
-
         return Double.parseDouble(null);
-
     }
 
+    public double getC1() {
+        return c1;
+    }
+
+    public void setC1(double c1) {
+        this.c1 = c1;
+    }
+
+    public double getC2() {
+        return c2;
+    }
+
+    public void setC2(double c2) {
+        this.c2 = c2;
+    }
 
     //  setters and getters starts from here
+    public double getCurrent_fitness() {
+        return current_fitness;
+    }
+
+    public void setCurrent_fitness(double current_fitness) {
+        this.current_fitness = current_fitness;
+    }
     public void setPop_size(int size){
         this.pop_size = size;
     }
@@ -171,7 +194,17 @@ public class PSO_based_approach {
     public int getNumberOfParticle(){
         return this.number_particle;
     }
+        class Mapping_Option{
+            double[][] mapping;
+            double fitness;
+            public Mapping_Option(double[][] Map){
+                this.mapping = Map;
 
+
+        }
+
+
+    }
 
 }
 

@@ -52,11 +52,12 @@
             <file leaf-file-name="Comparison.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="434">
-                    <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+                  <state relative-caret-position="345">
+                    <caret line="127" column="21" lean-forward="true" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
                     <folding>
                       <element signature="imports" expanded="true" />
-                      <element signature="e#525#556#0" expanded="true" />
+                      <element signature="e#559#590#0" expanded="true" />
+                      <marker date="1544948787318" expanded="false" signature="2817:2825" ph="&lt;~&gt;" />
                     </folding>
                   </state>
                 </provider>
@@ -152,11 +153,32 @@
       <file leaf-file-name="PSO_based_approach.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="65" column="48" lean-forward="true" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+            <state relative-caret-position="1560">
+              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1263#1271#0" expanded="true" />
+                <element signature="e#1522#1530#0" expanded="true" />
+                <element signature="method#Initialization#0;class#PSO_based_approach#0" expanded="false" />
+                <element signature="method#MapTaskToVM#0;class#PSO_based_approach#0" expanded="false" />
+                <element signature="method#generateETCMatrix#0;class#PSO_based_approach#0" expanded="false" />
+                <element signature="e#5370#5371#0" expanded="true" />
+                <element signature="e#5450#5451#0" expanded="true" />
+                <element signature="e#5773#5774#0" expanded="true" />
+                <element signature="e#5811#5812#0" expanded="true" />
+                <element signature="e#5873#5874#0" expanded="true" />
+                <element signature="e#5927#5928#0" expanded="true" />
+                <element signature="e#5966#5967#0" expanded="true" />
+                <element signature="e#6002#6003#0" expanded="true" />
+                <element signature="e#6036#6037#0" expanded="true" />
+                <element signature="e#6069#6070#0" expanded="true" />
+                <element signature="e#6118#6119#0" expanded="true" />
+                <element signature="e#6162#6163#0" expanded="true" />
+                <element signature="e#6196#6197#0" expanded="true" />
+                <element signature="e#6222#6223#0" expanded="true" />
+                <element signature="e#6264#6265#0" expanded="true" />
+                <element signature="e#6294#6295#0" expanded="true" />
+                <element signature="e#6333#6334#0" expanded="true" />
+                <element signature="e#6376#6377#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,6 +225,8 @@
       <find>vec</find>
       <find>etc</find>
       <find>iter</find>
+      <find>trans</find>
+      <find>if</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/ec/app/baselines</dir>
@@ -234,8 +258,8 @@
         <option value="$PROJECT_DIR$/src/config/testing/t2.json" />
         <option value="$PROJECT_DIR$/src/ec/app/tutorial5/WRR.java" />
         <option value="$PROJECT_DIR$/src/ec/app/tutorial5/Greedy.java" />
-        <option value="$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java" />
         <option value="$PROJECT_DIR$/src/ec/app/tutorial4/MultiValuedRegression.java" />
+        <option value="$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java" />
         <option value="$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java" />
       </list>
     </option>
@@ -247,7 +271,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2054" />
+    <option name="x" value="2030" />
     <option name="width" value="1242" />
     <option name="height" value="689" />
   </component>
@@ -341,7 +365,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EC">
+  <component name="RunManager" selected="Application.Comparison">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -490,15 +514,16 @@
       <workItem from="1543880873985" duration="4809000" />
       <workItem from="1543975188213" duration="42603000" />
       <workItem from="1544508951638" duration="1028000" />
-      <workItem from="1544512176729" duration="44331000" />
+      <workItem from="1544512176729" duration="55129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121845000" />
+    <option name="totallyTimeSpent" value="132643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1044" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -509,7 +534,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23265742" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23265742" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -538,18 +563,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/default-runtime/javafx-src.zip!/com/sun/scenario/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/MultiValuedRegression.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -926,24 +944,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Jswarm/doc/jswarm_pso/class-use/FitnessFunction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2592">
+          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="127" column="21" lean-forward="true" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#525#556#0" expanded="true" />
+            <element signature="e#559#590#0" expanded="true" />
+            <marker date="1544948787318" expanded="false" signature="2817:2825" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="65" column="48" lean-forward="true" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+        <state relative-caret-position="1560">
+          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1263#1271#0" expanded="true" />
+            <element signature="e#1522#1530#0" expanded="true" />
+            <element signature="method#Initialization#0;class#PSO_based_approach#0" expanded="false" />
+            <element signature="method#MapTaskToVM#0;class#PSO_based_approach#0" expanded="false" />
+            <element signature="method#generateETCMatrix#0;class#PSO_based_approach#0" expanded="false" />
+            <element signature="e#5370#5371#0" expanded="true" />
+            <element signature="e#5450#5451#0" expanded="true" />
+            <element signature="e#5773#5774#0" expanded="true" />
+            <element signature="e#5811#5812#0" expanded="true" />
+            <element signature="e#5873#5874#0" expanded="true" />
+            <element signature="e#5927#5928#0" expanded="true" />
+            <element signature="e#5966#5967#0" expanded="true" />
+            <element signature="e#6002#6003#0" expanded="true" />
+            <element signature="e#6036#6037#0" expanded="true" />
+            <element signature="e#6069#6070#0" expanded="true" />
+            <element signature="e#6118#6119#0" expanded="true" />
+            <element signature="e#6162#6163#0" expanded="true" />
+            <element signature="e#6196#6197#0" expanded="true" />
+            <element signature="e#6222#6223#0" expanded="true" />
+            <element signature="e#6264#6265#0" expanded="true" />
+            <element signature="e#6294#6295#0" expanded="true" />
+            <element signature="e#6333#6334#0" expanded="true" />
+            <element signature="e#6376#6377#0" expanded="true" />
           </folding>
         </state>
       </provider>
