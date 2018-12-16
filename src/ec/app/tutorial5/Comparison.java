@@ -41,7 +41,7 @@ public class Comparison {
 
 				File[] taskFiles = Utility.getTaskFileList(1); // testing set
 				File[] vmFiles = Utility.getVMFileList();
-				for (File tf : taskFiles) {
+				for (File tf : taskFiles) {//taking multiple task sets
 					ArrayList<Task> ls_tasks = Utility.getTaskList(tf.getPath());
 					ArrayList<VirtualMachine> ls_vms = Utility.getVMList(vmFiles[v].getPath());
 					v++;

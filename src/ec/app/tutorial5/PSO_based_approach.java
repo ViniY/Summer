@@ -13,7 +13,7 @@ public class PSO_based_approach {
     private int j;
     private ArrayList<VirtualMachine> ls_vms;//VMs
     int numberOfVM = 0;
-    public double[][] MAP;
+    public double[][] MAP;//hold the mapping schedule (task - VM )
     public double[][] POP;
     private double[] VEC;
     //  public double Min_Fit;// changed it to a local variable
@@ -38,14 +38,12 @@ public class PSO_based_approach {
         this.ls_vms = ls_vms;
         this.j = j;
         this.taskList = taskList;
-        Initialization(POP,VEC);
-
+        Initialization(POP,VEC);//initialise
     }
     public ArrayList<Object> taskMapping( int j) {
         ArrayList<Object> updatedVals = new ArrayList<Object>();//it is used as the returning value which holds the matching between task and VMs
         double[][] POP =new double [this.number_particle][this.taskList.size()];
         double[] VEC = new double[this.taskList.size()];
-
         Main_Procedure(this.POP,this.ETC);
         return updatedVals;
     }
@@ -95,29 +93,24 @@ public class PSO_based_approach {
     }
 
     // calculate CM matrix
-    public void cost_matrix() {//this was represented as CM(Communication cost matrix) in the paper
-
+    public void Communication_Matrix() {//this was represented as CM(Communication cost matrix) in the paper
 
     }
 
-
-
-
-    //    ETC is the Expected time to compute
+//    ETC is the Expected time to compute
 //    CM is the Communication cost matrix
 //    without any specification here we set it to 20 iteration
     public void Main_Procedure(double[][] POP, double[][] ETC) {
         double Min_Fit=0;
         for (int i = 0; i < POP.length; i++) {
-//            CalFitness(ETC, MAP[i], CM);
-
+//            CalFitness(ETC, MAP[i], CM);// it should have CM but currently have not figured out why I need this matrix
+            CalFitness(ETC, MAP[i]);
             Pbest[i] = POP[i];
         }
         for (int i = 0; i < POP.length; i++) {
             double temp = F(Pbest[i]);
             if (Min_Fit > temp) {
                 Min_Fit = temp;
-
                 Gbest = Pbest[i];
             }
         }
@@ -125,6 +118,7 @@ public class PSO_based_approach {
         while (Ietr < Max_Ietr) {
             for (int k = 0; k < POP.length; k++) {
 //                update velocity and position of POPk Using eq8 and 9
+
                 MapTaskToVM(POP, MAP, VEC);
 //                CalFitness(ETC, MAP[k], CM);
                 if (F(POP[k]) < F(Pbest[k])) {
@@ -141,6 +135,9 @@ public class PSO_based_approach {
         }
 
 
+    }
+    private double CalFitness(double[][] ETC, double[] Map_Col){
+        return 0;
     }
 
     private double F(double[] best) {// find the best value and return
@@ -194,17 +191,17 @@ public class PSO_based_approach {
     public int getNumberOfParticle(){
         return this.number_particle;
     }
-        class Mapping_Option{
-            double[][] mapping;
-            double fitness;
-            public Mapping_Option(double[][] Map){
-                this.mapping = Map;
-
-
-        }
-
-
-    }
+//        class Mapping_Option{
+//            double[][] mapping;
+//            double fitness;
+//            public Mapping_Option(double[][] Map){
+//                this.mapping = Map;
+//
+//
+//        }
+//
+//
+//    }
 
 }
 
