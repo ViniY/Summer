@@ -1,9 +1,11 @@
 package ec.app.tutorial5;
+import com.sun.javafx.collections.MappingChange;
 import ec.app.tutorial4.Task;
 import ec.app.tutorial4.VirtualMachine;
-
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 
 //public class PSO_based_approach  implements IAlgorithm
@@ -29,9 +31,10 @@ public class PSO_based_approach {
     private static double c2 = 2.05;
     private static double w = 0.5314;
     private double current_fitness =0;
-    private double[] V = new double[Max_Ietr];
+    private double[] V = new double[number_particle];// represents velocity of each particle
     private ArrayList<double[][]> Solution = new ArrayList<>();
-    private  double[] S = new double[Max_Ietr];
+    private  double[] S = new double[number_particle]; // represents each particle's position
+
 
 
     public PSO_based_approach(Object task, int number_particle, double[] VEC) {
@@ -107,7 +110,7 @@ public class PSO_based_approach {
         return ETC;
     }
 
-    // calculate CM matrix
+    // calculate CM matrix// no use
     public void Communication_Matrix() {//this was represented as CM(Communication cost matrix) in the paper
 
     }
