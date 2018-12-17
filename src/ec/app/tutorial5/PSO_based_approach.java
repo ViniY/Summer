@@ -9,19 +9,19 @@ import java.util.ArrayList;
 //public class PSO_based_approach  implements IAlgorithm
 public class PSO_based_approach {
     public double[][] ETC ;
-    private ArrayList<Task> taskList;//tasks
+    private ArrayList<Task> taskList = new ArrayList<>();//tasks
     private int j;
     private ArrayList<VirtualMachine> ls_vms;//VMs
     int numberOfVM = 0;
-    public double[][] MAP;//hold the mapping schedule (task - VM )
+    public int[][] MAP;//hold the mapping schedule (task - VM )
     public double[][] POP;
     private double[] VEC;
     //  public double Min_Fit;// changed it to a local variable
     public double besti;
-    private double[][] Pbest;
+    private double[][] Pbest = new double[taskList.size()][taskList.size()];
     private double[] Gbest;
-    private double Ietr;//index of current iteration
-    private double Max_Ietr=500;
+    private int Ietr;//index of current iteration
+    private int Max_Ietr=500;
     public int number_particle = 20;
     public boolean best_solution = false;// indicate rather find the best solution or not
     private int pop_size = 20;
@@ -29,6 +29,10 @@ public class PSO_based_approach {
     private static double c2 = 2.05;
     private static double w = 0.5314;
     private double current_fitness =0;
+    private double[] V = new double[Max_Ietr];
+    private ArrayList<double[][]> Solution = new ArrayList<>();
+    private  double[] S = new double[Max_Ietr];
+
 
     public PSO_based_approach(Object task, int number_particle, double[] VEC) {
         this.number_particle = number_particle;
@@ -38,12 +42,18 @@ public class PSO_based_approach {
         this.ls_vms = ls_vms;
         this.j = j;
         this.taskList = taskList;
+        double[][] POP =new double [this.number_particle][this.taskList.size()];
+        double[] VEC = new double[this.taskList.size()];
+        int[][] MAP = new int[number_particle][taskList.size()];
+        this.POP = POP;
+        this.MAP = MAP;
+        this.VEC = VEC;
+        this.Pbest= new double[POP.length][taskList.size()];
         Initialization(POP,VEC);//initialise
     }
     public ArrayList<Object> taskMapping( int j) {
         ArrayList<Object> updatedVals = new ArrayList<Object>();//it is used as the returning value which holds the matching between task and VMs
-        double[][] POP =new double [this.number_particle][this.taskList.size()];
-        double[] VEC = new double[this.taskList.size()];
+
         Main_Procedure(this.POP,this.ETC);
         return updatedVals;
     }
@@ -66,17 +76,22 @@ public class PSO_based_approach {
         }
         this.POP = POP;//update two array(POP and VEC ) hold in field
         this.VEC = VEC;
+        for(int i =0 ; i < MAP.length; i++){
+            for(int j=0; j < MAP[0].length; j++){
+                MAP[i][j] = 0;
+            }
+        }
         MapTaskToVM(this.POP,this.MAP,this.VEC);
         return;
     }
     //    the initial mapping generated --it will create the initial mapping
-    public void MapTaskToVM(double[][] POP, double[][] MAP, double[] VEC) {
+    public void MapTaskToVM(double[][] POP, int[][] MAP, double[] VEC) {
         for (int i = 0; i < POP.length; i++) {
             for (int j = 0; j < POP[0].length; j++) {
-                MAP[i][j] = Math.ceil(POP[i][j] * VEC[j]);
+                MAP[i][j] = (int) Math.ceil(POP[i][j] * VEC[j]);
             }
         }
-        ETC = generateETCMatrix(this.taskList,this.ls_vms);
+        this.ETC = generateETCMatrix(this.taskList,this.ls_vms);
     }
     //    calculate the ETC matrix
     private double[][] generateETCMatrix(ArrayList<Task> taskList, ArrayList<VirtualMachine> ls_vms)  {//if nothing inside of it then just throw a exception(better change here to an specific exception like define an exception)
@@ -118,7 +133,7 @@ public class PSO_based_approach {
         while (Ietr < Max_Ietr) {
             for (int k = 0; k < POP.length; k++) {
 //                update velocity and position of POPk Using eq8 and 9
-
+                updateVelocity(Ietr);
                 MapTaskToVM(POP, MAP, VEC);
 //                CalFitness(ETC, MAP[k], CM);
                 if (F(POP[k]) < F(Pbest[k])) {
@@ -131,18 +146,39 @@ public class PSO_based_approach {
             Ietr++;
             if(Ietr == Max_Ietr) this.best_solution =true;
             //calculate makespan and resource utilization
-
         }
 
-
-    }
-    private double CalFitness(double[][] ETC, double[] Map_Col){
-        return 0;
     }
 
-    private double F(double[] best) {// find the best value and return
-        return Double.parseDouble(null);
+    private void updateVelocity(int iter) {
+        if(S[iter]<0) S[iter] = 0.001;
+        else S[iter] = 0.999;
+        double r1 =0;
+        double r2 =0;
+        while(r1==0 ||r2==0){
+            r1 = Math.random();
+            r2 = Math.random();
+        }
+        V[iter] = w * V[iter-1] + c1 * r1 *(Pbest[iter] - S[iter -1]) + c2 * r2 * (Gbest[iter] - S )
     }
+
+    private double CalFitness(double[][] ETC, int[] Map_Col){
+        double makespan = 0;
+        for(int index =0; index < Map_Col.length; index++){
+            makespan+= ETC[index][Map_Col[index]];
+        }
+        return makespan;
+    }
+
+    private double F(double[] solution) {// find the best value and return
+     double makespan =0;
+        for(int index =0; index < solution.length; index++) {
+            makespan += taskList.get(index).task_size / ls_vms.get((int)solution[index]).velocity;
+        }
+        return makespan;
+    }
+
+
 
     public double getC1() {
         return c1;
@@ -180,29 +216,15 @@ public class PSO_based_approach {
         this.numberOfVM = numberOfVM;
     }
 
-    public double[][] getMAP() {
+    public int[][] getMAP() {
         return MAP;
     }
 
-    public void setMAP(double[][] MAP) {
+    public void setMAP(int[][] MAP) {
         this.MAP = MAP;
     }
 
     public int getNumberOfParticle(){
         return this.number_particle;
     }
-//        class Mapping_Option{
-//            double[][] mapping;
-//            double fitness;
-//            public Mapping_Option(double[][] Map){
-//                this.mapping = Map;
-//
-//
-//        }
-//
-//
-//    }
-
 }
-
-

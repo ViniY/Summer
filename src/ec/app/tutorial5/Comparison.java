@@ -13,10 +13,9 @@ public class Comparison {
 	private static final int ALGORITHM_WRR = 3;
 	private static final int ALGORITHM_RANDOM = 4;
 	private static final int ALGORITHM_PSO = 5;
-	private PSO_based_approach pso;
+	private static PSO_based_approach pso;
 
 	public double fitness_PSO(){
-
 
 
 
@@ -24,16 +23,14 @@ public class Comparison {
 	}
 
 	@SuppressWarnings("Duplicates")
-
-	public void main(String[] args) {
+	public static void main(String[] args) {
 		try {
 			// int alg = ALGORITHM_HEFT;
 			// int alg = ALGORITHM_GREEDY;
 			// int alg = ALGORITHM_RR;
 			//int alg = ALGORITHM_WRR;
-			int alg = ALGORITHM_RANDOM;
-//			int alg = ALGORITHM_PSO;
-
+//			int alg = ALGORITHM_RANDOM;
+			int alg = ALGORITHM_PSO;
 			for (int pp = 0; pp < 30; pp++) {
 				double totalCost = 0;
 				double totalTime = 0; // makespan
@@ -57,38 +54,38 @@ public class Comparison {
 							ArrayList<Task> parentTasks = Utility.getParentTasksById(ls_tasks, t.getId());
 							ArrayList<Object> udpatedVal = new ArrayList<Object>();
 							switch (alg) {
-							case ALGORITHM_HEFT:
-								HEFT heft = new HEFT();
-								udpatedVal = heft.taskMapping(parentTasks, ls_vms, t, 0); // 0: no use
-								break;
-							case ALGORITHM_GREEDY:
-								Greedy gd = new Greedy();
-								udpatedVal = gd.taskMapping(parentTasks, ls_vms, t, 0); // 0: no use
-								break;
-							case ALGORITHM_RR:
-								RR rr = new RR();
-								udpatedVal = rr.taskMapping(parentTasks, ls_vms, t, i); // i no use
-								break;
-							case ALGORITHM_WRR:
-								WRR wrr = new WRR();
-								udpatedVal = wrr.taskMapping(parentTasks, ls_vms, t, j); // i no use
-								j++;
-								break;
-							case ALGORITHM_RANDOM:
-								Random r = new Random();
-								udpatedVal = r.taskMapping(parentTasks, ls_vms, t, 0); // i no use
-								break;
+								case ALGORITHM_HEFT:
+									HEFT heft = new HEFT();
+									udpatedVal = heft.taskMapping(parentTasks, ls_vms, t, 0); // 0: no use
+									break;
+								case ALGORITHM_GREEDY:
+									Greedy gd = new Greedy();
+									udpatedVal = gd.taskMapping(parentTasks, ls_vms, t, 0); // 0: no use
+									break;
+								case ALGORITHM_RR:
+									RR rr = new RR();
+									udpatedVal = rr.taskMapping(parentTasks, ls_vms, t, i); // i no use
+									break;
+								case ALGORITHM_WRR:
+									WRR wrr = new WRR();
+									udpatedVal = wrr.taskMapping(parentTasks, ls_vms, t, j); // i no use
+									j++;
+									break;
+								case ALGORITHM_RANDOM:
+									Random r = new Random();
+									udpatedVal = r.taskMapping(parentTasks, ls_vms, t, 0); // i no use
+									break;
 							}
-							//
-							//****************************
-							// PSO used to give a solution of scheduling, this is different to the greedy algorithms which schedule
-							// each task and routing to VM, so here I put it outside of the for loop which is iterate through the task set
-							if(alg == 5){//PSO
-//								ArrayList<Object> udpatedVal = new ArrayList<Object>();// Here we store the solution which will be used to calculate
-								PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
-								this.pso = pso;
-								udpatedVal = pso.taskMapping(0);
-							}
+//							//
+//							//****************************
+//							// PSO used to give a solution of scheduling, this is different to the greedy algorithms which schedule
+//							// each task and routing to VM, so here I put it outside of the for loop which is iterate through the task set
+//							if(alg == 5){//PSO
+////								ArrayList<Object> udpatedVal = new ArrayList<Object>();// Here we store the solution which will be used to calculate
+//								PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
+//								new Comparison().setPso(pso);
+//								udpatedVal = pso.taskMapping(0);
+//							}
 							for (Object o : udpatedVal) {
 								if (o instanceof Task) {
 									t = (Task) o;
@@ -105,6 +102,33 @@ public class Comparison {
 								}
 							}
 						}
+					}
+					//
+					//****************************
+					// PSO used to give a solution of scheduling, this is different to the greedy algorithms which schedule
+					// each task and routing to VM, so here I put it outside of the for loop which is iterate through the task set
+					if(alg == 5){//PSO
+						ArrayList<Object> udpatedVal = new ArrayList<Object>();
+						PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
+						new Comparison().setPso(pso);
+						udpatedVal = pso.taskMapping(0);
+						Task t = queue.poll();
+						for (Object o : udpatedVal) {
+							if (o instanceof Task) {
+								t = (Task) o;
+								for (Task p : ls_tasks) {
+									if (p.getId().equals(t.getId()))
+										p = t;
+								}
+							} else if (o instanceof VirtualMachine) {
+								VirtualMachine m = (VirtualMachine) o;
+								for (VirtualMachine u : ls_vms) {
+									if (u.getId().equals(m.getId()))
+										u = m;
+								}
+							}
+						}
+
 					}
 
 					for (VirtualMachine vm : ls_vms) {
@@ -130,17 +154,22 @@ public class Comparison {
 						pso.setCurrent_fitness(average_makespan);
 						pso.Main_Procedure(pso.POP,pso.ETC);
 					}
-
 				}
 				else {
 					System.out.println(alg + " - average total cost of testing set is: " + average_total);
 					System.out.println(alg + " - average makespan of testing set is: " + average_makespan);
 				}
 			}
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
+	public PSO_based_approach getPso() {
+		return pso;
+	}
+
+	public void setPso(PSO_based_approach pso) {
+		this.pso = pso;
+	}
 }
