@@ -20,11 +20,11 @@ public class PSO_based_approach {
     private double[] VEC;
     //  public double Min_Fit;// changed it to a local variable
     public double besti;
-    private double[][] Pbest = new double[taskList.size()][taskList.size()];
-    private double[] Gbest;
+    public int number_particle = 20;
+    private double[][] Pbest = new double[number_particle][taskList.size()];
+    private double[] Gbest = new double[taskList.size()];
     private int Ietr;//index of current iteration
     private int Max_Ietr=500;
-    public int number_particle = 20;
     public boolean best_solution = false;// indicate rather find the best solution or not
     private int pop_size = 20;
     private static double c1 = 2.05;
@@ -33,10 +33,9 @@ public class PSO_based_approach {
     private double current_fitness =0;
     private double[] V = new double[number_particle];// represents velocity of each particle
     private ArrayList<double[][]> Solution = new ArrayList<>();
-    private  double[] S = new double[number_particle]; // represents each particle's position
+    private  double[] S = new double[number_particle]; // represents each particle's position (here the position represent an possible solution )
 
-
-
+    
     public PSO_based_approach(Object task, int number_particle, double[] VEC) {
         this.number_particle = number_particle;
         this.VEC = VEC;
