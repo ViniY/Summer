@@ -35,7 +35,7 @@ public class PSO_based_approach {
     private ArrayList<double[][]> Solution = new ArrayList<>();
     private  double[] S = new double[number_particle]; // represents each particle's position (here the position represent an possible solution )
 
-    
+
     public PSO_based_approach(Object task, int number_particle, double[] VEC) {
         this.number_particle = number_particle;
         this.VEC = VEC;

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import com.fasterxml.jackson.databind.*;
 // Generate JSon data
-
+import java.util.*;
 import ec.util.*;
 import ec.*;
 import ec.gp.*;
@@ -25,7 +25,7 @@ public class GenerateJSON {
 //			File[] listOfTestCases = Utility.getTestCaseFolders(folder);
 //
 //			for (File tc : listOfTestCases) {// test cases
-//				File[] taskFiles = Utility.getTaskFiles(tc.getPath());
+				File[] taskFiles = Utility.getTaskFiles(tc.getPath());
 //				TaskList tlist = new TaskList();
 //				TaskFile tfile = new TaskFile();
 //				ArrayList<TaskFile> tflist = new ArrayList<TaskFile>();
