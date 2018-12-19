@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+//import ec.util.*;
 
 
 //public class PSO_based_approach  implements IAlgorithm
@@ -19,21 +20,21 @@ public class PSO_based_approach {
     public double[][] POP;
     private double[] VEC;
     //  public double Min_Fit;// changed it to a local variable
-    public double besti;
+    public int besti;
     public int number_particle = 20;
-    private double[][] Pbest = new double[number_particle][taskList.size()];
-    private double[] Gbest = new double[taskList.size()];
+    private double[][] Pbest;
+    private double[] Gbest;
     private int Ietr;//index of current iteration
     private int Max_Ietr=500;
     public boolean best_solution = false;// indicate rather find the best solution or not
-    private int pop_size = 20;
     private static double c1 = 2.05;
     private static double c2 = 2.05;
     private static double w = 0.5314;
     private double current_fitness =0;
-    private double[] V = new double[number_particle];// represents velocity of each particle
+    private double[] V = new double[Max_Ietr];// represents velocity of each particle
     private ArrayList<double[][]> Solution = new ArrayList<>();
-    private  double[] S = new double[number_particle]; // represents each particle's position (here the position represent an possible solution )
+    private  double[] S = new double[Max_Ietr]; // represents each particle's position (here the position represent an possible solution )
+    private int index_current_best = 0;
 
 
     public PSO_based_approach(Object task, int number_particle, double[] VEC) {
@@ -51,6 +52,7 @@ public class PSO_based_approach {
         this.MAP = MAP;
         this.VEC = VEC;
         this.Pbest= new double[POP.length][taskList.size()];
+        this.Gbest = new double[taskList.size()];
         Initialization(POP,VEC);//initialise
     }
     public ArrayList<Object> taskMapping( int j) {
@@ -112,20 +114,20 @@ public class PSO_based_approach {
     // calculate CM matrix// no use
     public void Communication_Matrix() {//this was represented as CM(Communication cost matrix) in the paper
 
-    }
+    }//no use
 
 //    ETC is the Expected time to compute
 //    CM is the Communication cost matrix
 //    without any specification here we set it to 20 iteration
     public void Main_Procedure(double[][] POP, double[][] ETC) {
-        double Min_Fit=0;
+        double Min_Fit=Double.MAX_VALUE;
         for (int i = 0; i < POP.length; i++) {
 //            CalFitness(ETC, MAP[i], CM);// it should have CM but currently have not figured out why I need this matrix
-            CalFitness(ETC, MAP[i]);
+            CalFitness(ETC,MAP[i]);
             Pbest[i] = POP[i];
         }
         for (int i = 0; i < POP.length; i++) {
-            double temp = F(Pbest[i]);
+            double temp = F(Pbest[i],i);
             if (Min_Fit > temp) {
                 Min_Fit = temp;
                 Gbest = Pbest[i];
@@ -137,12 +139,13 @@ public class PSO_based_approach {
 //                update velocity and position of POPk Using eq8 and 9
                 updateVelocity(Ietr);
                 MapTaskToVM(POP, MAP, VEC);
-//                CalFitness(ETC, MAP[k], CM);
-                if (F(POP[k]) < F(Pbest[k])) {
+                CalFitness(ETC, MAP[k]);
+                if (F(POP[k],k) < F(Pbest[k],k)) {
                     Pbest[k] = POP[k];
                 }
-                if (F(Pbest[k]) < F(Gbest)) {
+                if (F(Pbest[k],k) < F(Gbest,k)) {
                     Gbest = Pbest[k];
+                    besti = k;
                 }
             }
             Ietr++;
@@ -150,32 +153,58 @@ public class PSO_based_approach {
             //calculate makespan and resource utilization
         }
 
+        if(best_solution){
+            double[][] best_matrix = new double[number_particle][taskList.size()];
+//            for(int index = 0; index < this.number_particle; index++){
+//                best_matrix[index] = Gbest;
+//                best_cal = MapTaskToVM(POP,_matrix);
+//            }
+
+            double best_makespan = CalFitness(ETC,MAP[besti]);
+        }
+
     }
 
     private void updateVelocity(int iter) {
+        if(iter==0)S[0] = Math.random();
         if(S[iter]<0) S[iter] = 0.001;
-        else S[iter] = 0.999;
+        else if (S[iter]>1) S[iter] = 0.999;
         double r1 =0;
         double r2 =0;
         while(r1==0 ||r2==0){
             r1 = Math.random();
             r2 = Math.random();
         }
-        V[iter] = w * V[iter-1] + c1 * r1 *(Pbest[iter] - S[iter -1]) + c2 * r2 * (Gbest[iter] - S )
+        int local_best_index = 0;
+        int global_best_index = 0;
+        if(iter>0){
+//            System.out.println("S0:" + S[0]);
+//            System.out.println("iter" + iter);
+            Gbest[0] = 0.0;
+            V[iter] = w * V[iter-1] + c1 * r1 *(S[local_best_index] - S[iter -1]) + c2 * r2 * (Gbest[global_best_index] - S[iter-1]);
+//            System.out.println("V(ietr):" + V[iter]);
+        }
+        else {
+                V[iter] = Math.random();
+//            System.out.println("init" + iter);
+        }
     }
 
     private double CalFitness(double[][] ETC, int[] Map_Col){
         double makespan = 0;
         for(int index =0; index < Map_Col.length; index++){
             makespan+= ETC[index][Map_Col[index]];
+            if(this.Ietr == this.Max_Ietr) {
+                System.out.println("The current cost is: " + makespan);
+            }
         }
         return makespan;
     }
 
-    private double F(double[] solution) {// find the best value and return
+    private double F(double[] POPi,int i) {// find the best value and return
      double makespan =0;
-        for(int index =0; index < solution.length; index++) {
-            makespan += taskList.get(index).task_size / ls_vms.get((int)solution[index]).velocity;
+        for(int index =0; index < POPi.length; index++) {
+            makespan += taskList.get(index).task_size / ls_vms.get(MAP[i][index]).velocity;
         }
         return makespan;
     }
@@ -206,10 +235,6 @@ public class PSO_based_approach {
     public void setCurrent_fitness(double current_fitness) {
         this.current_fitness = current_fitness;
     }
-    public void setPop_size(int size){
-        this.pop_size = size;
-    }
-
     public int getNumberOfVM() {
         return numberOfVM;
     }

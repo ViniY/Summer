@@ -25,7 +25,7 @@ public class GenerateJSON {
 //			File[] listOfTestCases = Utility.getTestCaseFolders(folder);
 //
 //			for (File tc : listOfTestCases) {// test cases
-				File[] taskFiles = Utility.getTaskFiles(tc.getPath());
+//				File[] taskFiles = Utility.getTaskFiles(tc.getPath());
 //				TaskList tlist = new TaskList();
 //				TaskFile tfile = new TaskFile();
 //				ArrayList<TaskFile> tflist = new ArrayList<TaskFile>();
