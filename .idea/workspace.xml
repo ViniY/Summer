@@ -25,7 +25,7 @@
             <file leaf-file-name="Comparison.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-615">
+                  <state relative-caret-position="681">
                     <caret line="113" column="39" lean-forward="true" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
                     <folding>
                       <element signature="e#5776#5777#0" expanded="true" />
@@ -45,12 +45,24 @@
       <file leaf-file-name="MultiValuedRegression.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/MultiValuedRegression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="300">
+              <caret line="281" column="30" lean-forward="false" selection-start-line="281" selection-start-column="30" selection-end-line="281" selection-end-column="30" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1464#1495#0" expanded="true" />
                 <element signature="e#6765#6766#0" expanded="true" />
                 <element signature="e#6831#6832#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PSO/src/pso/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1421">
+              <caret line="59" column="76" lean-forward="true" selection-start-line="59" selection-start-column="76" selection-end-line="60" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PSO_based_approach.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PSO_based_approach.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="231" column="31" lean-forward="true" selection-start-line="231" selection-start-column="31" selection-end-line="231" selection-end-column="31" />
+            <state relative-caret-position="476">
+              <caret line="226" column="21" lean-forward="true" selection-start-line="226" selection-start-column="21" selection-end-line="226" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#taskMapping#0;class#PSO_based_approach#0" expanded="false" />
@@ -148,9 +160,7 @@
       <find>out.</find>
       <find>task</find>
       <find>setFit_v</find>
-      <find>makespan</find>
       <find>totaltime</find>
-      <find>fitness</find>
       <find>pop_size</find>
       <find>Pop_size</find>
       <find>vec</find>
@@ -165,6 +175,10 @@
       <find>getTestCaseFolders</find>
       <find>getAllTasks</find>
       <find>gettask</find>
+      <find>makespan</find>
+      <find>fitness</find>
+      <find>system.out.println</find>
+      <find>Subpop 0 best fitness of generation Fitness</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/ec/app/baselines</dir>
@@ -209,7 +223,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1732" />
     <option name="width" value="1232" />
     <option name="height" value="688" />
@@ -241,20 +255,25 @@
             <path>
               <item name="Summer Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Summer_project" type="462c0819:PsiDirectoryNode" />
+              <item name="PSO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Summer Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Summer_project" type="462c0819:PsiDirectoryNode" />
+              <item name="PSO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Summer Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Summer_project" type="462c0819:PsiDirectoryNode" />
+              <item name="PSO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ec" type="462c0819:PsiDirectoryNode" />
+              <item name="pso" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Summer Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Summer_project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ec" type="462c0819:PsiDirectoryNode" />
-              <item name="gp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -288,7 +307,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Comparison">
+  <component name="RunManager" selected="Application.EC">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -439,15 +458,15 @@
       <workItem from="1544508951638" duration="1028000" />
       <workItem from="1544512176729" duration="75942000" />
       <workItem from="1545091602237" duration="5742000" />
-      <workItem from="1545100348712" duration="14337000" />
+      <workItem from="1545100348712" duration="19009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173535000" />
+    <option name="totallyTimeSpent" value="178207000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1916" y="0" width="1928" height="1048" extended-state="6" />
+    <frame x="1916" y="0" width="1928" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -493,24 +512,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/config/testing/t4.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="216">
-            <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/baselines/Writer.java" />
     <entry file="file://$PROJECT_DIR$/src/ec/app/baselines/baselines.java" />
     <entry file="file://$PROJECT_DIR$/src/ec/app/baselines/TesterPSO.java" />
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/config/training/t15.json">
@@ -800,17 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/MultiValuedRegression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="e#6765#6766#0" expanded="true" />
-            <element signature="e#6831#6832#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/GenerateJSON.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
@@ -837,21 +827,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-615">
-          <caret line="113" column="39" lean-forward="true" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
-          <folding>
-            <element signature="e#5776#5777#0" expanded="true" />
-            <element signature="e#5797#5798#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="231" column="31" lean-forward="true" selection-start-line="231" selection-start-column="31" selection-end-line="231" selection-end-column="31" />
+        <state relative-caret-position="476">
+          <caret line="226" column="21" lean-forward="true" selection-start-line="226" selection-start-column="21" selection-end-line="226" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#taskMapping#0;class#PSO_based_approach#0" expanded="false" />
@@ -882,6 +861,56 @@
             <element signature="e#9127#9128#0" expanded="true" />
             <element signature="e#9170#9171#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="113" column="39" lean-forward="true" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
+          <folding>
+            <element signature="e#5776#5777#0" expanded="true" />
+            <element signature="e#5797#5798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GP_Grid_Output/GPRuns.sh.e3280730">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1348">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/MultiValuedRegression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="281" column="30" lean-forward="false" selection-start-line="281" selection-start-column="30" selection-end-line="281" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1464#1495#0" expanded="true" />
+            <element signature="e#6765#6766#0" expanded="true" />
+            <element signature="e#6831#6832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PSO/src/pso/Particle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#4691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PSO/src/pso/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1421">
+          <caret line="59" column="76" lean-forward="true" selection-start-line="59" selection-start-column="76" selection-end-line="60" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
