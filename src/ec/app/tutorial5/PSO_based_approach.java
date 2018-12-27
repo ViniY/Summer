@@ -55,13 +55,14 @@ public class PSO_based_approach {
         this.Gbest = new double[taskList.size()];
         Initialization(POP,VEC);//initialise
     }
+    @SuppressWarnings("Duplicates")
     public ArrayList<Object> taskMapping( int j) {
         ArrayList<Object> updatedVals = new ArrayList<Object>();//it is used as the returning value which holds the matching between task and VMs
 
         Main_Procedure(this.POP,this.ETC);
         return updatedVals;
     }
-
+    @SuppressWarnings("Duplicates")
     //  intialise POP and VEC this two arrays with this function with random value varies from 0 to 1 based on uniform distribution
     public void Initialization(double[][] POP, double[] VEC) {
         for (int i = 0; i < POP.length; i++) {
