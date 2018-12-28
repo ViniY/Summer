@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java" afterPath="$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java" />
       <change beforePath="$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java" afterPath="$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java" />
+      <change beforePath="$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java" afterPath="$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,34 +26,11 @@
             <file leaf-file-name="PSO_based_approach.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="411">
-                    <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+                  <state relative-caret-position="381">
+                    <caret line="198" column="44" lean-forward="false" selection-start-line="198" selection-start-column="44" selection-end-line="198" selection-end-column="44" />
                     <folding>
                       <element signature="imports" expanded="true" />
                       <element signature="method#Communication_Matrix#0;class#PSO_based_approach#0" expanded="false" />
-                      <element signature="method#updateVelocity#0;class#PSO_based_approach#0" expanded="false" />
-                      <element signature="e#8426#8427#0" expanded="true" />
-                      <element signature="e#8451#8452#0" expanded="true" />
-                      <element signature="e#8487#8488#0" expanded="true" />
-                      <element signature="e#8515#8516#0" expanded="true" />
-                      <element signature="e#8544#8545#0" expanded="true" />
-                      <element signature="e#8569#8570#0" expanded="true" />
-                      <element signature="e#8605#8606#0" expanded="true" />
-                      <element signature="e#8633#8634#0" expanded="true" />
-                      <element signature="e#8720#8721#0" expanded="true" />
-                      <element signature="e#8758#8759#0" expanded="true" />
-                      <element signature="e#8820#8821#0" expanded="true" />
-                      <element signature="e#8874#8875#0" expanded="true" />
-                      <element signature="e#8907#8908#0" expanded="true" />
-                      <element signature="e#8940#8941#0" expanded="true" />
-                      <element signature="e#8989#8990#0" expanded="true" />
-                      <element signature="e#9033#9034#0" expanded="true" />
-                      <element signature="e#9064#9065#0" expanded="true" />
-                      <element signature="e#9090#9091#0" expanded="true" />
-                      <element signature="e#9129#9130#0" expanded="true" />
-                      <element signature="e#9159#9160#0" expanded="true" />
-                      <element signature="e#9198#9199#0" expanded="true" />
-                      <element signature="e#9241#9242#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -93,39 +71,11 @@
       <file leaf-file-name="PSO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1627">
-              <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+            <state relative-caret-position="3576">
+              <caret line="177" column="55" lean-forward="true" selection-start-line="177" selection-start-column="55" selection-end-line="177" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1463#1494#0" expanded="true" />
-                <element signature="e#3852#3853#0" expanded="true" />
-                <element signature="e#3894#3895#0" expanded="true" />
-                <element signature="e#3956#3957#0" expanded="true" />
-                <element signature="e#3992#3993#0" expanded="true" />
-                <element signature="e#4040#4041#0" expanded="true" />
-                <element signature="e#4084#4085#0" expanded="true" />
-                <element signature="e#4119#4120#0" expanded="true" />
-                <element signature="e#4147#4148#0" expanded="true" />
-                <element signature="e#4182#4183#0" expanded="true" />
-                <element signature="e#4210#4211#0" expanded="true" />
-                <element signature="e#4243#4244#0" expanded="true" />
-                <element signature="e#4269#4270#0" expanded="true" />
-                <element signature="e#4310#4311#0" expanded="true" />
-                <element signature="e#4347#4348#0" expanded="true" />
-                <element signature="e#4391#4392#0" expanded="true" />
-                <element signature="e#4423#4424#0" expanded="true" />
-                <element signature="e#4474#4475#0" expanded="true" />
-                <element signature="e#4503#4504#0" expanded="true" />
-                <element signature="e#4536#4537#0" expanded="true" />
-                <element signature="e#4569#4570#0" expanded="true" />
-                <element signature="e#4602#4603#0" expanded="true" />
-                <element signature="e#4635#4636#0" expanded="true" />
-                <element signature="e#4663#4664#0" expanded="true" />
-                <element signature="e#4688#4689#0" expanded="true" />
-                <element signature="e#4716#4717#0" expanded="true" />
-                <element signature="e#4741#4742#0" expanded="true" />
-                <element signature="e#4768#4769#0" expanded="true" />
-                <element signature="e#4792#4793#0" expanded="true" />
                 <element signature="e#6404#6405#0" expanded="true" />
                 <element signature="e#6441#6442#0" expanded="true" />
                 <element signature="e#6507#6508#0" expanded="true" />
@@ -239,8 +189,8 @@
         <option value="$PROJECT_DIR$/src/ec/app/tutorial4/MultiValuedRegression.java" />
         <option value="$PROJECT_DIR$/src/ec/app/tutorial4/GenerateJSON.java" />
         <option value="$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java" />
-        <option value="$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java" />
         <option value="$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java" />
+        <option value="$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java" />
       </list>
     </option>
   </component>
@@ -490,16 +440,15 @@
       <workItem from="1545091602237" duration="5742000" />
       <workItem from="1545100348712" duration="19070000" />
       <workItem from="1545866413358" duration="9981000" />
-      <workItem from="1545955646706" duration="5979000" />
+      <workItem from="1545955646706" duration="6435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194228000" />
+    <option name="totallyTimeSpent" value="194684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1732" y="0" width="1920" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -510,7 +459,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23265742" sideWeight="0.20364584" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23265742" sideWeight="0.7963542" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23265742" sideWeight="0.7963542" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -539,7 +488,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -873,73 +822,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        <state relative-caret-position="381">
+          <caret line="198" column="44" lean-forward="false" selection-start-line="198" selection-start-column="44" selection-end-line="198" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Communication_Matrix#0;class#PSO_based_approach#0" expanded="false" />
-            <element signature="method#updateVelocity#0;class#PSO_based_approach#0" expanded="false" />
-            <element signature="e#8426#8427#0" expanded="true" />
-            <element signature="e#8451#8452#0" expanded="true" />
-            <element signature="e#8487#8488#0" expanded="true" />
-            <element signature="e#8515#8516#0" expanded="true" />
-            <element signature="e#8544#8545#0" expanded="true" />
-            <element signature="e#8569#8570#0" expanded="true" />
-            <element signature="e#8605#8606#0" expanded="true" />
-            <element signature="e#8633#8634#0" expanded="true" />
-            <element signature="e#8720#8721#0" expanded="true" />
-            <element signature="e#8758#8759#0" expanded="true" />
-            <element signature="e#8820#8821#0" expanded="true" />
-            <element signature="e#8874#8875#0" expanded="true" />
-            <element signature="e#8907#8908#0" expanded="true" />
-            <element signature="e#8940#8941#0" expanded="true" />
-            <element signature="e#8989#8990#0" expanded="true" />
-            <element signature="e#9033#9034#0" expanded="true" />
-            <element signature="e#9064#9065#0" expanded="true" />
-            <element signature="e#9090#9091#0" expanded="true" />
-            <element signature="e#9129#9130#0" expanded="true" />
-            <element signature="e#9159#9160#0" expanded="true" />
-            <element signature="e#9198#9199#0" expanded="true" />
-            <element signature="e#9241#9242#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1627">
-          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        <state relative-caret-position="3576">
+          <caret line="177" column="55" lean-forward="true" selection-start-line="177" selection-start-column="55" selection-end-line="177" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1463#1494#0" expanded="true" />
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#3894#3895#0" expanded="true" />
-            <element signature="e#3956#3957#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
-            <element signature="e#4040#4041#0" expanded="true" />
-            <element signature="e#4084#4085#0" expanded="true" />
-            <element signature="e#4119#4120#0" expanded="true" />
-            <element signature="e#4147#4148#0" expanded="true" />
-            <element signature="e#4182#4183#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4243#4244#0" expanded="true" />
-            <element signature="e#4269#4270#0" expanded="true" />
-            <element signature="e#4310#4311#0" expanded="true" />
-            <element signature="e#4347#4348#0" expanded="true" />
-            <element signature="e#4391#4392#0" expanded="true" />
-            <element signature="e#4423#4424#0" expanded="true" />
-            <element signature="e#4474#4475#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
-            <element signature="e#4536#4537#0" expanded="true" />
-            <element signature="e#4569#4570#0" expanded="true" />
-            <element signature="e#4602#4603#0" expanded="true" />
-            <element signature="e#4635#4636#0" expanded="true" />
-            <element signature="e#4663#4664#0" expanded="true" />
-            <element signature="e#4688#4689#0" expanded="true" />
-            <element signature="e#4716#4717#0" expanded="true" />
-            <element signature="e#4741#4742#0" expanded="true" />
-            <element signature="e#4768#4769#0" expanded="true" />
-            <element signature="e#4792#4793#0" expanded="true" />
             <element signature="e#6404#6405#0" expanded="true" />
             <element signature="e#6441#6442#0" expanded="true" />
             <element signature="e#6507#6508#0" expanded="true" />

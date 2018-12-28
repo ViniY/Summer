@@ -196,6 +196,7 @@ public class PSO_based_approach {
         for(int index =0; index < Map_Col.length; index++){
             makespan+= ETC[index][Map_Col[index]];
             if(this.Ietr == this.Max_Ietr) {
+                System.out.println("Ietr" + this.Ietr);
                 System.out.println("The current cost is: " + makespan);
             }
         }
@@ -215,43 +216,34 @@ public class PSO_based_approach {
     public double getC1() {
         return c1;
     }
-
     public void setC1(double c1) {
         this.c1 = c1;
     }
-
     public double getC2() {
         return c2;
     }
-
     public void setC2(double c2) {
         this.c2 = c2;
     }
-
     //  setters and getters starts from here
     public double getCurrent_fitness() {
         return current_fitness;
     }
-
     public void setCurrent_fitness(double current_fitness) {
         this.current_fitness = current_fitness;
     }
     public int getNumberOfVM() {
         return numberOfVM;
     }
-
     public void setNumberOfVM(int numberOfVM) {
         this.numberOfVM = numberOfVM;
     }
-
     public int[][] getMAP() {
         return MAP;
     }
-
     public void setMAP(int[][] MAP) {
         this.MAP = MAP;
     }
-
     public int getNumberOfParticle(){
         return this.number_particle;
     }
