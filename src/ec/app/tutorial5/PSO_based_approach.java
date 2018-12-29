@@ -35,7 +35,7 @@ public class PSO_based_approach {
     private ArrayList<double[][]> Solution = new ArrayList<>();
     private  double[] S = new double[Max_Ietr]; // represents each particle's position (here the position represent an possible solution )
     private int index_current_best = 0;
-
+    private double best_makespan = -1;
 
     public PSO_based_approach(Object task, int number_particle, double[] VEC) {
         this.number_particle = number_particle;
@@ -53,13 +53,14 @@ public class PSO_based_approach {
         this.VEC = VEC;
         this.Pbest= new double[POP.length][taskList.size()];
         this.Gbest = new double[taskList.size()];
+        System.out.println("new PSO start");
         Initialization(POP,VEC);//initialise
     }
     @SuppressWarnings("Duplicates")
     public ArrayList<Object> taskMapping( int j) {
         ArrayList<Object> updatedVals = new ArrayList<Object>();//it is used as the returning value which holds the matching between task and VMs
-
         Main_Procedure(this.POP,this.ETC);
+
         return updatedVals;
     }
     @SuppressWarnings("Duplicates")
@@ -86,7 +87,9 @@ public class PSO_based_approach {
                 MAP[i][j] = 0;
             }
         }
+        System.out.println("Initialised");
         MapTaskToVM(this.POP,this.MAP,this.VEC);
+        System.out.println("First Mapping finished");
         return;
     }
     //    the initial mapping generated --it will create the initial mapping
@@ -154,15 +157,15 @@ public class PSO_based_approach {
             //calculate makespan and resource utilization
         }
 
-        if(best_solution){
-            double[][] best_matrix = new double[number_particle][taskList.size()];
+//        if(best_solution){
+//            double[][] best_matrix = new double[number_particle][taskList.size()];
 //            for(int index = 0; index < this.number_particle; index++){
 //                best_matrix[index] = Gbest;
 //                best_cal = MapTaskToVM(POP,_matrix);
 //            }
 
-            double best_makespan = CalFitness(ETC,MAP[besti]);
-        }
+//            double best_makespan = CalFitness(ETC,MAP[besti]);
+//        }
 
     }
 
@@ -181,9 +184,11 @@ public class PSO_based_approach {
         if(iter>0){
 //            System.out.println("S0:" + S[0]);
 //            System.out.println("iter" + iter);
-            Gbest[0] = 0.0;
+//            Gbest[0] = 0.0;
             V[iter] = w * V[iter-1] + c1 * r1 *(S[local_best_index] - S[iter -1]) + c2 * r2 * (Gbest[global_best_index] - S[iter-1]);
 //            System.out.println("V(ietr):" + V[iter]);
+
+//            System.out.println("V iter: " + V[iter]);
         }
         else {
                 V[iter] = Math.random();
@@ -196,8 +201,8 @@ public class PSO_based_approach {
         for(int index =0; index < Map_Col.length; index++){
             makespan+= ETC[index][Map_Col[index]];
             if(this.Ietr == this.Max_Ietr) {
-                System.out.println("Ietr" + this.Ietr);
-                System.out.println("The current cost is: " + makespan);
+//                System.out.println("Ietr" + this.Ietr);
+//                System.out.println("The current cost is: " + makespan);
             }
         }
         return makespan;

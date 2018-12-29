@@ -28,7 +28,7 @@ public class Comparison {
 			// int alg = ALGORITHM_HEFT;
 			// int alg = ALGORITHM_GREEDY;
 			// int alg = ALGORITHM_RR;
-			//int alg = ALGORITHM_WRR;
+//			int alg = ALGORITHM_WRR;
 //			int alg = ALGORITHM_RANDOM;
 			int alg = ALGORITHM_PSO;
 			for (int pp = 0; pp < 30; pp++) {
@@ -110,9 +110,9 @@ public class Comparison {
 					if(alg == 5){//PSO
 						ArrayList<Object> udpatedVal = new ArrayList<Object>();
 						if(pp==0){
-							System.out.println("PP:" +  pp);
+						System.out.println("PP:" +  pp);
 						PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
-						new Comparison().setPso(pso);
+						Comparison.pso = pso;
 						}
 						udpatedVal = pso.taskMapping(0);
 						Task t = queue.poll();
