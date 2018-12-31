@@ -23,6 +23,12 @@ public class PSO {
     private int[][] MAP;//hold the mapping schedule (task - VM )
     public boolean best_solution = false;
     public ArrayList<Object> updateVals = new ArrayList<>(); // returned arraylist which is used to calculate the fitness
+    public int[] final_best_solution;
+
+
+
+
+    private int initial_counter = 0;
 
 
     //Constructor for PSO which holds particles -(represents solution)
@@ -35,6 +41,7 @@ public class PSO {
         this.numberOfVM = this.ls_vms.size();
         this.MAP =new int[this.task_list.size()][this.task_list.size()];
         this.Pbest = new double[this.generation][this.Swarm_Size];
+        this.final_best_solution = new int[this.task_list.size()];
         Initialization();
     }
     @SuppressWarnings("Duplicates")
@@ -50,6 +57,8 @@ public class PSO {
                 Pbest[i][j] = Double.MAX_VALUE;
             }
         }
+        initial_counter++;
+        System.out.println("initial_counter +       "  + initial_counter);
         System.out.println("Initialised Pbest Matrix with max values");
         return;
     }
