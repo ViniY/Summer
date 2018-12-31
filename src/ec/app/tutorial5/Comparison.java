@@ -3,6 +3,7 @@ package ec.app.tutorial5;
 import java.io.File;
 import java.util.*;
 
+import com.sun.xml.internal.bind.v2.TODO;
 import ec.app.tutorial4.Task;
 import ec.app.tutorial4.VirtualMachine;
 
@@ -118,6 +119,7 @@ public class Comparison {
                     // each task and routing to VM, so here I put it outside of the for loop which is iterate through the task set
                     if (alg == 5) {//PSO
                         ArrayList<Object> udpatedVal = new ArrayList<Object>();
+                        //TODO here need to delete this if condition cuz we need 30 runs instead of 1 here just wanna test
                         if (pp == 0) {
                             System.out.println("PP:-" + pp);
                             PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
