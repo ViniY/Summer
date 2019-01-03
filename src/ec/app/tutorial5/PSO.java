@@ -300,8 +300,11 @@ public class PSO {
         }
 
         public double CalculateFitness() {
-
             for(Task t : task_list){
+                ArrayList<Task> parentTasks = new ArrayList<>();
+                parentTasks  = Utility.getParentTasksById(task_list,t.getId());
+                
+
 
             }
 
