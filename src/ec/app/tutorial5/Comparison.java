@@ -122,9 +122,11 @@ public class Comparison {
                         //TODO here need to delete this if condition cuz we need 30 runs instead of 1 here just wanna test
                         if (pp == 0) {
                             System.out.println("PP:-" + pp);
-                            PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
-                            Comparison.pso = pso;
-                            System.out.println("hash code for PSO object " + Comparison.pso.toString());
+//                            PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
+                            PSO pso = new PSO(ls_tasks,ls_vms,-1);
+//                            Comparison.pso = pso;
+
+//                            System.out.println("hash code for PSO object " + Comparison.pso.toString());
                         }
                         udpatedVal = pso.taskMapping(0);
                         for(int i = 0; i < ls_tasks.size(); i ++) {
