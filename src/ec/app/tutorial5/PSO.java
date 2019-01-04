@@ -141,7 +141,7 @@ public class PSO {
     }
 
     public double CalFitness(Particle p) {
-        return p.CalculateFitness();
+        return p.CalculateFitness(p.Solution);
 
     }
 
@@ -299,18 +299,31 @@ public class PSO {
             this.pbest_fitness = pbest_fitness;
         }
 
-        public double CalculateFitness() {
-            for(Task t : task_list){
-                ArrayList<Task> parentTasks = new ArrayList<>();
-                parentTasks  = Utility.getParentTasksById(task_list,t.getId());
-                
-
-
-            }
-
+        public double CalculateFitness(int[] Solution) {
+//            for(Task t : task_list){
+            setTaskFinishTime(Solution);
+            
 
 
             return 0;
+        }
+
+        private void setTaskFinishTime(int[] solution) {
+            for(int index =0; index < task_list.size(); index++){
+                Task t = task_list.get(index);
+                ArrayList<Task> parentTasks = new ArrayList<>();
+                parentTasks  = Utility.getParentTasksById(task_list,t.getId());
+                t.setAllocation_time(Utility.getMaxFinishTime(parentTasks));
+                t.setExe_time((double) t.getTask_size()/ls_vms.get(Solution[index]).getVelocity());
+
+                double preFinishTime = Utility.getMaxFinishTime(ls_vms.get(Solution[index]).getPriority_queue());
+                t.setStart_time(Utility.getMaxStartTime(preFinishTime,t.getAllocation_time()));
+                t.setRelative_finish_time();
+                t.setFinish_time();
+                ls_vms.get(Solution[index]).setPriority_queue(t);
+            }
+            System.out.println("reset the task execution time");
+
         }
     }
 }
