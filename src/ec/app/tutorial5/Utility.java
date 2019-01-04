@@ -1,6 +1,7 @@
 package ec.app.tutorial5;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -275,6 +276,21 @@ public class Utility {
 			e.printStackTrace();
 			return null;
 		}
+	}
+	public static ArrayList<Task> TaskListCloning(ArrayList<Task> list){
+		ArrayList<Task> cloned = new ArrayList<>();
+		for(Task t : list){
+			Task n = (Task) t.clone();
+			cloned.add(n);
+		}
+		if(cloned.size() == list.size()) {
+			System.out.println("list cloned");
+			return cloned;
+		}
+		return null;//cloned wrong
+
+
+
 	}
 
 

@@ -2,6 +2,8 @@ package ec.app.tutorial4;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -9,7 +11,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-public class Task {
+public class Task implements Serializable{
 	public String id;
 	public long task_size;
 	public ArrayList<String> parent_id;
@@ -21,6 +23,17 @@ public class Task {
 	public double relative_finish_time;
 	public double allocation_time;
 
+	public Task() {
+	}
+	public Object clone(){
+		try{
+			Task clonedObj = (Task) (super.clone());
+			return clonedObj;
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 	public double getWaiting_time() {
 		return waiting_time;
 	}
@@ -48,8 +61,6 @@ public class Task {
 	public double finish_time;
 	public int task_status;
 
-	public Task() {
-	}
 
 	public String getId() {
 		return id;

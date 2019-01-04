@@ -47,11 +47,22 @@ public class PSO {
     @SuppressWarnings("Duplicates")
     //  intialise POP and VEC this two arrays with this function with random value varies from 0 to 1 based on uniform distribution
     public void Initialization() {
-        for (int i=0; i < this.Swarm_Size; i++){
+        System.out.println("Printing hash code for old list and the first task inside of it:" + " 1  :" + this.task_list.hashCode() + " 2 :" + this.task_list.get(0).hashCode()  );
+        for (int i=0; i < this.Swarm_Size-10; i++){
+//            ArrayList<Task> clone_task = (ArrayList<Task>) Utility.DeepClone_Seializable(this.task_list);
+            ArrayList<Task> clone_task = new ArrayList<>();
+            for(Task t : this.task_list){
+                clone_task.add((Task) t.clone());
+            }
+            System.out.println("Printing the new Hash Codes :" + " 1 : " + clone_task.hashCode() + " 2 : " + clone_task.get(0).hashCode());
+            PSO pso = new PSO(clone_task,ls_vms,-1);
+
             Particle p = new Particle(this.task_list,this.ls_vms,-1);
             this.list_particle.add(p);
         }
+
         System.out.println("Particles initialised");
+
         for (int i = 0; i < this.Pbest.length; i++){
             for(int j=0; j < this.Pbest[0].length; j++){
                 Pbest[i][j] = Double.MAX_VALUE;
