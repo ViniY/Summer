@@ -301,12 +301,16 @@ public class PSO {
 
         public double CalculateFitness(int[] Solution) {
 //            for(Task t : task_list){
+            resetTaskStartFinishTime(Solution);
             setTaskFinishTime(Solution);
-            
+
+
 
 
             return 0;
         }
+
+
 
         private void setTaskFinishTime(int[] solution) {
             for(int index =0; index < task_list.size(); index++){
@@ -325,5 +329,15 @@ public class PSO {
             System.out.println("reset the task execution time");
 
         }
+    }
+    private void resetTaskStartFinishTime(int[] solution) {
+        for(Task t : task_list){
+//            t.
+
+
+
+        }
+
+
     }
 }

@@ -123,7 +123,8 @@ public class Comparison {
                         if (pp == 0) {
                             System.out.println("PP:-" + pp);
 //                            PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
-                            PSO pso = new PSO(ls_tasks,ls_vms,-1);
+                            ArrayList<Task> clone_task = (ArrayList<Task>) Utility.DeepClone_Seializable(ls_tasks);
+                            PSO pso = new PSO(clone_task,ls_vms,-1);
 //                            Comparison.pso = pso;
 
 //                            System.out.println("hash code for PSO object " + Comparison.pso.toString());

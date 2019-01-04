@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java" afterPath="$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java" />
       <change beforePath="$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java" afterPath="$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java" />
+      <change beforePath="$PROJECT_DIR$/src/ec/app/tutorial5/Utility.java" afterPath="$PROJECT_DIR$/src/ec/app/tutorial5/Utility.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,6 +19,24 @@
     <SUITE FILE_PATH="coverage/Summer_Project$EC.coverage" NAME="EC Coverage Results" MODIFIED="1544512144081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DockManager">
+    <window id="5">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="Utility.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Utility.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="2568">
+                    <caret line="264" column="18" lean-forward="false" selection-start-line="264" selection-start-column="18" selection-end-line="264" selection-end-column="18" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
     <window id="2">
       <content type="file-editors">
         <state>
@@ -25,76 +44,14 @@
             <file leaf-file-name="Comparison.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-1056">
-                    <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+                  <state relative-caret-position="528">
+                    <caret line="126" column="68" lean-forward="true" selection-start-line="126" selection-start-column="68" selection-end-line="126" selection-end-column="68" />
                     <folding>
-                      <element signature="e#9255#9256#0" expanded="true" />
-                      <element signature="e#9281#9282#0" expanded="true" />
-                      <element signature="e#9331#9332#0" expanded="true" />
-                      <element signature="e#9361#9362#0" expanded="true" />
+                      <element signature="e#9373#9374#0" expanded="true" />
+                      <element signature="e#9399#9400#0" expanded="true" />
+                      <element signature="e#9449#9450#0" expanded="true" />
+                      <element signature="e#9479#9480#0" expanded="true" />
                     </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="4">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="PSO_based_approach.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="531">
-                    <caret line="149" column="38" lean-forward="true" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                      <element signature="e#2428#2436#0" expanded="true" />
-                      <element signature="method#Communication_Matrix#0;class#PSO_based_approach#0" expanded="false" />
-                      <element signature="e#8684#8685#0" expanded="true" />
-                      <element signature="e#8709#8710#0" expanded="true" />
-                      <element signature="e#8744#8745#0" expanded="true" />
-                      <element signature="e#8772#8773#0" expanded="true" />
-                      <element signature="e#8800#8801#0" expanded="true" />
-                      <element signature="e#8825#8826#0" expanded="true" />
-                      <element signature="e#8860#8861#0" expanded="true" />
-                      <element signature="e#8888#8889#0" expanded="true" />
-                      <element signature="e#8974#8975#0" expanded="true" />
-                      <element signature="e#9012#9013#0" expanded="true" />
-                      <element signature="e#9073#9074#0" expanded="true" />
-                      <element signature="e#9127#9128#0" expanded="true" />
-                      <element signature="e#9160#9161#0" expanded="true" />
-                      <element signature="e#9193#9194#0" expanded="true" />
-                      <element signature="e#9241#9242#0" expanded="true" />
-                      <element signature="e#9285#9286#0" expanded="true" />
-                      <element signature="e#9315#9316#0" expanded="true" />
-                      <element signature="e#9341#9342#0" expanded="true" />
-                      <element signature="e#9379#9380#0" expanded="true" />
-                      <element signature="e#9409#9410#0" expanded="true" />
-                      <element signature="e#9447#9448#0" expanded="true" />
-                      <element signature="e#9490#9491#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="3">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Random.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Random.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="576">
-                    <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-                    <folding />
                   </state>
                 </provider>
               </entry>
@@ -109,8 +66,8 @@
       <file leaf-file-name="PSO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="304" column="12" lean-forward="true" selection-start-line="304" selection-start-column="12" selection-end-line="304" selection-end-column="12" />
+            <state relative-caret-position="336">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2003#2034#0" expanded="true" />
@@ -134,7 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>makespan</find>
       <find>fitness</find>
       <find>system.out.println</find>
       <find>Subpop 0 best fitness of generation Fitness</find>
@@ -164,6 +120,7 @@
       <find>pbest</find>
       <find>update</find>
       <find>cal</find>
+      <find>getparent</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/ec/app/baselines</dir>
@@ -181,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ec/app/tutorial5/Utility.java" />
         <option value="$PROJECT_DIR$/src/ec/app/baselines/ImplementingPSO.java" />
         <option value="$PROJECT_DIR$/src/ec/app/baselines/baselines.java" />
         <option value="$PROJECT_DIR$/src/ec/app/baselines/ParticleSwarmOptimization.java" />
@@ -197,8 +153,9 @@
         <option value="$PROJECT_DIR$/src/ec/app/tutorial4/MultiValuedRegression.java" />
         <option value="$PROJECT_DIR$/src/ec/app/tutorial4/GenerateJSON.java" />
         <option value="$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java" />
-        <option value="$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java" />
         <option value="$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java" />
+        <option value="$PROJECT_DIR$/src/ec/app/tutorial5/Utility.java" />
+        <option value="$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java" />
       </list>
     </option>
   </component>
@@ -449,12 +406,12 @@
       <workItem from="1545100348712" duration="19070000" />
       <workItem from="1545866413358" duration="9981000" />
       <workItem from="1545955646706" duration="8748000" />
-      <workItem from="1546056365182" duration="40184000" />
+      <workItem from="1546056365182" duration="46230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237181000" />
+    <option name="totallyTimeSpent" value="243227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1732" y="0" width="1920" height="1044" extended-state="6" />
@@ -798,14 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="234" column="38" lean-forward="false" selection-start-line="234" selection-start-column="38" selection-end-line="234" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/gp/breed/SizeFairCrossoverPipeline.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
@@ -830,16 +779,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
+    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Random.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1056">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="e#9255#9256#0" expanded="true" />
-            <element signature="e#9281#9282#0" expanded="true" />
-            <element signature="e#9331#9332#0" expanded="true" />
-            <element signature="e#9361#9362#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="576">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -877,18 +821,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Random.java">
+    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        <state relative-caret-position="528">
+          <caret line="126" column="68" lean-forward="true" selection-start-line="126" selection-start-column="68" selection-end-line="126" selection-end-column="68" />
+          <folding>
+            <element signature="e#9373#9374#0" expanded="true" />
+            <element signature="e#9399#9400#0" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9479#9480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2568">
+          <caret line="264" column="18" lean-forward="false" selection-start-line="264" selection-start-column="18" selection-end-line="264" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="304" column="12" lean-forward="true" selection-start-line="304" selection-start-column="12" selection-end-line="304" selection-end-column="12" />
+        <state relative-caret-position="336">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2003#2034#0" expanded="true" />

@@ -1,9 +1,6 @@
 package ec.app.tutorial5;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FilenameFilter;
-import java.io.IOException;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -264,5 +261,21 @@ public class Utility {
 	public static double getMaxStartTime(double a, double b) {
 		return a >= b ? a : b;
 	}
+
+	public static Object DeepClone_Seializable(Object o){
+		try{
+			ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+			ObjectOutputStream outputStrm = new ObjectOutputStream(outputStream);
+			outputStrm.writeObject(o);
+			ByteArrayInputStream inputStream = new ByteArrayInputStream(outputStream.toByteArray());
+			ObjectInputStream objectOutputStream = new ObjectInputStream(inputStream);
+			return objectOutputStream.readObject();
+		}
+		catch (Exception e){
+			e.printStackTrace();
+			return null;
+		}
+	}
+
 
 }
