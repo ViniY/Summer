@@ -19,113 +19,13 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Summer_Project$EC.coverage" NAME="EC Coverage Results" MODIFIED="1544512144081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
-  <component name="DockManager">
-    <window id="5">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Utility.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Utility.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1721">
-                    <caret line="284" column="9" lean-forward="true" selection-start-line="284" selection-start-column="9" selection-end-line="284" selection-end-column="9" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Comparison.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-646">
-                    <caret line="133" column="50" lean-forward="true" selection-start-line="133" selection-start-column="50" selection-end-line="133" selection-end-column="50" />
-                    <folding>
-                      <element signature="e#9373#9374#0" expanded="true" />
-                      <element signature="e#9399#9400#0" expanded="true" />
-                      <element signature="e#9449#9450#0" expanded="true" />
-                      <element signature="e#9479#9480#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="PSO_based_approach.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1034">
-                    <caret line="170" column="38" lean-forward="true" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                      <element signature="e#2428#2436#0" expanded="true" />
-                      <element signature="method#Communication_Matrix#0;class#PSO_based_approach#0" expanded="false" />
-                      <element signature="e#6765#6796#0" expanded="true" />
-                      <element signature="e#8720#8721#0" expanded="true" />
-                      <element signature="e#8745#8746#0" expanded="true" />
-                      <element signature="e#8780#8781#0" expanded="true" />
-                      <element signature="e#8808#8809#0" expanded="true" />
-                      <element signature="e#8836#8837#0" expanded="true" />
-                      <element signature="e#8861#8862#0" expanded="true" />
-                      <element signature="e#8896#8897#0" expanded="true" />
-                      <element signature="e#8924#8925#0" expanded="true" />
-                      <element signature="e#9010#9011#0" expanded="true" />
-                      <element signature="e#9048#9049#0" expanded="true" />
-                      <element signature="e#9109#9110#0" expanded="true" />
-                      <element signature="e#9163#9164#0" expanded="true" />
-                      <element signature="e#9196#9197#0" expanded="true" />
-                      <element signature="e#9229#9230#0" expanded="true" />
-                      <element signature="e#9277#9278#0" expanded="true" />
-                      <element signature="e#9321#9322#0" expanded="true" />
-                      <element signature="e#9351#9352#0" expanded="true" />
-                      <element signature="e#9377#9378#0" expanded="true" />
-                      <element signature="e#9415#9416#0" expanded="true" />
-                      <element signature="e#9445#9446#0" expanded="true" />
-                      <element signature="e#9483#9484#0" expanded="true" />
-                      <element signature="e#9526#9527#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="6">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Task.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/Task.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="315">
-                    <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="50" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="PSO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7147">
-              <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="559">
+              <caret line="375" column="0" lean-forward="true" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2003#2034#0" expanded="true" />
@@ -135,16 +35,6 @@
                 <element signature="e#6635#6636#0" expanded="true" />
                 <element signature="e#10959#10990#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectInputStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/default-runtime/src.zip!/java/io/ObjectInputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="2676" column="0" lean-forward="false" selection-start-line="2676" selection-start-column="0" selection-end-line="2676" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -186,10 +76,10 @@
       <find>VMM</find>
       <find>t</find>
       <find>pbest</find>
-      <find>update</find>
       <find>cal</find>
       <find>main</find>
       <find>getparent</find>
+      <find>update</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/ec/app/baselines</dir>
@@ -484,12 +374,12 @@
       <workItem from="1545100348712" duration="19070000" />
       <workItem from="1545866413358" duration="9981000" />
       <workItem from="1545955646706" duration="8748000" />
-      <workItem from="1546056365182" duration="50994000" />
+      <workItem from="1546056365182" duration="51756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247991000" />
+    <option name="totallyTimeSpent" value="248753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1732" y="0" width="1920" height="1044" extended-state="6" />
@@ -502,7 +392,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15795091" sideWeight="0.20364584" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23265742" sideWeight="0.7963542" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23265742" sideWeight="0.7963542" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -870,6 +760,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="375" column="0" lean-forward="true" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2003#2034#0" expanded="true" />
+            <element signature="e#6545#6546#0" expanded="true" />
+            <element signature="e#6569#6570#0" expanded="true" />
+            <element signature="e#6611#6612#0" expanded="true" />
+            <element signature="e#6635#6636#0" expanded="true" />
+            <element signature="e#10959#10990#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Utility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1721">
@@ -890,8 +796,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="170" column="38" lean-forward="true" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
+        <state relative-caret-position="410">
+          <caret line="144" column="26" lean-forward="true" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2428#2436#0" expanded="true" />
@@ -919,22 +825,6 @@
             <element signature="e#9445#9446#0" expanded="true" />
             <element signature="e#9483#9484#0" expanded="true" />
             <element signature="e#9526#9527#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7147">
-          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2003#2034#0" expanded="true" />
-            <element signature="e#6545#6546#0" expanded="true" />
-            <element signature="e#6569#6570#0" expanded="true" />
-            <element signature="e#6611#6612#0" expanded="true" />
-            <element signature="e#6635#6636#0" expanded="true" />
-            <element signature="e#10959#10990#0" expanded="true" />
           </folding>
         </state>
       </provider>
