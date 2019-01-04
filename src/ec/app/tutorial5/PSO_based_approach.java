@@ -165,6 +165,7 @@ public class PSO_based_approach {
         return null;
     }
 
+    @SuppressWarnings("Duplicates")
     private void updateVelocity(int iter) {
         if(iter==0)S[0] = Math.random();
         if(S[iter]<0) S[iter] = 0.001;

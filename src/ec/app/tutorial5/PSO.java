@@ -220,6 +220,8 @@ public class PSO {
         private int num_VMS = 0;
         private int num_iter = 0;
         private double current_fitness;
+        private double Velocity[];
+        private double S[];
 
         public Particle(ArrayList<Task> taskList, ArrayList<VirtualMachine> ls_vms, int j){
             this.Solution = new int[taskList.size()];
@@ -229,6 +231,8 @@ public class PSO {
             this.VEC = new double[this.task_list.size()];
             this.Pbest_k = new double[this.task_list.size()];
             this.num_VMS = ls_vms.size();
+            this.Velocity = new double[this.task_list.size()];
+            this.S = new double[this.task_list.size()];
 
             Initialise_Particle();
             MapTaskToVM();
@@ -299,7 +303,32 @@ public class PSO {
             this.fitness = fitness;
         }
 
-        public void updateVelocity(int ietr) {
+@SuppressWarnings("Duplicates")
+        public void updateVelocity(int iter) {
+            if(iter==0)S[0] = Math.random();
+            if(S[iter]<0) S[iter] = 0.001;
+            else if (S[iter]>1) S[iter] = 0.999;
+            double r1 =0;
+            double r2 =0;
+            while(r1==0 ||r2==0){
+                r1 = Math.random();
+                r2 = Math.random();
+            }
+            int local_best_index = 0;
+            int global_best_index = 0;
+            if(iter>0){
+//            System.out.println("S0:" + S[0]);
+//            System.out.println("iter" + iter);
+//            Gbest[0] = 0.0;
+                Velocity[iter] = w * Velocity[iter-1] + c1 * r1 *(S[local_best_index] - S[iter -1]) + c2 * r2 * (Gbest[global_best_index] - S[iter-1]);
+//            System.out.println("V(ietr):" + V[iter]);
+
+//            System.out.println("V iter: " + V[iter]);
+            }
+            else {
+                Velocity[iter] = Math.random();
+//            System.out.println("init" + iter);
+            }
         }
 
         public double getPbest_fitness() {
