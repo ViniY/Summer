@@ -11,7 +11,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-public class Task implements Serializable{
+public class Task implements Cloneable{
 	public String id;
 	public long task_size;
 	public ArrayList<String> parent_id;
@@ -25,7 +25,7 @@ public class Task implements Serializable{
 
 	public Task() {
 	}
-	public Object clone(){
+	public Task clone(){
 		try{
 			Task clonedObj = (Task) (super.clone());
 			return clonedObj;

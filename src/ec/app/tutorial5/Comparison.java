@@ -15,8 +15,8 @@ public class Comparison {
     private static final int ALGORITHM_WRR = 3;
     private static final int ALGORITHM_RANDOM = 4;
     private static final int ALGORITHM_PSO = 5;
-    private static PSO_based_approach pso;
-
+//    private static PSO_based_approach pso;
+    private static PSO pso;
 
     public double fitness_PSO() {
 
@@ -123,9 +123,10 @@ public class Comparison {
                         if (pp == 0) {
                             System.out.println("PP:-" + pp);
 //                            PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
-                            ArrayList<Task> clone_task = (ArrayList<Task>) Utility.DeepClone_Seializable(ls_tasks);
-                            PSO pso = new PSO(clone_task,ls_vms,-1);
-//                            Comparison.pso = pso;
+//                            ArrayList<Task> clone_task = (ArrayList<Task>) Utility.DeepClone_Seializable(ls_tasks);
+//                            PSO pso = new PSO(clone_task,ls_vms,-1);
+                            PSO pso = new PSO(ls_tasks,ls_vms,-1);
+                            Comparison.pso = pso;
 
 //                            System.out.println("hash code for PSO object " + Comparison.pso.toString());
                         }

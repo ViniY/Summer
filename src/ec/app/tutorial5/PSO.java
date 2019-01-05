@@ -44,25 +44,27 @@ public class PSO {
         this.Gbest = new double[this.task_list.size()];
         Initialization();
     }
+
+    public PSO() {// constructor built here to let the particle class extend
+    }
+
     @SuppressWarnings("Duplicates")
     //  intialise POP and VEC this two arrays with this function with random value varies from 0 to 1 based on uniform distribution
     public void Initialization() {
         System.out.println("Printing hash code for old list and the first task inside of it:" + " 1  :" + this.task_list.hashCode() + " 2 :" + this.task_list.get(0).hashCode()  );
-        for (int i=0; i < this.Swarm_Size-10; i++){
+        for (int i=0; i < this.Swarm_Size; i++){
 //            ArrayList<Task> clone_task = (ArrayList<Task>) Utility.DeepClone_Seializable(this.task_list);
             ArrayList<Task> clone_task = new ArrayList<>();
-            for(Task t : this.task_list){
-                clone_task.add((Task) t.clone());
-            }
+//            for(Task t : this.task_list){
+//                clone_task.add((Task) t.clone());
+//            }
+            clone_task = Utility.TaskListCloning(task_list);
             System.out.println("Printing the new Hash Codes :" + " 1 : " + clone_task.hashCode() + " 2 : " + clone_task.get(0).hashCode());
-            PSO pso = new PSO(clone_task,ls_vms,-1);
-
+//            PSO pso = new PSO(clone_task,ls_vms,-1);
             Particle p = new Particle(this.task_list,this.ls_vms,-1);
             this.list_particle.add(p);
         }
-
         System.out.println("Particles initialised");
-
         for (int i = 0; i < this.Pbest.length; i++){
             for(int j=0; j < this.Pbest[0].length; j++){
                 Pbest[i][j] = Double.MAX_VALUE;
@@ -100,6 +102,19 @@ public class PSO {
 //        }//  ETC generated
         return ETC;
     }
+
+    public ArrayList<Object> taskMapping(int j){
+
+
+
+
+
+        return null;
+    }
+
+
+
+
 
     public void Main_Procedure(){
         double makeSpan = 0;
@@ -153,15 +168,7 @@ public class PSO {
 
     public double CalFitness(Particle p) {
         return p.CalculateFitness(p.Solution);
-
     }
-
-
-
-
-
-
-
     // getter and setters
     public void setTask_list(ArrayList<Task> task_list) {
         this.task_list = task_list;
@@ -208,7 +215,7 @@ public class PSO {
 
 
 
-    class Particle {
+    class Particle extends PSO{
         private  ArrayList<VirtualMachine> ls_vms = new ArrayList<>();
         private ArrayList<Task> task_list = new ArrayList<>();
         private int[] Solution;
@@ -224,6 +231,7 @@ public class PSO {
         private double S[];
 
         public Particle(ArrayList<Task> taskList, ArrayList<VirtualMachine> ls_vms, int j){
+            super();
             this.Solution = new int[taskList.size()];
             this.task_list = taskList;
             this.ls_vms = ls_vms;
@@ -318,39 +326,36 @@ public class PSO {
             int global_best_index = 0;
             if(iter>0){
 //            System.out.println("S0:" + S[0]);
-//            System.out.println("iter" + iter);
-//            Gbest[0] = 0.0;
-                Velocity[iter] = w * Velocity[iter-1] + c1 * r1 *(S[local_best_index] - S[iter -1]) + c2 * r2 * (Gbest[global_best_index] - S[iter-1]);
-//            System.out.println("V(ietr):" + V[iter]);
 
-//            System.out.println("V iter: " + V[iter]);
+                Velocity[iter] = w * Velocity[iter-1] + c1 * r1 *(S[local_best_index] - S[iter -1]) + c2 * r2 * (Gbest[global_best_index] - S[iter-1]);
             }
             else {
                 Velocity[iter] = Math.random();
-//            System.out.println("init" + iter);
             }
         }
 
         public double getPbest_fitness() {
             return pbest_fitness;
         }
-
         public void setPbest_fitness(double pbest_fitness) {
             this.pbest_fitness = pbest_fitness;
         }
-
         public double CalculateFitness(int[] Solution) {
 //            for(Task t : task_list){
             resetTaskStartFinishTime(Solution);
             setTaskFinishTime(Solution);
+            double makespan = 0;
+//            for(int index = 0; index < Solution.length; index++){
+//
+//            }
+            double total_time = 0;
+                total_time += Utility.getTasksMaxSpan(this.task_list);
+            System.out.println("The total makespan of this particle is :"  + total_time);
 
 
 
-
-            return 0;
+            return total_time;
         }
-
-
 
         private void setTaskFinishTime(int[] solution) {
             for(int index =0; index < task_list.size(); index++){
@@ -367,7 +372,6 @@ public class PSO {
                 ls_vms.get(Solution[index]).setPriority_queue(t);
             }
             System.out.println("reset the task execution time");
-
         }
     }
     private void resetTaskStartFinishTime(int[] solution) {
