@@ -166,7 +166,7 @@ public class Comparison {
                 double average_makespan = (double) totalTime / taskFiles.length;
                 //***************PSO
                 if (alg == 5) {// PSO
-                    if (pso.best_solution) {//already the best solution
+                    if (pso.best_solution_boolean) {//already the best solution
                         System.out.println(alg + " - average total cost of testing set is: " + average_total);
                         System.out.println(alg + " - average makespan of testing set is: " + average_makespan);
                     } else {

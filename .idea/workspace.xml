@@ -18,6 +18,28 @@
     <SUITE FILE_PATH="coverage/Summer_Project$EC.coverage" NAME="EC Coverage Results" MODIFIED="1544512144081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DockManager">
+    <window id="4">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="Task.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/Task.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="603">
+                    <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                      <element signature="e#2167#2168#0" expanded="true" />
+                      <element signature="e#2234#2235#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
     <window id="2">
       <content type="file-editors">
         <state>
@@ -25,33 +47,27 @@
             <file leaf-file-name="PSO.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="700">
-                    <caret line="242" column="62" lean-forward="true" selection-start-line="242" selection-start-column="62" selection-end-line="242" selection-end-column="62" />
+                  <state relative-caret-position="950">
+                    <caret line="393" column="5" lean-forward="true" selection-start-line="393" selection-start-column="5" selection-end-line="393" selection-end-column="5" />
                     <folding>
                       <element signature="imports" expanded="true" />
-                      <element signature="e#6223#6224#0" expanded="true" />
-                      <element signature="e#6247#6248#0" expanded="true" />
-                      <element signature="e#6289#6290#0" expanded="true" />
-                      <element signature="e#6313#6314#0" expanded="true" />
-                      <element signature="e#6357#6358#0" expanded="true" />
-                      <element signature="e#6410#6411#0" expanded="true" />
-                      <element signature="e#10605#10606#0" expanded="true" />
-                      <element signature="e#10648#10649#0" expanded="true" />
-                      <element signature="e#10821#10852#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/Task.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="311">
-                    <caret line="108" column="16" lean-forward="false" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                      <element signature="e#2167#2168#0" expanded="true" />
-                      <element signature="e#2234#2235#0" expanded="true" />
+                      <element signature="e#7092#7093#0" expanded="true" />
+                      <element signature="e#7116#7117#0" expanded="true" />
+                      <element signature="e#7158#7159#0" expanded="true" />
+                      <element signature="e#7182#7183#0" expanded="true" />
+                      <element signature="e#7226#7227#0" expanded="true" />
+                      <element signature="e#7279#7280#0" expanded="true" />
+                      <element signature="e#7821#7822#0" expanded="true" />
+                      <element signature="e#7858#7859#0" expanded="true" />
+                      <element signature="e#11526#11527#0" expanded="true" />
+                      <element signature="e#11569#11570#0" expanded="true" />
+                      <element signature="e#11748#11779#0" expanded="true" />
+                      <element signature="method#setTaskFinishTime#0;class#Particle#0;class#PSO#0" expanded="false" />
+                      <element signature="method#resetTaskStartFinishTime#0;class#Particle#0;class#PSO#0" expanded="false" />
+                      <element signature="e#14912#14913#0" expanded="true" />
+                      <element signature="e#14959#14960#0" expanded="true" />
+                      <element signature="e#15024#15025#0" expanded="true" />
+                      <element signature="e#15088#15089#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -111,13 +127,13 @@
       <file leaf-file-name="Comparison.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="147" column="33" lean-forward="true" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
+            <state relative-caret-position="1314">
+              <caret line="170" column="100" lean-forward="true" selection-start-line="170" selection-start-column="100" selection-end-line="170" selection-end-column="100" />
               <folding>
-                <element signature="e#9523#9524#0" expanded="true" />
-                <element signature="e#9549#9550#0" expanded="true" />
-                <element signature="e#9584#9585#0" expanded="true" />
-                <element signature="e#9614#9615#0" expanded="true" />
+                <element signature="e#9531#9532#0" expanded="true" />
+                <element signature="e#9557#9558#0" expanded="true" />
+                <element signature="e#9592#9593#0" expanded="true" />
+                <element signature="e#9622#9623#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,12 +170,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>new</find>
-      <find>file</find>
-      <find>upd</find>
-      <find>print</find>
-      <find>gen</find>
-      <find>The current cost</find>
       <find>pp</find>
       <find>6</find>
       <find>average total cost of testing set i</find>
@@ -177,13 +187,19 @@
       <find>pbest</find>
       <find>main</find>
       <find>getparent</find>
-      <find>update</find>
       <find>DeepClone_Seializable</find>
       <find>calculate</find>
       <find>cal</find>
       <find>taskmapping</find>
       <find>Gbest</find>
       <find>ceil</find>
+      <find>*****</find>
+      <find>now</find>
+      <find>particle</find>
+      <find>clone</find>
+      <find>fitness</find>
+      <find>Max</find>
+      <find>update</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/ec/app/baselines</dir>
@@ -479,16 +495,15 @@
       <workItem from="1545866413358" duration="9981000" />
       <workItem from="1545955646706" duration="8748000" />
       <workItem from="1546056365182" duration="51756000" />
-      <workItem from="1546645585901" duration="13707000" />
+      <workItem from="1546645585901" duration="17762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262460000" />
+    <option name="totallyTimeSpent" value="266515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -533,13 +548,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/Task.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/feature_selection.java" />
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/test.java" />
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/fitness_function.java" />
@@ -857,50 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="108" column="16" lean-forward="false" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2167#2168#0" expanded="true" />
-            <element signature="e#2234#2235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="147" column="33" lean-forward="true" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="33" />
-          <folding>
-            <element signature="e#9523#9524#0" expanded="true" />
-            <element signature="e#9549#9550#0" expanded="true" />
-            <element signature="e#9584#9585#0" expanded="true" />
-            <element signature="e#9614#9615#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="242" column="62" lean-forward="true" selection-start-line="242" selection-start-column="62" selection-end-line="242" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6223#6224#0" expanded="true" />
-            <element signature="e#6247#6248#0" expanded="true" />
-            <element signature="e#6289#6290#0" expanded="true" />
-            <element signature="e#6313#6314#0" expanded="true" />
-            <element signature="e#6357#6358#0" expanded="true" />
-            <element signature="e#6410#6411#0" expanded="true" />
-            <element signature="e#10605#10606#0" expanded="true" />
-            <element signature="e#10648#10649#0" expanded="true" />
-            <element signature="e#10821#10852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO_based_approach.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -931,6 +895,66 @@
             <element signature="e#9445#9446#0" expanded="true" />
             <element signature="e#9483#9484#0" expanded="true" />
             <element signature="e#9526#9527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/default-runtime/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="211" column="28" lean-forward="false" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial4/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+            <element signature="e#2234#2235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/PSO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="393" column="5" lean-forward="true" selection-start-line="393" selection-start-column="5" selection-end-line="393" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7092#7093#0" expanded="true" />
+            <element signature="e#7116#7117#0" expanded="true" />
+            <element signature="e#7158#7159#0" expanded="true" />
+            <element signature="e#7182#7183#0" expanded="true" />
+            <element signature="e#7226#7227#0" expanded="true" />
+            <element signature="e#7279#7280#0" expanded="true" />
+            <element signature="e#7821#7822#0" expanded="true" />
+            <element signature="e#7858#7859#0" expanded="true" />
+            <element signature="e#11526#11527#0" expanded="true" />
+            <element signature="e#11569#11570#0" expanded="true" />
+            <element signature="e#11748#11779#0" expanded="true" />
+            <element signature="method#setTaskFinishTime#0;class#Particle#0;class#PSO#0" expanded="false" />
+            <element signature="method#resetTaskStartFinishTime#0;class#Particle#0;class#PSO#0" expanded="false" />
+            <element signature="e#14912#14913#0" expanded="true" />
+            <element signature="e#14959#14960#0" expanded="true" />
+            <element signature="e#15024#15025#0" expanded="true" />
+            <element signature="e#15088#15089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ec/app/tutorial5/Comparison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1314">
+          <caret line="170" column="100" lean-forward="true" selection-start-line="170" selection-start-column="100" selection-end-line="170" selection-end-column="100" />
+          <folding>
+            <element signature="e#9531#9532#0" expanded="true" />
+            <element signature="e#9557#9558#0" expanded="true" />
+            <element signature="e#9592#9593#0" expanded="true" />
+            <element signature="e#9622#9623#0" expanded="true" />
           </folding>
         </state>
       </provider>
