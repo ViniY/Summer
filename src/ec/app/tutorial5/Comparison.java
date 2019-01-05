@@ -3,7 +3,6 @@ package ec.app.tutorial5;
 import java.io.File;
 import java.util.*;
 
-import com.sun.xml.internal.bind.v2.TODO;
 import ec.app.tutorial4.Task;
 import ec.app.tutorial4.VirtualMachine;
 
@@ -171,8 +170,9 @@ public class Comparison {
                         System.out.println(alg + " - average total cost of testing set is: " + average_total);
                         System.out.println(alg + " - average makespan of testing set is: " + average_makespan);
                     } else {
-                        pso.setCurrent_fitness(average_makespan);
-                        pso.Main_Procedure(pso.POP, pso.ETC);
+                        pso.Main_Procedure();
+//                        pso.setCurrent_fitness(average_makespan);// used in the first version
+//                        pso.Main_Procedure(pso.POP, pso.ETC);//was used in the first version
                     }
                 } else {
                     System.out.println(alg + " - average total cost of testing set is: " + average_total);
@@ -184,11 +184,11 @@ public class Comparison {
         }
     }
 
-    public PSO_based_approach getPso() {
+    public PSO getPso() {
         return pso;
     }
 
-    public void setPso(PSO_based_approach pso) {
+    public void setPso(PSO pso) {
         this.pso = pso;
     }
 }
