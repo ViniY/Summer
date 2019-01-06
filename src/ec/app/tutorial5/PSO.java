@@ -25,13 +25,14 @@ public class PSO {
     public ArrayList<Object> updateVals = new ArrayList<>(); // returned arraylist which is used to calculate the fitness
     public int[] final_best_solution;//store the best solution in each generation
     public double Min_fiteness = Double.MAX_VALUE; // initial with the maximum value
-    private double gbest_fitness = Double.MAX_VALUE;
+    private double gbest_fitness = -Double.MAX_VALUE;
     private int[] bestSolution;
+    private double Gbest_coeff= 1;
 //    public Particle bestParticle = new Particle(this.task_list,this.ls_vms,-1);
 
 
     //Constructor for PSO which holds particles -(represents solution)
-    public PSO(ArrayList<Task> taskList, ArrayList<VirtualMachine> ls_vms, int j){//j is useless
+    public PSO(ArrayList<Task> taskList, ArrayList<VirtualMachine> ls_vms, int seed){//j is useless
         this.ls_vms = ls_vms;
         this.task_list = taskList;
         int generation = 0 ;
@@ -86,21 +87,24 @@ public class PSO {
         return ETC;
     }
 
-    public ArrayList<Object> taskMapping(int j){
-            ArrayList<Object> updateVal = new ArrayList<>();//the final Mapping solution
-            updateVal = Main_Procedure();
+    public Map<String, ArrayList> taskMapping(int j){
+        Map<String,ArrayList> returning = new HashMap<>();
 
-        return updateVal;
+            ArrayList<Object> updateVal = new ArrayList<>();//the final Mapping solution
+            returning = Main_Procedure();
+
+        return returning;
     }
 
 
 
 
 
-    public ArrayList<Object> Main_Procedure(){
+    public Map<String, ArrayList> Main_Procedure(){
         double makeSpan = 0;
         double fitness = Double.MAX_VALUE;
         int generation_best_index = 0;
+        ArrayList<Task> updated_task = new ArrayList<>();
         ArrayList<Object> update  = new ArrayList<>();
         for(int i =0 ; i < list_particle.size(); i++){
 
@@ -125,25 +129,28 @@ public class PSO {
             System.out.println("********************************************");
             for(int k=0; k < Swarm_Size; k++){
                 Particle p= list_particle.get(k);
-                p.updateVelocity(Ietr);
-                p.MapTaskToVM();
+                p.updateVelocity(Ietr,this.Gbest_coeff);
+                p.MapTaskToVM(Ietr);
                 CalFitness(p);
-                if(p.current_fitness < p.pbest_fitness){
+                if(p.current_fitness > p.pbest_fitness){
                     p.setPbest_fitness(p.current_fitness,p.getSolution());
                     p.setLocal_best_index(Ietr);
                 }
-                if(p.current_fitness < gbest_fitness){
+                if(p.pbest_fitness > gbest_fitness){
+                    this.Gbest_coeff = p.S[Ietr];
                     gbest_fitness = p.current_fitness;
                     this.Gbest  = p.POP;//g_best = Pbest k
                     best_index = k;
+                    updated_task = p.task_list;
 //                    this.bestParticle = p;
                 }
             }
             Ietr++;
 //            makeSpan = bestParticle.fitness;
             makeSpan = list_particle.get(best_index).pbest_fitness;
-            if(Ietr == MAX_ITER) System.out.println("this is the best solution" + makeSpan);
-            System.out.println("Now we are in the "+ Ietr +" Iteration and our makespan of the current best is: " + makeSpan );
+//            if(Ietr == MAX_ITER) System.out.println("this is the best solution" + makeSpan);
+//            System.out.println("Now we are in the "+ Ietr +" Iteration and our makespan of the current best is: " + makeSpan );
+            System.out.println("Gbest Makespan : "+ gbest_fitness);
         }
 
         if(Ietr == MAX_ITER){
@@ -153,8 +160,10 @@ public class PSO {
                 update.add(ls_vms.get( bestSolution[i]));
             }
         }
-
-        return update;
+        Map<String,ArrayList> returning = new HashMap<>();
+        returning.put("solution_updated",update);
+        returning.put("updated_tasks",updated_task);
+        return returning;
     }
 
     private double CalculateMakeSpan() {
@@ -240,11 +249,11 @@ public class PSO {
             this.VEC = new double[this.task_list.size()];
             this.Pbest_k = new double[this.task_list.size()];
             this.num_VMS = ls_vms.size();
-            this.Velocity = new double[MAX_ITER];
+            this.Velocity = new double[this.task_list.size()];
             this.S = new double[MAX_ITER];
             this.bestSolutionSoFar = new int[this.task_list.size()];
             Initialise_Particle();
-            MapTaskToVM();
+            MapTaskToVM(0);
             System.out.println("new Particle initialised");
         }
 
@@ -272,11 +281,23 @@ public class PSO {
         }
 
 //      2. Mapping
-        public void MapTaskToVM( ) {
+        public void MapTaskToVM(int iter ) {
             int[] solution = new int[this.task_list.size()];
-            for(int i = 0; i < POP.length; i++){
-                solution[i] =(int) Math.floor(this.POP[i]*this.VEC[i]);// should be ceil in the paper but bound problem occured not sure what should do here
+//            if(iter ==0) {
+
+                for (int i = 0; i < POP.length; i++) {
+                    solution[i] = (int) Math.floor(this.POP[i] * this.VEC[i]);// should be ceil in the paper but bound problem occured not sure what should do here
 //                solution[i] =(int) Math.ceil(this.POP[i]*this.VEC[i]);
+                }
+//            }
+//            else{
+//                for(int i=0; i < POP.length; i++){
+//                    solution[i] = (int) Math.floor(this.POP[i] * this.Velocity[i]);
+//                }
+//            }
+            for(int index= 0; index < POP.length; index++){
+                    if(solution[index]<0 ){solution[index] = 0;}
+                    if(solution[index]>(ls_vms.size()-1)){solution[index]=(ls_vms.size()-1);}
             }
 
             this.Solution = solution;
@@ -310,7 +331,7 @@ public class PSO {
 
       @SuppressWarnings("Duplicates")
 
-        public void updateVelocity(int iter) {
+        public void updateVelocity(int iter,double Gbest) {
             if(iter==0)S[0] = Math.random();
             if(S[iter]<0) S[iter] = 0.001;
             else if (S[iter]>1) S[iter] = 0.999;
@@ -320,11 +341,14 @@ public class PSO {
                 r1 = Math.random();
                 r2 = Math.random();
             }
-            int global_best_index = 0;
+
             if(iter>0){
 //            System.out.println("S0:" + S[0]);
                 System.out.println("Pbest index : " + S[this.local_best_index]);
-                Velocity[iter] = w * Velocity[iter-1] + c1 * r1 *(S[this.local_best_index] - S[iter -1]) + c2 * r2 * (Gbest[global_best_index] - S[iter-1]);
+                Velocity[iter] = w * Velocity[iter-1] + c1 * r1 *(S[this.local_best_index] - S[iter -1]) + c2 * r2 * (Gbest - S[iter-1]);
+                for(int i =0 ; i < POP.length; i++){
+                    POP[i] = POP[i] + Velocity[i];
+                }
             }
             else {
                 Velocity[iter] = Math.random();
@@ -343,7 +367,7 @@ public class PSO {
             setTaskFinishTime(Solution);
             double total_time = 0;
             total_time += Utility.getTasksMaxSpan(this.task_list);
-            System.out.println("The total makespan of this particle is :"  + total_time);
+//            System.out.println("The total makespan of this particle is :"  + total_time);
             if(total_time<this.pbest_fitness) this.pbest_fitness = total_time;
             this.fitness = total_time;
             return total_time;

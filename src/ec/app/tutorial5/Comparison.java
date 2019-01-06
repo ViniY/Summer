@@ -1,6 +1,7 @@
 package ec.app.tutorial5;
 
 import java.io.File;
+import java.lang.reflect.Array;
 import java.util.*;
 
 import ec.app.tutorial4.Task;
@@ -117,6 +118,7 @@ public class Comparison {
                     // PSO used to give a solution of scheduling, this is different to the greedy algorithms which schedule
                     // each task and routing to VM, so here I put it outside of the for loop which is iterate through the task set
                     if (alg == 5) {//PSO
+
                         ArrayList<Object> udpatedVal = new ArrayList<Object>();
                         //TODO here need to delete this if condition cuz we need 30 runs instead of 1 here just wanna test
                         if (pp == 0) {
@@ -124,12 +126,16 @@ public class Comparison {
 //                            PSO_based_approach pso = new PSO_based_approach(ls_tasks, ls_vms, j);
 //                            ArrayList<Task> clone_task = (ArrayList<Task>) Utility.DeepClone_Seializable(ls_tasks);
 //                            PSO pso = new PSO(clone_task,ls_vms,-1);
-                            PSO pso = new PSO(ls_tasks,ls_vms,-1);
+                            PSO pso = new PSO(ls_tasks,ls_vms,pp+100);
                             Comparison.pso = pso;
 
 //                            System.out.println("hash code for PSO object " + Comparison.pso.toString());
                         }
-                        udpatedVal = pso.taskMapping(0);
+                         Map<String,ArrayList> catch_returning = new HashMap<>();
+                        catch_returning = pso.taskMapping(0);
+//                        udpatedVal,updated_task_list = pso.taskMapping(0);
+                        udpatedVal = catch_returning.get("solution_updated");
+                        ls_tasks = catch_returning.get("updated_tasks");
                         for(int i = 0; i < ls_tasks.size(); i ++) {
                             Task t = queue.poll();
                             for (Object o : udpatedVal) {
