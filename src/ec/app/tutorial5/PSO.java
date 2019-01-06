@@ -116,20 +116,29 @@ public class PSO {
         this.gbest_fitness = fitness;
         int generation_best[] = new int[task_list.size()];
         int best_index =-1;//represent the index of the current best solution
-        for(int index = 0; index < Swarm_Size; index++){
-            if(Min_fiteness > F(Pbest[index])){
-                Min_fiteness = F(Pbest[index]);
-                best_index = index;
-                Gbest = Pbest[index];
+        for(int index = 0; index < Swarm_Size; index++) {
+//            if(Min_fiteness > F(Pbest[index])){
+//                Min_fiteness = F(Pbest[index]);
+//                best_index = index;
+//                Gbest = Pbest[index];
+//            }
+            CalFitness(list_particle.get(index));
+        }
+        int index_of_best_particle = -1;
+        for(int i=0; i < Swarm_Size; i++){
+            if(list_particle.get(i).fitness <  Min_fiteness){
+                Min_fiteness = list_particle.get(i).fitness;
+                index_of_best_particle= i ;
             }
         }
+        Gbest = list_particle.get(index_of_best_particle).POP;
         int Ietr = 0 ;
 //        bestParticle.fitness = Double.MAX_VALUE;//initial the most valued particle here used to store the best particle which make it way easier to return the global best solution
         while(Ietr < MAX_ITER){
             System.out.println("********************************************");
             for(int k=0; k < Swarm_Size; k++){
                 Particle p= list_particle.get(k);
-                p.updateVelocity(Ietr,this.Gbest_coeff);
+                p.updateVelocity(Ietr,this.Gbest);
                 p.MapTaskToVM(Ietr);
                 CalFitness(p);
                 if(p.current_fitness > p.pbest_fitness){
@@ -137,7 +146,6 @@ public class PSO {
                     p.setLocal_best_index(Ietr);
                 }
                 if(p.pbest_fitness > gbest_fitness){
-                    this.Gbest_coeff = p.S[Ietr];
                     gbest_fitness = p.current_fitness;
                     this.Gbest  = p.POP;//g_best = Pbest k
                     best_index = k;
@@ -147,7 +155,9 @@ public class PSO {
             }
             Ietr++;
 //            makeSpan = bestParticle.fitness;
+            if(best_index!=-1){
             makeSpan = list_particle.get(best_index).pbest_fitness;
+            }
 //            if(Ietr == MAX_ITER) System.out.println("this is the best solution" + makeSpan);
 //            System.out.println("Now we are in the "+ Ietr +" Iteration and our makespan of the current best is: " + makeSpan );
             System.out.println("Gbest Makespan : "+ gbest_fitness);
@@ -224,7 +234,7 @@ public class PSO {
 
 
     class Particle extends PSO implements Cloneable{
-        private  ArrayList<VirtualMachine> ls_vms = new ArrayList<>();
+        private ArrayList<VirtualMachine> ls_vms = new ArrayList<>();
         private ArrayList<Task> task_list = new ArrayList<>();
         private int[] Solution;
         private double[] POP;
@@ -239,6 +249,7 @@ public class PSO {
         private double S[];
         private int[] bestSolutionSoFar;
         private int local_best_index;
+        private double[]local_best_pop;
 
         public Particle(ArrayList<Task> taskList, ArrayList<VirtualMachine> ls_vms, int j){
             super();
@@ -250,9 +261,11 @@ public class PSO {
             this.Pbest_k = new double[this.task_list.size()];
             this.num_VMS = ls_vms.size();
             this.Velocity = new double[this.task_list.size()];
-            this.S = new double[MAX_ITER];
+//            this.S = new double[MAX_ITER];
+
             this.bestSolutionSoFar = new int[this.task_list.size()];
             Initialise_Particle();
+            this.local_best_pop = POP;
             MapTaskToVM(0);
             System.out.println("new Particle initialised");
         }
@@ -331,28 +344,32 @@ public class PSO {
 
       @SuppressWarnings("Duplicates")
 
-        public void updateVelocity(int iter,double Gbest) {
-            if(iter==0)S[0] = Math.random();
-            if(S[iter]<0) S[iter] = 0.001;
-            else if (S[iter]>1) S[iter] = 0.999;
+        public void updateVelocity(int iter,double[] Gbest) {
+//            if(S[iter]<0) S[iter] = 0.001;
+//            else if (S[iter]>1) S[iter] = 0.999;
             double r1 =0;
             double r2 =0;
             while(r1==0 ||r2==0){
                 r1 = Math.random();
                 r2 = Math.random();
             }
+          for(int i =0 ; i < task_list.size(); i++) {
+              System.out.println("Velocity t: " + Velocity[i]);
+          }
+          double ww =0;
+            double c1r1 =0;
+            double c2r2=0;
+            for(int i =0 ; i < task_list.size(); i++){
+                Velocity[i] = w * Velocity[i] + c1 * r1 *(this.local_best_pop[i] - this.POP[i]) + c2 * r2 * (Gbest[i] - this.POP[i]);
+                 ww = w * Velocity[i];
+                 c1r1 = c1 * r1 *(this.local_best_pop[i] - this.POP[i]);
+                 c2r2 = c2 * r2 * (Gbest[i] - this.POP[i]);
+                POP[i] = POP[i] + Velocity[i];
+                    if(POP[i] < 0 ) POP[i] = 0.001;
+                    if(POP[i] > 1 ) POP[i] = 0.999;
 
-            if(iter>0){
-//            System.out.println("S0:" + S[0]);
-                System.out.println("Pbest index : " + S[this.local_best_index]);
-                Velocity[iter] = w * Velocity[iter-1] + c1 * r1 *(S[this.local_best_index] - S[iter -1]) + c2 * r2 * (Gbest - S[iter-1]);
-                for(int i =0 ; i < POP.length; i++){
-                    POP[i] = POP[i] + Velocity[i];
                 }
-            }
-            else {
-                Velocity[iter] = Math.random();
-            }
+
         }
 
         public double getPbest_fitness() {
@@ -370,6 +387,8 @@ public class PSO {
 //            System.out.println("The total makespan of this particle is :"  + total_time);
             if(total_time<this.pbest_fitness) this.pbest_fitness = total_time;
             this.fitness = total_time;
+            this.current_fitness = total_time;
+            this.local_best_pop = POP;
             return total_time;
         }
 
@@ -387,7 +406,7 @@ public class PSO {
                 t.setFinish_time();
                 ls_vms.get(Solution[index]).setPriority_queue(t);
             }
-            System.out.println("reset the task execution time");
+//            System.out.println("reset the task execution time");
         }
         private void resetTaskStartFinishTime(int[] solution) {
             for(Task t : task_list){
@@ -414,6 +433,7 @@ public class PSO {
 
         public void setLocal_best_index(int local_best_index) {
             this.local_best_index = local_best_index;
+
         }
     }
 
