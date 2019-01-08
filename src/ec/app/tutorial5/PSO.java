@@ -15,11 +15,11 @@ public class PSO {
     private int generation = 0;
     private ArrayList<Task> task_list = new ArrayList<>();
     private  ArrayList<VirtualMachine> ls_vms = new ArrayList<>();
-    private int Swarm_Size = 3; //without specification the swarm size is 20
+    private int Swarm_Size = 20; //without specification the swarm size is 20
     private double c1 = 2.05;
     private double c2 = 2.05;
     private double w = 0.5314;
-    private int MAX_ITER  = 3;
+    private int MAX_ITER  = 15;//should be 500 now is testing
 //    private int numberOfVM;
     private ArrayList<Particle> list_particle = new ArrayList<>();
 //    private int[][] MAP;//hold the mapping schedule (task - VM )
@@ -97,6 +97,11 @@ public class PSO {
         Map<String,ArrayList> returning = new HashMap<>();
 //            ArrayList<Object> updateVal = new ArrayList<>();//the final Mapping solution
             returning = Main_Procedure();
+        try {
+            writeTofileChecker();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return returning;
     }
 
@@ -131,22 +136,27 @@ public class PSO {
         int Ietr = 0 ;
 //        bestParticle.fitness = Double.MAX_VALUE;//initial the most valued particle here used to store the best particle which make it way easier to return the global best solution
         while(Ietr < MAX_ITER){
+            if(Ietr ==1) {
+                this.list_particle.remove(0);
+                this.gbest_fitness = Double.MAX_VALUE;
+            }
             System.out.println("********************************************");
             for(int k=0; k < Swarm_Size; k++){
                 Particle p= list_particle.get(k);
                 //checking in file
-                this.checker.add("this is particle :" + k + "Iteration : " + "the fitness is :" + p.fitness );
+                this.checker.add("Particle :" + k + " Iteration : " + Ietr + " Current Fitness :" + p.fitness + "   Pbest now is :  "+ p.pbest_fitness + "    Gbest now is :" + this.gbest_fitness);
+
 
                 p.updateVelocity(Ietr,this.Gbest);
                 p.MapTaskToVM(Ietr);
                 CalFitness(p);
-                if(p.fitness > p.pbest_fitness){
+                if(p.fitness < p.pbest_fitness){
                     p.setPbest_fitness(p.fitness,p.getSolution());
                     p.setLocal_best_index(Ietr);
                     System.out.println("local best updating");
                 }
-                if(p.pbest_fitness < gbest_fitness){
-                    gbest_fitness = p.pbest_fitness;
+                if(p.pbest_fitness < this.gbest_fitness){
+                    this.gbest_fitness = p.pbest_fitness;
                     this.Gbest  = p.POP;//g_best = Pbest k
                     best_index = k;
                     updated_task = p.task_list;
@@ -177,11 +187,7 @@ public class PSO {
         returning.put("updated_tasks",updated_task);
 
 
-        try {
-            writeTofileChecker();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
 
         return returning;
     }
@@ -237,11 +243,27 @@ public class PSO {
 
 //checker
     public void writeTofileChecker()throws IOException {
+        try{
+            File file =   new File("/home/yuyong1/Desktop/Summer_project/src/ec/app/tutorial4/config/checker.txt");
+            if(file.delete()){
+                System.out.println("file deleted");
+            }
+                else{
+                System.out.println("no such file");
+            }
+
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
         FileWriter fileWriter = new FileWriter("/home/yuyong1/Desktop/Summer_project/src/ec/app/tutorial4/config/checker.txt");
+
         if(!this.checker.isEmpty()){
             for(int index = 0 ; index < this.checker.size(); index++){
                 fileWriter.write(this.checker.get(index));
                 fileWriter.write("# ");
+                fileWriter.write("\n");
 
             }
 
@@ -318,8 +340,8 @@ public class PSO {
 //            if(iter ==0) {
 
                 for (int i = 0; i < POP.length; i++) {
-                    solution[i] = (int) Math.floor(this.POP[i] * this.VEC[i]);// should be ceil in the paper but bound problem occured not sure what should do here
-//                solution[i] =(int) Math.ceil(this.POP[i]*this.VEC[i]);
+//                    solution[i] = (int) Math.floor(this.POP[i] * this.VEC[i]);// should be ceil in the paper but bound problem occured not sure what should do here
+                solution[i] =(int) Math.ceil(this.POP[i]*this.VEC[i]);
                 }
 //            }
 //            else{
@@ -381,10 +403,9 @@ public class PSO {
 //                 ww = w * Velocity[i];
 //                 c1r1 = c1 * r1 *(this.local_best_pop[i] - this.POP[i]);
 //                 c2r2 = c2 * r2 * (Gbest[i] - this.POP[i]);
-                POP[i] = POP[i] + Velocity[i];
+                this.POP[i] = this.POP[i] + Velocity[i];
                     if(POP[i] < 0 ) POP[i] = 0.001;
                     if(POP[i] > 1 ) POP[i] = 0.999;
-
                 }
 
         }
@@ -403,8 +424,7 @@ public class PSO {
             total_time += Utility.getTasksMaxSpan(this.task_list);
             if(total_time<this.pbest_fitness) this.pbest_fitness = total_time;
             this.fitness = total_time;
-            this.fitness = total_time;
-            this.local_best_pop = POP;
+            this.local_best_pop = this.POP;
             return total_time;
         }
 
