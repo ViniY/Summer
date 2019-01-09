@@ -15,11 +15,11 @@ public class PSO {
     private int generation = 0;
     private ArrayList<Task> task_list = new ArrayList<>();
     private  ArrayList<VirtualMachine> ls_vms = new ArrayList<>();
-    private int Swarm_Size = 20; //without specification the swarm size is 20
+    private int Swarm_Size = 3; //without specification the swarm size is 20
     private double c1 = 2.05;
     private double c2 = 2.05;
     private double w = 0.5314;
-    private int MAX_ITER  = 15;//should be 500 now is testing
+    private int MAX_ITER  = 100;//should be 500 now is testing
 //    private int numberOfVM;
     private ArrayList<Particle> list_particle = new ArrayList<>();
 //    private int[][] MAP;//hold the mapping schedule (task - VM )
@@ -40,7 +40,7 @@ public class PSO {
     //Constructor for PSO which holds particles -(represents solution)
     public PSO(ArrayList<Task> taskList, ArrayList<VirtualMachine> ls_vms, int seed){//j is useless
         java.util.Random seedGenerator = new java.util.Random();
-        seedGenerator.setSeed((long) seed);
+//        seedGenerator.setSeed((long) seed);
         this.ls_vms = ls_vms;
         this.task_list = taskList;
         int generation = 0 ;
@@ -136,10 +136,10 @@ public class PSO {
         int Ietr = 0 ;
 //        bestParticle.fitness = Double.MAX_VALUE;//initial the most valued particle here used to store the best particle which make it way easier to return the global best solution
         while(Ietr < MAX_ITER){
-            if(Ietr ==1) {
-                this.list_particle.remove(0);
-                this.gbest_fitness = Double.MAX_VALUE;
-            }
+//            if(Ietr ==1) {
+//                this.list_particle.remove(0);
+//                this.gbest_fitness = Double.MAX_VALUE;
+//            }
             System.out.println("********************************************");
             for(int k=0; k < Swarm_Size; k++){
                 Particle p= list_particle.get(k);
@@ -284,7 +284,6 @@ public class PSO {
         private double pbest_fitness;//store the local best fitness
         private int num_VMS = 0;
         private int num_iter = 0;
-        private double current_fitness;
         private double Velocity[];
         private double S[];
         private int[] bestSolutionSoFar;
@@ -340,8 +339,8 @@ public class PSO {
 //            if(iter ==0) {
 
                 for (int i = 0; i < POP.length; i++) {
-//                    solution[i] = (int) Math.floor(this.POP[i] * this.VEC[i]);// should be ceil in the paper but bound problem occured not sure what should do here
-                solution[i] =(int) Math.ceil(this.POP[i]*this.VEC[i]);
+                    solution[i] = (int) Math.floor(this.POP[i] * this.VEC[i]);// should be ceil in the paper but bound problem occured not sure what should do here
+//                solution[i] =(int) Math.ceil(this.POP[i]*this.VEC[i]);
                 }
 //            }
 //            else{
@@ -415,7 +414,9 @@ public class PSO {
         }
         public void setPbest_fitness(double pbest_fitness,int[] BestSolutionSoFar) {
             this.pbest_fitness = pbest_fitness;
-            this.bestSolutionSoFar = BestSolutionSoFar;
+            //CLONE THE CURRENT Solution TODO
+            this.bestSolutionSoFar = BestSolutionSoFar.clone();
+//            this.bestSolutionSoFar = BestSolutionSoFar;
         }
         public double CalculateFitness(int[] Solution) {
             resetTaskStartFinishTime(Solution);
